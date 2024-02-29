@@ -30,5 +30,11 @@
 </div>
 
 <div class="nav-box">
-
+	<div class="text-box2">
+		<h2>봄, 시즌 <span class="bold" style="font-weight: 800;">여행지</span></h2>
+		<p>추천 여행지 바로가기</p>
+	</div>
+	<div class="img-box2">
+	<img src="https://i.ibb.co/nPZh7qf/20.png" alt="" /></div>
+</div>
 <%@ include file="../common/foot.jspf"%>

@@ -280,9 +280,29 @@ body {
 /* 네비 박스 */
 .nav-box {
 	position: absolute; 
-	width : 600px; 
+	width : 500px; 
 	height: 279px; 
 	left : 550px; 
 	top :750px;
 	background-color: #F8EFD1;
+}
+
+/* 네비 박스 텍스트*/
+.nav-box .text-box2 {
+	position: absolute;
+	top: 45px;
+	left: 40px;
+	font-size: 25px;
+	line-height: 4; /* 텍스트 높이를 조절합니다. 기본값은 normal입니다. */
+}
+
+.nav-box .text-box2 > p {
+	font-size: 18px;
+}
+
+.nav-box .img-box2 {
+	position: absolute;
+	left: 100px;
+	width: 900px;
+	height: 500px;
 }
