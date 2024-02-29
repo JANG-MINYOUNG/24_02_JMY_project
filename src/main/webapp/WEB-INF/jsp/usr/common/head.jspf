@@ -20,7 +20,8 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 </head>
 <body>
-<header>
+
+<header class="header_bar">
     <div class="top_bar visible-on-web_size flex justify-around">
         <div class="con height-100p flex flex-jc-sa">
             <a href="#" class="logo flex flex-ai-c">GABODA</a>

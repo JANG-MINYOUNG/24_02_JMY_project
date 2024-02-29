@@ -29,4 +29,6 @@
   </button>
 </div>
 
+<div class="nav-box">
+
 <%@ include file="../common/foot.jspf"%>

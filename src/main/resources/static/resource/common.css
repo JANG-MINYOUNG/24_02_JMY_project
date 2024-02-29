@@ -48,13 +48,21 @@ html>body {
 }
 
 body {
-	height: 100%;
+	height: 20000px;
+}
+
+/* 헤더 바 */
+.header_bar {
+    position: relative; /* 수정: 헤더의 위치를 상대적(relative)으로 변경합니다. */
+    width: 100%; /* 헤더의 너비를 화면 너비에 맞춥니다. */
+    top: 0; /* 화면의 맨 위에 헤더를 배치합니다. */
+    z-index: 1000; /* 다른 요소 위에 헤더를 표시합니다. */
 }
 
 /* 탑바 */
 .top_bar {
 	flex: space-between;
-	position: fixed;
+	position: relative; /* 수정: 헤더의 위치를 상대적(relative)으로 변경합니다. */
 	left: 0;
 	top: 30px;
 	width: 100%;
@@ -190,16 +198,16 @@ body {
 	color: #ffc0cd;
 }
 
-.home-box {
-	background-color: #ffc0cd;
-	height: 469px;
-	width: 1920px;
-}
-
 /* 메인페이지 */
 .home-box {
 	margin-top: 80px; /* 원하는 만큼의 간격으로 조정하세요 */
 	width: 100%;
+}
+
+.home-box {
+	background-color: #ffc0cd;
+	height: 469px;
+	width: 1920px;
 }
 
 .img-box {
@@ -230,42 +238,51 @@ body {
 }
 
 .arrow-container {
-  position: relative;
-  
+	position: relative;
 }
 
-.left{
-  position: absolute;
-  left: 29%;
-  border: none;
-  background-color: transparent;
-  padding-top: 40px;
-  width: 60px;
-  height: 80px;
+.left {
+	position: absolute;
+	left: 29%;
+	border: none;
+	background-color: transparent;
+	padding-top: 40px;
+	width: 60px;
+	height: 80px;
 }
 
-.right{
-  position: absolute;
-  left: 46%;
-  border: none;
-  background-color: transparent;
-  padding-top: 40px;
-  width: 60px;
-  height: 80px;
+.right {
+	position: absolute;
+	left: 46%;
+	border: none;
+	background-color: transparent;
+	padding-top: 40px;
+	width: 60px;
+	height: 80px;
 }
 
 .arrow svg {
-  width: 100%;
-  height: 100%;
+	width: 100%;
+	height: 100%;
 }
 
 .arrow svg polyline {
-  stroke-width: 5px; /* 선의 두께를 6px로 설정 */
+	stroke-width: 5px; /* 선의 두께를 6px로 설정 */
 }
 
 .separator {
-  font-size: 25px; /* 원하는 크기로 설정하세요 */
-  position: absolute;
-  left: 37.5%;
-  margin-top: 2.3%;
+	font-size: 25px; /* 원하는 크기로 설정하세요 */
+	position: absolute;
+	left: 37.5%;
+	margin-top: 2.3%;
+}
+
+/* 네비 박스 */
+.nav-box {
+	position: absolute; 
+	width : 600px; 
+	height: 279px; 
+	left : 429px; 
+	top :757px;
+	background-color: #F8EFD1;
 }
