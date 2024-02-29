@@ -207,7 +207,7 @@ body {
 .home-box {
 	background-color: #ffc0cd;
 	height: 469px;
-	width: 1920px;
+	width: 100%;
 }
 
 .img-box {
@@ -282,7 +282,7 @@ body {
 	position: absolute; 
 	width : 600px; 
 	height: 279px; 
-	left : 429px; 
-	top :757px;
+	left : 550px; 
+	top :750px;
 	background-color: #F8EFD1;
 }
