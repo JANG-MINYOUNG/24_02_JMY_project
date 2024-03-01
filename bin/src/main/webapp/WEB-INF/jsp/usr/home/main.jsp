@@ -34,39 +34,7 @@
 		<h2>봄, 시즌 <span class="bold" style="font-weight: 800;">여행지</span></h2>
 		<p>추천 여행지 바로가기</p>
 	</div>
-	
 	<div class="img-box2">
 	<img src="https://i.ibb.co/nPZh7qf/20.png" alt="" /></div>
-	<div class="nav-box2-container">	
-		<div class="nav-box2">
-			<a href="">추천! 테마여행</a>
-			<a href="">추천 여행지로 바로가기</a>
-		</div>
-		<div class="img-box3">
-			<a href="#"><img src="https://i.ibb.co/2M657Lz/image.jpg" alt="image" border="0"></a>
-		</div>
-	</div>		
-	<div class="nav-box3-container">	
-		<div class="nav-box3">
-			<a href="">날씨별! 엑티비티</a>
-			<a href="">날씨별 여행지 바로가기</a>
-		</div>
-		<div class="img-box4">
-			<a href="#"><img src="https://lh3.googleusercontent.com/p/AF1QipNWcAVvjkMq1iLowvG5YwVy6Vh0DxZpcoWqk1Po=s680-w680-h510" alt="image" border="0"></a>
-		</div>
-	</div>
-	<div class="nav-box4-container">	
-		<div class="nav-box4">
-			<a href="">동행자 찾기!</a>
-			<a href="">함께 떠날 동료 찾기</a>
-		</div>
-	</div>
-	<div class="nav-box5-container">	
-		<div class="nav-box5">
-			<a href="">나만의 여행 일지 남기기</a>
-			<a href="">여행일지 바로가기</a>
-		</div>
-	</div>
 </div>
-
 <%@ include file="../common/foot.jspf"%>

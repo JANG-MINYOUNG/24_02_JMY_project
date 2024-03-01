@@ -53,10 +53,10 @@ body {
 
 /* 헤더 바 */
 .header_bar {
-	position: relative; /* 수정: 헤더의 위치를 상대적(relative)으로 변경합니다. */
-	width: 100%; /* 헤더의 너비를 화면 너비에 맞춥니다. */
-	top: 0; /* 화면의 맨 위에 헤더를 배치합니다. */
-	z-index: 1000; /* 다른 요소 위에 헤더를 표시합니다. */
+    position: relative; /* 수정: 헤더의 위치를 상대적(relative)으로 변경합니다. */
+    width: 100%; /* 헤더의 너비를 화면 너비에 맞춥니다. */
+    top: 0; /* 화면의 맨 위에 헤더를 배치합니다. */
+    z-index: 1000; /* 다른 요소 위에 헤더를 표시합니다. */
 }
 
 /* 탑바 */
@@ -213,23 +213,23 @@ body {
 .img-box {
 	position: absolute;
 	filter: drop-shadow(0px 5px 15px rgba(0, 0, 0, 0.35));
-	padding-left: 850px;
+	padding-left: 950px;
 	padding-top: 130px;
 }
 
 /* 이미지 */
 .img-box img {
 	border-radius: 20px;
-	width: 800px;
+	width: 700px;
 	height: 450px;
 }
 
 /* 배경 텍스트 */
 .text-box {
 	position: absolute;
-	top: 270px;
-	left: 25%; /* 이미지의 오른쪽에 위치하도록 설정 */
-	font-size: 28px;
+	top: 250px;
+	left: 30%; /* 이미지의 오른쪽에 위치하도록 설정 */
+	font-size: 25px;
 	z-index: 1; /* 이미지 위로 텍스트 박스를 올리기 위해 z-index 설정 */
 }
 
@@ -243,7 +243,7 @@ body {
 
 .left {
 	position: absolute;
-	left: 24%;
+	left: 29%;
 	border: none;
 	background-color: transparent;
 	padding-top: 40px;
@@ -253,7 +253,7 @@ body {
 
 .right {
 	position: absolute;
-	left: 40%;
+	left: 46%;
 	border: none;
 	background-color: transparent;
 	padding-top: 40px;
@@ -273,19 +273,18 @@ body {
 .separator {
 	font-size: 25px; /* 원하는 크기로 설정하세요 */
 	position: absolute;
-	left: 32%;
+	left: 37.5%;
 	margin-top: 2.3%;
 }
 
 /* 네비 박스 */
 .nav-box {
-	position: absolute;
-	width: 700px;
-	height: 279px;
-	left: 450px;
-	top: 750px;
+	position: absolute; 
+	width : 500px; 
+	height: 279px; 
+	left : 550px; 
+	top :750px;
 	background-color: #F8EFD1;
-	display: inline-block;
 }
 
 /* 네비 박스 텍스트*/
@@ -293,227 +292,17 @@ body {
 	position: absolute;
 	top: 45px;
 	left: 40px;
-	font-size: 35px;
-	line-height: 3; /* 텍스트 높이를 조절합니다. 기본값은 normal입니다. */
+	font-size: 25px;
+	line-height: 4; /* 텍스트 높이를 조절합니다. 기본값은 normal입니다. */
 }
 
-.nav-box .text-box2>p {
-	font-size: 20px;
+.nav-box .text-box2 > p {
+	font-size: 18px;
 }
 
 .nav-box .img-box2 {
 	position: absolute;
-	left: 120px;
-	top: -100px;
-}
-
-.nav-box .img-box2>img {
-	margin-left: auto;
-	margin-right: auto;
-	min-width: 650px;
-}
-
-.nav-box2 {
-	position: absolute;
-	width: 252px;
-	height: 279px;
-	left: 600px;
-	background-color: #9A9A9A;
-	z-index: 2;
-}
-
-.nav-box2::after {
-	content: '';
- 	position: absolute;
-  	right: -40px;
-  	top: 25%;
-  	margin-top: -20px;
-  	border-top: 20px solid transparent;
-  	border-right: 20px solid transparent;
-  	border-bottom: 20px solid transparent;
-  	border-left: 20px solid #9A9A9A;
-}
-
-.nav-box2 :first-child {
-	position: absolute;
-	font-size: 25px;
-	color: #FFFFFF;
-	font-weight: 400;
-	font-size: 24px;
-	top: 90px;
-	left: 20%;
-}
-
-.nav-box2 :last-child {
-	position: absolute;
-	font-size: 25px;
-	color: #FFFFFF;
-	font-weight: 700;
-	font-size: 18px;
-	top: 120px;
-	left: 15%;
-	line-height: 100px;
-	
-}
-
-.nav-box .nav-box2 a:last-child:hover {
-    text-decoration: underline; /* 호버 시 밑줄 표시 */
-}
-
-
-.nav-box .img-box3 {
-    position: absolute;
-    width: 70%; /* 너비 설정 */
-    height: 100%; /* nav-box2의 높이와 동일하게 설정 */
-    top: 0; /* nav-box2와 동일한 위치로 설정 */
-    left: 752px; /* nav-box2의 너비만큼 더해줌 */
-}
-
-.nav-box .img-box3 a {
-    display: block; /* 블록 레벨 요소로 설정하여 너비와 높이가 적용됩니다 */
-}
-
-.nav-box .img-box3 a img {
-    width: 450px; /* 이미지의 너비를 부모 요소에 맞춥니다 */
-    height: 279px; /* 이미지의 높이를 부모 요소에 맞춥니다 */
-    object-fit: cover; /* 이미지가 요소에 꽉 채워지도록 설정합니다 */
-}
-
-.nav-box .nav-box3 {
-	position: absolute;
-	width: 250px;
-	height: 279px;
-	left: 0px;
-	top: 100%;
-	background: #A96969;
-	z-index: 3;
-}
-
-.nav-box3::after {
-	content: '';
-  	position: absolute;
-  	right: -40px;
-  	top: 25%;
-  	margin-top: -20px;
-  	border-top: 20px solid transparent;
-  	border-right: 20px solid transparent;
-  	border-bottom: 20px solid transparent;
-  	border-left: 20px solid #A96969;
-}
-
-.nav-box .nav-box3 a:first-child {
-    position: absolute;
-	width: auto;
-	height: auto;
-	left: 13%;
-	top: 25%;  
-    color: white; 
-	font-weight: 400;
-	font-size: 24px;
-	line-height: 50px;
-}
-
-.nav-box .nav-box3 a:last-child {
-    position: absolute;
-	width: auto;
-	height: auto;
-	left: 9%;
-	top: 35%;  
-    color: white;    
-	font-weight: 700;
-	font-size: 20px;
-	line-height: 120px;
- 
-}
-
-.nav-box .nav-box3 a:last-child:hover {
-    text-decoration: underline; /* 호버 시 밑줄 표시 */
-}
-
-.nav-box .img-box4 {
-    position: absolute;
-    width: 70%; 
-    height: 100%; 
-    top: 100%; 
-    left: 35%; 
-}
-
-.nav-box .img-box4 a {
-    display: block; /* 블록 레벨 요소로 설정하여 너비와 높이가 적용됩니다 */
-}
-
-.nav-box .img-box4 a img {
-    width: 355px; /* 이미지의 너비를 부모 요소에 맞춥니다 */
-    height: 279px; /* 이미지의 높이를 부모 요소에 맞춥니다 */
-    object-fit: cover; /* 이미지가 요소에 꽉 채워지도록 설정합니다 */
-}
-
-.nav-box4 {
-	position: absolute;
-	width: 252px;
-	height: 279px;
-	left: 600px;
-	top: 100%;
-	background-color: #ffffff;
-}
-
-.nav-box4 :first-child {
-	position: absolute;
-	font-size: 25px;
-	color: black;
-	font-weight: 600;
-	font-size: 24px;
-	top: 90px;
-	left: 25%;
-}
-
-.nav-box4 :last-child {
-	position: absolute;
-	font-size: 25px;
-	color: black;
-	font-weight: 700;
-	font-size: 18px;
-	top: 120px;
-	left: 20%;
-	line-height: 100px;
-	
-}
-
-.nav-box .nav-box4 a:last-child:hover {
-    text-decoration: underline; /* 호버 시 밑줄 표시 */
-}
-
-.nav-box5 {
-	position: absolute;
-	width: 350px;
-	height: 279px;
-	left: 852px;
-	top: 100%;
-	background-color: #F8EFD1;
-}
-
-.nav-box5 :first-child {
-	position: absolute;
-	font-size: 25px;
-	color: black;
-	font-weight: 600;
-	font-size: 28px;
-	top: 90px;
-	left: 40px;
-}
-
-.nav-box5 :last-child {
-	position: absolute;
-	font-size: 25px;
-	color: black;
-	font-weight: 700;
-	font-size: 22px;
-	top: 120px;
-	left: 25%;
-	line-height: 100px;
-	
-}
-
-.nav-box .nav-box5 a:last-child:hover {
-    text-decoration: underline; /* 호버 시 밑줄 표시 */
+	left: 100px;
+	width: 900px;
+	height: 500px;
 }
