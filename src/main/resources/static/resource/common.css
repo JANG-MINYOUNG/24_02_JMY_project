@@ -155,35 +155,6 @@ body {
 }
 
 
-<<<<<<< HEAD
-=======
-.btn_toggle>div {
-	position: absolute;
-	background-color: black;
-	height: 2px;
-	width: 100%;
-	top: 30%;
-	left: 50%;
-	transform: translateX(-50%) translateY(-50%) rotate(0);
-	transition: transform 0.3s cubic-bezier(1, 0.14, 0, 1.29), top 0.3s;
-}
-
-.btn_toggle>div:last-child {
-	top: 70%;
-	transform: translateX(-50%) translateY(-50%) rotate(0);
-}
-
-.btn_toggle.active>div {
-	top: 50%;
-	transform: translateX(-50%) translateY(-50%) rotate(45deg);
-}
-
-.btn_toggle.active>div:last-child {
-	top: 50%;
-	transform: translateX(-50%) translateY(-50%) rotate(-45deg);
-}
-
->>>>>>> 62551b508f3f62276ad42214134e475654285355
 /* 로고 */
 .logo {
 	font-family: "MV Boli";
@@ -515,11 +486,7 @@ body {
     text-decoration: underline; /* 호버 시 밑줄 표시 */
 }
 
-<<<<<<< HEAD
 .nav-box .nav-box-bg {
-=======
-.nav-box .nav-box6 {
->>>>>>> 62551b508f3f62276ad42214134e475654285355
 	position: absolute;
 	width: 600px;
 	height: 432px;
@@ -535,11 +502,7 @@ body {
 	color: black;
 	font-weight: 800;
 	font-size: 30px;
-<<<<<<< HEAD
 	top: 1450px;
-=======
-	top: 145%;
->>>>>>> 62551b508f3f62276ad42214134e475654285355
 	left: 400px;
 }
 
@@ -548,11 +511,7 @@ body {
 	color: black;
 	font-weight: 500;
 	font-size: 27px;
-<<<<<<< HEAD
 	top: 1520px;
-=======
-	top: 152%;
->>>>>>> 62551b508f3f62276ad42214134e475654285355
 	left: 400px;
 }
 
@@ -561,11 +520,7 @@ body {
 	color: black;
 	font-weight: 400;
 	font-size: 22px;
-<<<<<<< HEAD
 	top: 1570px;
-=======
-	top: 160%;
->>>>>>> 62551b508f3f62276ad42214134e475654285355
 	left: 400px;
 }
 
@@ -573,11 +528,7 @@ body {
     position: absolute;
     left: 400px;
     right: 1179px;
-<<<<<<< HEAD
     top: 1620px;
-=======
-    top: 1580px;
->>>>>>> 62551b508f3f62276ad42214134e475654285355
     bottom: 3416px;
     box-sizing: border-box;
 }
@@ -617,11 +568,7 @@ body {
 	font-style: normal;
 	font-weight: 700;
 	font-size: 40px;
-<<<<<<< HEAD
 	top: 1670px;
-=======
-	top: 172%;
->>>>>>> 62551b508f3f62276ad42214134e475654285355
 	left: 400px;
 }
 
@@ -630,7 +577,6 @@ body {
 	color: black;
 	font-family: 'Kantumruy';
 	font-style: normal;
-<<<<<<< HEAD
 	font-weight: 400;
 	font-size: 24px;
 	top: 1750px;
@@ -805,10 +751,3 @@ body {
 
 
 
-=======
-	font-weight: 300;
-	font-size: 35px;
-	top: 180%;
-	left: 400px;
-}
->>>>>>> 62551b508f3f62276ad42214134e475654285355
