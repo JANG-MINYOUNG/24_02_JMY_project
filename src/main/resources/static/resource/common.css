@@ -187,7 +187,7 @@ body {
 	transform: translateX(-50%) translateY(-50%) rotate(-45deg);
 }
 
-/* 검색창 */
+/* 로고 */
 .logo {
 	font-family: "MV Boli";
 	font-style: italic;
@@ -213,7 +213,7 @@ body {
 .img-box {
 	position: absolute;
 	filter: drop-shadow(0px 5px 15px rgba(0, 0, 0, 0.35));
-	padding-left: 850px;
+	padding-left: 760px;
 	padding-top: 130px;
 }
 
@@ -228,7 +228,7 @@ body {
 .text-box {
 	position: absolute;
 	top: 270px;
-	left: 25%; /* 이미지의 오른쪽에 위치하도록 설정 */
+	left: 21%; /* 이미지의 오른쪽에 위치하도록 설정 */
 	font-size: 28px;
 	z-index: 1; /* 이미지 위로 텍스트 박스를 올리기 위해 z-index 설정 */
 }
@@ -243,7 +243,7 @@ body {
 
 .left {
 	position: absolute;
-	left: 24%;
+	left: 20%;
 	border: none;
 	background-color: transparent;
 	padding-top: 40px;
@@ -253,7 +253,7 @@ body {
 
 .right {
 	position: absolute;
-	left: 40%;
+	left: 36%;
 	border: none;
 	background-color: transparent;
 	padding-top: 40px;
@@ -273,7 +273,7 @@ body {
 .separator {
 	font-size: 25px; /* 원하는 크기로 설정하세요 */
 	position: absolute;
-	left: 32%;
+	left: 28%;
 	margin-top: 2.3%;
 }
 
@@ -282,7 +282,7 @@ body {
 	position: absolute;
 	width: 700px;
 	height: 279px;
-	left: 450px;
+	left: 400px;
 	top: 750px;
 	background-color: #F8EFD1;
 	display: inline-block;
@@ -341,7 +341,7 @@ body {
 	font-weight: 400;
 	font-size: 24px;
 	top: 90px;
-	left: 20%;
+	left: 20%;	
 }
 
 .nav-box2 :last-child {
@@ -374,7 +374,7 @@ body {
 }
 
 .nav-box .img-box3 a img {
-    width: 450px; /* 이미지의 너비를 부모 요소에 맞춥니다 */
+    width: 410px; /* 이미지의 너비를 부모 요소에 맞춥니다 */
     height: 279px; /* 이미지의 높이를 부모 요소에 맞춥니다 */
     object-fit: cover; /* 이미지가 요소에 꽉 채워지도록 설정합니다 */
 }
@@ -485,7 +485,7 @@ body {
 
 .nav-box5 {
 	position: absolute;
-	width: 350px;
+	width: 310px;
 	height: 279px;
 	left: 852px;
 	top: 100%;
@@ -497,9 +497,9 @@ body {
 	font-size: 25px;
 	color: black;
 	font-weight: 600;
-	font-size: 28px;
+	font-size: 26px;
 	top: 90px;
-	left: 40px;
+	left: 30px;
 }
 
 .nav-box5 :last-child {
@@ -516,4 +516,101 @@ body {
 
 .nav-box .nav-box5 a:last-child:hover {
     text-decoration: underline; /* 호버 시 밑줄 표시 */
+}
+
+.nav-box .nav-box6 {
+	position: absolute;
+	width: 600px;
+	height: 432px;
+	top: 126px;
+	right: 100%;
+	background: #F8EFD1;
+	z-index: -1000;
+}
+
+/* 날씨별 엑티비티 찾기 */
+.weather-box > h2 {
+	position: absolute;
+	color: black;
+	font-weight: 800;
+	font-size: 30px;
+	top: 145%;
+	left: 400px;
+}
+
+.weather-box > p1 {
+	position: absolute;
+	color: black;
+	font-weight: 500;
+	font-size: 27px;
+	top: 152%;
+	left: 400px;
+}
+
+.weather-box > p2 {
+	position: absolute;
+	color: black;
+	font-weight: 400;
+	font-size: 22px;
+	top: 160%;
+	left: 400px;
+}
+
+.search-box {
+    position: absolute;
+    left: 400px;
+    right: 1179px;
+    top: 1580px;
+    bottom: 3416px;
+    box-sizing: border-box;
+}
+    
+.input {
+    display: flex;
+    align-items: center;
+    gap: 2px;
+    height: 100%;
+}
+    
+.input input[type="text"] {
+    flex-grow: 1;
+    height: 100%;
+    border: none;
+    outline: none;
+    padding: 0 10px;
+    border-radius: 30px;
+    
+}
+    
+.input svg {
+    width: 20px;
+    height: 20px;
+    opacity: 0.7;
+}
+    
+.input-bordered {
+    border: 1px solid #000000;
+	border-radius: 30px;
+}
+
+.weather-box > p3 {
+	position: absolute;
+	color: black;
+	font-family: 'Kantumruy';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 40px;
+	top: 172%;
+	left: 400px;
+}
+
+.weather-box > p4 {
+	position: absolute;
+	color: black;
+	font-family: 'Kantumruy';
+	font-style: normal;
+	font-weight: 300;
+	font-size: 35px;
+	top: 180%;
+	left: 400px;
 }
