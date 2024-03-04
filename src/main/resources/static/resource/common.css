@@ -48,15 +48,16 @@ html>body {
 }
 
 body {
-	height: 20000px;
+	height: 100%;
 }
+
 
 /* 헤더 바 */
 .header_bar {
-    position: relative; /* 수정: 헤더의 위치를 상대적(relative)으로 변경합니다. */
-    width: 100%; /* 헤더의 너비를 화면 너비에 맞춥니다. */
-    top: 0; /* 화면의 맨 위에 헤더를 배치합니다. */
-    z-index: 1000; /* 다른 요소 위에 헤더를 표시합니다. */
+	position: relative; /* 수정: 헤더의 위치를 상대적(relative)으로 변경합니다. */
+	width: 100%; /* 헤더의 너비를 화면 너비에 맞춥니다. */
+	top: 0; /* 화면의 맨 위에 헤더를 배치합니다. */
+	z-index: 1000; /* 다른 요소 위에 헤더를 표시합니다. */
 }
 
 /* 탑바 */
@@ -153,41 +154,8 @@ body {
 	border-bottom: 1px solid #e9e9e9;
 }
 
-/* 토글버튼 */
-.btn_toggle {
-	width: 30px;
-	height: 30px;
-	position: relative;
-	cursor: pointer;
-}
 
-.btn_toggle>div {
-	position: absolute;
-	background-color: black;
-	height: 2px;
-	width: 100%;
-	top: 30%;
-	left: 50%;
-	transform: translateX(-50%) translateY(-50%) rotate(0);
-	transition: transform 0.3s cubic-bezier(1, 0.14, 0, 1.29), top 0.3s;
-}
-
-.btn_toggle>div:last-child {
-	top: 70%;
-	transform: translateX(-50%) translateY(-50%) rotate(0);
-}
-
-.btn_toggle.active>div {
-	top: 50%;
-	transform: translateX(-50%) translateY(-50%) rotate(45deg);
-}
-
-.btn_toggle.active>div:last-child {
-	top: 50%;
-	transform: translateX(-50%) translateY(-50%) rotate(-45deg);
-}
-
-/* 검색창 */
+/* 로고 */
 .logo {
 	font-family: "MV Boli";
 	font-style: italic;
@@ -213,23 +181,23 @@ body {
 .img-box {
 	position: absolute;
 	filter: drop-shadow(0px 5px 15px rgba(0, 0, 0, 0.35));
-	padding-left: 950px;
+	padding-left: 760px;
 	padding-top: 130px;
 }
 
 /* 이미지 */
 .img-box img {
 	border-radius: 20px;
-	width: 700px;
+	width: 800px;
 	height: 450px;
 }
 
 /* 배경 텍스트 */
 .text-box {
 	position: absolute;
-	top: 250px;
-	left: 30%; /* 이미지의 오른쪽에 위치하도록 설정 */
-	font-size: 25px;
+	top: 270px;
+	left: 21%; /* 이미지의 오른쪽에 위치하도록 설정 */
+	font-size: 28px;
 	z-index: 1; /* 이미지 위로 텍스트 박스를 올리기 위해 z-index 설정 */
 }
 
@@ -243,7 +211,7 @@ body {
 
 .left {
 	position: absolute;
-	left: 29%;
+	left: 20%;
 	border: none;
 	background-color: transparent;
 	padding-top: 40px;
@@ -253,7 +221,7 @@ body {
 
 .right {
 	position: absolute;
-	left: 46%;
+	left: 36%;
 	border: none;
 	background-color: transparent;
 	padding-top: 40px;
@@ -273,18 +241,19 @@ body {
 .separator {
 	font-size: 25px; /* 원하는 크기로 설정하세요 */
 	position: absolute;
-	left: 37.5%;
+	left: 28%;
 	margin-top: 2.3%;
 }
 
 /* 네비 박스 */
 .nav-box {
-	position: absolute; 
-	width : 500px; 
-	height: 279px; 
-	left : 550px; 
-	top :750px;
+	position: absolute;
+	width: 700px;
+	height: 279px;
+	left: 400px;
+	top: 750px;
 	background-color: #F8EFD1;
+	display: inline-block;
 }
 
 /* 네비 박스 텍스트*/
@@ -292,17 +261,493 @@ body {
 	position: absolute;
 	top: 45px;
 	left: 40px;
-	font-size: 25px;
-	line-height: 4; /* 텍스트 높이를 조절합니다. 기본값은 normal입니다. */
+	font-size: 35px;
+	line-height: 3; /* 텍스트 높이를 조절합니다. 기본값은 normal입니다. */
 }
 
-.nav-box .text-box2 > p {
-	font-size: 18px;
+.nav-box .text-box2>p {
+	font-size: 20px;
 }
 
 .nav-box .img-box2 {
 	position: absolute;
-	left: 100px;
-	width: 900px;
-	height: 500px;
+	left: 120px;
+	top: -100px;
 }
+
+.nav-box .img-box2>img {
+	margin-left: auto;
+	margin-right: auto;
+	min-width: 650px;
+}
+
+.nav-box2 {
+	position: absolute;
+	width: 252px;
+	height: 279px;
+	left: 600px;
+	background-color: #9A9A9A;
+	z-index: 2;
+}
+
+.nav-box2::after {
+	content: '';
+ 	position: absolute;
+  	right: -40px;
+  	top: 25%;
+  	margin-top: -20px;
+  	border-top: 20px solid transparent;
+  	border-right: 20px solid transparent;
+  	border-bottom: 20px solid transparent;
+  	border-left: 20px solid #9A9A9A;
+}
+
+.nav-box2 :first-child {
+	position: absolute;
+	font-size: 25px;
+	color: #FFFFFF;
+	font-weight: 400;
+	font-size: 24px;
+	top: 90px;
+	left: 20%;	
+}
+
+.nav-box2 :last-child {
+	position: absolute;
+	font-size: 25px;
+	color: #FFFFFF;
+	font-weight: 700;
+	font-size: 18px;
+	top: 120px;
+	left: 15%;
+	line-height: 100px;
+	
+}
+
+.nav-box .nav-box2 a:last-child:hover {
+    text-decoration: underline; /* 호버 시 밑줄 표시 */
+}
+
+
+.nav-box .img-box3 {
+    position: absolute;
+    width: 70%; /* 너비 설정 */
+    height: 100%; /* nav-box2의 높이와 동일하게 설정 */
+    top: 0; /* nav-box2와 동일한 위치로 설정 */
+    left: 752px; /* nav-box2의 너비만큼 더해줌 */
+}
+
+.nav-box .img-box3 a {
+    display: block; /* 블록 레벨 요소로 설정하여 너비와 높이가 적용됩니다 */
+}
+
+.nav-box .img-box3 a img {
+    width: 410px; /* 이미지의 너비를 부모 요소에 맞춥니다 */
+    height: 279px; /* 이미지의 높이를 부모 요소에 맞춥니다 */
+    object-fit: cover; /* 이미지가 요소에 꽉 채워지도록 설정합니다 */
+}
+
+.nav-box .nav-box3 {
+	position: absolute;
+	width: 250px;
+	height: 279px;
+	left: 0px;
+	top: 100%;
+	background: #A96969;
+	z-index: 3;
+}
+
+.nav-box3::after {
+	content: '';
+  	position: absolute;
+  	right: -40px;
+  	top: 25%;
+  	margin-top: -20px;
+  	border-top: 20px solid transparent;
+  	border-right: 20px solid transparent;
+  	border-bottom: 20px solid transparent;
+  	border-left: 20px solid #A96969;
+}
+
+.nav-box .nav-box3 a:first-child {
+    position: absolute;
+	width: auto;
+	height: auto;
+	left: 13%;
+	top: 25%;  
+    color: white; 
+	font-weight: 400;
+	font-size: 24px;
+	line-height: 50px;
+}
+
+.nav-box .nav-box3 a:last-child {
+    position: absolute;
+	width: auto;
+	height: auto;
+	left: 9%;
+	top: 35%;  
+    color: white;    
+	font-weight: 700;
+	font-size: 20px;
+	line-height: 120px;
+ 
+}
+
+.nav-box .nav-box3 a:last-child:hover {
+    text-decoration: underline; /* 호버 시 밑줄 표시 */
+}
+
+.nav-box .img-box4 {
+    position: absolute;
+    width: 70%; 
+    height: 100%; 
+    top: 100%; 
+    left: 35%; 
+}
+
+.nav-box .img-box4 a {
+    display: block; /* 블록 레벨 요소로 설정하여 너비와 높이가 적용됩니다 */
+}
+
+.nav-box .img-box4 a img {
+    width: 355px; /* 이미지의 너비를 부모 요소에 맞춥니다 */
+    height: 279px; /* 이미지의 높이를 부모 요소에 맞춥니다 */
+    object-fit: cover; /* 이미지가 요소에 꽉 채워지도록 설정합니다 */
+}
+
+.nav-box4 {
+	position: absolute;
+	width: 252px;
+	height: 279px;
+	left: 600px;
+	top: 100%;
+	background-color: #ffffff;
+}
+
+.nav-box4 :first-child {
+	position: absolute;
+	font-size: 25px;
+	color: black;
+	font-weight: 600;
+	font-size: 24px;
+	top: 90px;
+	left: 25%;
+}
+
+.nav-box4 :last-child {
+	position: absolute;
+	font-size: 25px;
+	color: black;
+	font-weight: 700;
+	font-size: 18px;
+	top: 120px;
+	left: 20%;
+	line-height: 100px;
+	
+}
+
+.nav-box .nav-box4 a:last-child:hover {
+    text-decoration: underline; /* 호버 시 밑줄 표시 */
+}
+
+.nav-box5 {
+	position: absolute;
+	width: 310px;
+	height: 279px;
+	left: 852px;
+	top: 100%;
+	background-color: #F8EFD1;
+}
+
+.nav-box5 :first-child {
+	position: absolute;
+	font-size: 25px;
+	color: black;
+	font-weight: 600;
+	font-size: 26px;
+	top: 90px;
+	left: 30px;
+}
+
+.nav-box5 :last-child {
+	position: absolute;
+	font-size: 25px;
+	color: black;
+	font-weight: 700;
+	font-size: 22px;
+	top: 120px;
+	left: 25%;
+	line-height: 100px;
+	
+}
+
+.nav-box .nav-box5 a:last-child:hover {
+    text-decoration: underline; /* 호버 시 밑줄 표시 */
+}
+
+.nav-box .nav-box-bg {
+	position: absolute;
+	width: 600px;
+	height: 432px;
+	top: 126px;
+	right: 100%;
+	background: #F8EFD1;
+	z-index: -1000;
+}
+
+/* 날씨별 엑티비티 찾기 */
+.weather-box > h2 {
+	position: absolute;
+	color: black;
+	font-weight: 800;
+	font-size: 30px;
+	top: 1450px;
+	left: 400px;
+}
+
+.weather-box > p1 {
+	position: absolute;
+	color: black;
+	font-weight: 500;
+	font-size: 27px;
+	top: 1520px;
+	left: 400px;
+}
+
+.weather-box > p2 {
+	position: absolute;
+	color: black;
+	font-weight: 400;
+	font-size: 22px;
+	top: 1570px;
+	left: 400px;
+}
+
+.search-box {
+    position: absolute;
+    left: 400px;
+    right: 1179px;
+    top: 1620px;
+    bottom: 3416px;
+    box-sizing: border-box;
+}
+    
+.input {
+    display: flex;
+    align-items: center;
+    gap: 2px;
+    height: 100%;
+}
+    
+.input input[type="text"] {
+    flex-grow: 1;
+    height: 100%;
+    border: none;
+    outline: none;
+    padding: 0 10px;
+    border-radius: 30px;
+    
+}
+    
+.input svg {
+    width: 20px;
+    height: 20px;
+    opacity: 0.7;
+}
+    
+.input-bordered {
+    border: 1px solid #000000;
+	border-radius: 30px;
+}
+
+.weather-box > p3 {
+	position: absolute;
+	color: black;
+	font-family: 'Kantumruy';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 40px;
+	top: 1670px;
+	left: 400px;
+}
+
+.weather-box > p4 {
+	position: absolute;
+	color: black;
+	font-family: 'Kantumruy';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 24px;
+	top: 1750px;
+	left: 400px;
+}
+
+.weather_img {
+    width: 90px; /* 이미지의 너비 설정 */
+    height: auto; /* 높이를 자동으로 조정하여 가로세로 비율 유지 */
+    display: block; /* 이미지를 블록 수준 요소로 표시 */
+	margin-top: 1110px;
+	margin-left: 650px;
+}
+
+.weather_place {
+    width: 600px; /* 이미지의 너비 설정 */
+    height: auto; /* 높이를 자동으로 조정하여 가로세로 비율 유지 */
+	top: -320px;
+	left: 965px;
+	position: relative;	
+	border-top-left-radius: 20px; /* 왼쪽 상단 모서리 둥글게 */
+    border-bottom-left-radius: 20px; /* 왼쪽 하단 모서리 둥글게 */
+}
+
+/* 테마여행 메뉴*/
+
+.theme_place > p {
+	position: absolute;
+	color: black;
+	font-weight: 800;
+	font-size: 30px;
+	top: 2000px;
+	left: 400px;	
+}
+
+.theme_nav .theme_nav_img1,
+.theme_nav .theme_nav_img2,
+.theme_nav .theme_nav_img3,
+.theme_nav .theme_nav_img4,
+.theme_nav .theme_nav_img5 {
+    position: absolute;
+    width: 162px;
+    height: 45px;
+    left: 400px;
+    background-size: cover; /* 이미지가 요소에 맞게 조절되도록 설정 */
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 20px;
+}
+
+.theme_nav .theme_nav_img1 {
+    top: 2080px;
+    background-image: url(https://i.ibb.co/sJHN7Z6/image.jpg);
+}
+
+.theme_nav .theme_nav_img2 {
+    top: 2150px;
+    background-image: url(https://i.ibb.co/6PpFgqf/image.jpg);
+}
+
+.theme_nav .theme_nav_img3 {
+    top: 2220px;
+    background-image: url(https://i.ibb.co/9W4DyNn/image.jpg);
+}
+
+.theme_nav .theme_nav_img4 {
+    top: 2290px;
+    background-image: url(https://i.ibb.co/yn0vFyR/1.jpg);
+}
+
+.theme_nav .theme_nav_img5 {
+    top: 2360px;
+    background-image: url(https://i.ibb.co/NYR1hVM/image.jpg);
+}
+
+/* 테마 여행 추천 여행지1 */
+/* 첫 번째 이미지 스타일링 */
+.theme_nav_place1 .first-image {
+    /* 첫 번째 이미지에 대한 스타일 지정 */
+	width: 250px; /* 이미지의 너비 설정 */
+    height: 300px;
+	top: 2080px;
+	left: 700px;
+	position: absolute;
+	border-radius: 20px;	
+}
+
+/* 두 번째 이미지 스타일링 */
+.theme_nav_place1 .second-image {
+    /* 두 번째 이미지에 대한 스타일 지정 */
+	width: 160px; /* 이미지의 너비 설정 */
+    height: 135px;
+	top: 2080px;
+	left: 960px;
+	position: absolute;
+	border-radius: 20px;	
+}
+
+/* 세 번째 이미지 스타일링 */
+.theme_nav_place1 .third-image {
+    /* 세 번째 이미지에 대한 스타일 지정 */
+	width: 160px; /* 이미지의 너비 설정 */
+    height: 135px;
+	top: 2245px;
+	left: 960px;
+	position: absolute;
+	border-radius: 20px;	
+}
+
+/* 텍스트 스타일링 */
+.theme_nav_place1 p {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333333;
+	top: 2380px;
+	left: 710px;
+	position: absolute;
+}
+
+/* 테마 여행 추천 여행지2 */
+/* 첫 번째 이미지 스타일링 */
+.theme_nav_place2 .first-image {
+    /* 첫 번째 이미지에 대한 스타일 지정 */
+	width: 250px; /* 이미지의 너비 설정 */
+    height: 300px;
+	top: 2080px;
+	left: 1150px;
+	position: absolute;
+	border-radius: 20px;	
+}
+
+/* 두 번째 이미지 스타일링 */
+.theme_nav_place2 .second-image {
+    /* 두 번째 이미지에 대한 스타일 지정 */
+	width: 160px; /* 이미지의 너비 설정 */
+    height: 135px;
+	top: 2080px;
+	left: 1410px;
+	position: absolute;
+	border-radius: 20px;	
+}
+
+/* 세 번째 이미지 스타일링 */
+.theme_nav_place2 .third-image {
+    /* 세 번째 이미지에 대한 스타일 지정 */
+	width: 160px; /* 이미지의 너비 설정 */
+    height: 135px;
+	top: 2245px;
+	left: 1410px;
+	position: absolute;
+	border-radius: 20px;	
+}
+
+/* 텍스트 스타일링 */
+.theme_nav_place2 p {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333333;
+	top: 2380px;
+	left: 1165px;
+	position: absolute;
+}
+
+.theme_nav_bg {
+	position: absolute;
+	width: 1920px;
+	height: 270px;
+	top: 2170px;
+	background: #F8EFD1;
+	z-index: -1000;
+}
+
+
+

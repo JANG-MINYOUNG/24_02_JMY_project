@@ -69,10 +69,10 @@
             <nav class="menu_box_1 flex justify-around">
                 <ul class="height-100p flex">
                     <li>
-                        <a href="#" class="flex flex-ai-c height-100p">로그인</a>
+                        <a href="../member/login" class="flex flex-ai-c height-100p">로그인</a>
                     </li>
                     <li>
-                        <a href="#" class="flex flex-ai-c height-100p">회원가입</a>
+                        <a href="../member/join" class="flex flex-ai-c height-100p">회원가입</a>
                     </li>
                 </ul>
                 <div class="bg"></div>
