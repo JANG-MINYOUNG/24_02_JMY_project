@@ -4,32 +4,25 @@
 <%@ include file="../common/head.jspf"%>
 
 
-<section class="mt-8 text-xl px-4">
-	<div class="mx-auto">
-		<form action="../member/doLogin" method="POST">
-			<table class="login-box table-box-1" border="1">
-				<tbody>
-					<tr>
-						<th>아이디</th>
-						<td><input autocomplete="off" type="text" placeholder="아이디 입력" name="loginId" /></td>
-					</tr>
-					<tr>
-						<th>비밀번호</th>
-						<td><input autocomplete="off" type="text" placeholder="비밀번호 입력" name="loginPw" /></td>
-					</tr>
-					<tr>
-						<th></th>
-						<td><input type="submit" value="로그인" /></td>
-					</tr>
-				</tbody>
-			</table>
-		</form>
-		<div class="btns">
-			<button class="hover:underline" type="button" onclick="history.back();">뒤로가기</button>
-		</div>
-	</div>
-</section>
+<div style="display: flex; justify-content: center; align-items: center; height: 80vh; flex-direction: column; line-height: 3;">
+    <div style="margin-bottom: 20px; font-size: 18px;">로그인</div>
+    <form method="POST" action="../member/doLogin" onsubmit="LoginForm__submit(this); return false;">
+    	<input type="hidden" name="afterLoginUri" value="${param.afterLoginUri }" />
+        	<div style="margin-bottom: 10px; font-size: 16px;">
+            	<input autocomplete="off" type="text" placeholder="아이디" name="loginId" style="width: 350px; border-radius: 5px; outline-color: #ffc0cd;"/>
+        	</div>
+        	<div style="margin-bottom: 10px; font-size: 16px;">
+            	<input autocomplete="off" type="password" placeholder="비밀번호" name="loginPw" style="width: 350px; border-radius: 5px; outline-color: #ffc0cd;"/>
+        	</div>
+        	<button type="submit" style="background-color: #CCCCCC; color: white; width: 350px; border-radius: 10px; padding: 0px;">로그인</button>
+    	</form>
+    	<div style="margin-top: 20px; width: 350px; display: flex; justify-content: space-between;">
+        	<div style="display: flex;">
+            	<a href="#" style="text-decoration: none; color: #000; font-size: 14px; margin-right: 20px;">아이디 찾기</a>
+            	<a href="#" style="text-decoration: none; color: #000; font-size: 14px;">비밀번호 찾기</a>
+        	</div>
+        	<a href="join" style="text-decoration: none; color: green; font-size: 14px;">회원가입</a>
+    	</div>
+</div>
 
 
-
-<%@ include file="../common/foot.jspf"%>

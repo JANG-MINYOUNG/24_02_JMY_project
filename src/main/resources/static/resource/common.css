@@ -195,14 +195,14 @@ body {
 /* 배경 텍스트 */
 .text-box {
 	position: absolute;
-	top: 270px;
+	top: 290px;
 	left: 21%; /* 이미지의 오른쪽에 위치하도록 설정 */
 	font-size: 28px;
 	z-index: 1; /* 이미지 위로 텍스트 박스를 올리기 위해 z-index 설정 */
 }
 
 .text-box .spring-info, .text-box .spring-greeting {
-	margin-bottom: 50px; /* 대전, 충청도 벚꽃 보러가자!와 안녕, 봄! 사이의 간격을 늘립니다. */
+	line-height: 100px;
 }
 
 .arrow-container {
@@ -262,11 +262,15 @@ body {
 	top: 45px;
 	left: 40px;
 	font-size: 35px;
-	line-height: 3; /* 텍스트 높이를 조절합니다. 기본값은 normal입니다. */
+	line-height: 2.5; /* 텍스트 높이를 조절합니다. 기본값은 normal입니다. */
 }
 
-.nav-box .text-box2>p {
+.nav-box .text-box2>a {
 	font-size: 20px;
+}
+
+.nav-box .text-box2 a:last-child:hover {
+    text-decoration: underline; /* 호버 시 밑줄 표시 */
 }
 
 .nav-box .img-box2 {
@@ -748,6 +752,7 @@ body {
 	background: #F8EFD1;
 	z-index: -1000;
 }
+
 
 
 

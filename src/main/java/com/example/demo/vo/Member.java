@@ -18,7 +18,5 @@ public class Member {
 	private String nickname;
 	private String cellphoneNum;
 	private String email;
-	private boolean delStatus;
-	private String delDate;
 
 }

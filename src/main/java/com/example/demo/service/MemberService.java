@@ -51,5 +51,4 @@ public class MemberService {
 	public Member getMember(int id) {
 		return memberRepository.getMember(id);
 	}
-
 }
