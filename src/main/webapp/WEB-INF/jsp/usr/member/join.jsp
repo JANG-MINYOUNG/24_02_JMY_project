@@ -54,46 +54,50 @@
 </style>
 
 <script>
-    $(document).ready(function () {
-        $("#confirm").click(function () { // 버튼의 ID를 confirm으로 변경
-            var id = $("input[name='loginId']").val(); // 입력한 아이디 값 가져오기
-            
-            // 입력한 아이디가 비어있는 경우 알림창 띄우기
-            if (id.trim() === '') {
-                alert("아이디를 입력해주세요.");
-                return;
-            }
+$(document).ready(function () {
+    // 아이디 입력 필드의 값이 변경될 때마다 중복체크 여부를 다시 "no"로 설정
+    $("input[name='loginId']").on("input", function() {
+        $("#check").val("no");
+    });
 
-            // 아이디를 서버로 전송하여 중복 여부 확인
-            $.ajax({
-                type: "POST",
-                url: "/idOverlap",
-                data: {
-                    id: id
-                },
-                success: function (data) {
-                    if (data === "true") {
-                        alert("사용 가능한 아이디입니다.");
-                        $("#check").val("yes"); // 중복체크 여부 변경
-                        $("form").submit(); // 폼 제출
-                    } else if (data === "false") {
-                        alert("중복된 아이디입니다.");
-                    }
-                },
-                error: function () {
-                    alert("서버와의 통신 중 오류가 발생했습니다.");
+    $("#confirm").click(function () {
+        var id = $("input[name='loginId']").val();
+
+        // 입력한 아이디가 비어있는 경우 알림창 띄우기
+        if (id.trim() === '') {
+            alert("아이디를 입력해주세요.");
+            return;
+        }
+
+        // 아이디를 서버로 전송하여 중복 여부 확인
+        $.ajax({
+            type: "POST",
+            url: "/idOverlap",
+            data: {
+                id: id
+            },
+            success: function (data) {
+                if (data === "true") {
+                    alert("사용 가능한 아이디입니다.");
+                    $("#check").val("yes"); // 중복체크 여부 변경
+                    $("form").submit(); // 폼 제출
+                } else if (data === "false") {
+                    alert("중복된 아이디입니다.");
                 }
-            });
-        });
-
-        // 폼 제출 시 중복체크 여부 확인
-        $("form").submit(function() {
-            if ($("#check").val() === 'no') {
-                alert("중복체크를 해주세요.");
-                return false; // 폼 제출 취소
+            },
+            error: function () {
+                alert("서버와의 통신 중 오류가 발생했습니다.");
             }
         });
     });
+
+    $("form").submit(function() {
+        if ($("#check").val() === 'no') {
+            alert("중복체크를 해주세요.");
+            return false; // 폼 제출 취소
+        }
+    });
+});
 </script>
 
 
