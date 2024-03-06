@@ -39,7 +39,17 @@ public class MemberService {
 		return ResultData.from("S-1", "회원가입이 완료되었습니다.", "id", id);
 
 	}
-
+	
+	public boolean isIdOverlap(String loginId) {
+	    Member member = getMemberByLoginId(loginId);
+	    
+	    if (member == null) {
+	    	
+	    	return false;
+	    }
+	    return true;
+	}
+	
 	private Member getMemberByNameAndEmail(String name, String email) {
 		return memberRepository.getMemberByNameAndEmail(name, email);
 	}
@@ -51,4 +61,7 @@ public class MemberService {
 	public Member getMember(int id) {
 		return memberRepository.getMember(id);
 	}
+
+	
 }
+

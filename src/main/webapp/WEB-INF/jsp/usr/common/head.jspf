@@ -39,7 +39,7 @@
                         <a href="/" class="flex flex-ai-c height-100p">홈</a>
                     </li>
                     <li>
-                        <a href="../usr/seasonTrip/main" class="flex flex-ai-c height-100p">시즌별 여행지</a>
+                        <a href="/usr/seasonTrip/main" class="flex flex-ai-c height-100p">시즌별 여행지</a>
                         <ul>
                             <li><a href="#">대전</a></li>
                             <li><a href="#">충청북도</a></li>
@@ -58,9 +58,9 @@
                         <a href="#" class="flex flex-ai-c height-100p">동행자 찾기</a>
                     </li>
                     <li>
-                        <a href="#" class="flex flex-ai-c height-100p">커뮤니티</a>
+                        <a href="/" class="flex flex-ai-c height-100p">커뮤니티</a>
                         <ul>
-                            <li><a href="#">자유게시판</a></li>
+                            <li><a href="/usr/article/freeBoard/list?boardId=1&page=1">자유게시판</a></li>
                             <li><a href="#">나의 여행일지</a></li>
                         </ul>
                     </li>
@@ -77,12 +77,12 @@
             <nav class="menu_box_1 flex justify-around">
                 <ul class="height-100p flex">
                     <c:if test="${!rq.isLogined() }">
-						<li><a href="../member/login">로그인</a></li>
-						<li><a href="../member/join">회원가입</a></li>
+						<li><a href="/usr/member/login">로그인</a></li>
+						<li><a href="/usr/member/join">회원가입</a></li>
 					</c:if>
 					<c:if test="${rq.isLogined() }">
 						<li><a class="h-full px-3 flex items-center" href="/usr/member/myPage">마이페이지</a></li>
-					<li><a onclick="if(confirm('로그아웃 할래?') == false) return false;" class="h-full px-3 flex items-center" href="../member/doLogout">로그아웃</a></li>
+					<li><a onclick="if(confirm('로그아웃 할래?') == false) return false;" class="h-full px-3 flex items-center" href="/usr/member/doLogout">로그아웃</a></li>
 				</c:if>
                 </ul>
                 <div class="bg"></div>

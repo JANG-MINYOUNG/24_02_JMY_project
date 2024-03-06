@@ -24,7 +24,77 @@
     }
 </style>
 
+<style>
+    .upload-container {
+        display: flex;
+        align-items: center;
+    }
 
+    .upload-btn {
+        border-radius: 20px;
+        padding: 10px;
+        border: 2px solid #ffc0cd;
+        outline: none;
+        font-size: 16px;
+        background-color: white;
+        margin-right: 10px;
+    }
+
+    .upload-btn input[type=file] {
+        display: none;
+    }
+
+    .pass-match {
+        color: green;
+    }
+
+    .pass-mismatch {
+        color: red;
+    }
+</style>
+
+<script>
+    $(document).ready(function () {
+        $("#confirm").click(function () { // 버튼의 ID를 confirm으로 변경
+            var id = $("input[name='loginId']").val(); // 입력한 아이디 값 가져오기
+            
+            // 입력한 아이디가 비어있는 경우 알림창 띄우기
+            if (id.trim() === '') {
+                alert("아이디를 입력해주세요.");
+                return;
+            }
+
+            // 아이디를 서버로 전송하여 중복 여부 확인
+            $.ajax({
+                type: "POST",
+                url: "/idOverlap",
+                data: {
+                    id: id
+                },
+                success: function (data) {
+                    if (data === "true") {
+                        alert("사용 가능한 아이디입니다.");
+                        $("#check").val("yes"); // 중복체크 여부 변경
+                        $("form").submit(); // 폼 제출
+                    } else if (data === "false") {
+                        alert("중복된 아이디입니다.");
+                    }
+                },
+                error: function () {
+                    alert("서버와의 통신 중 오류가 발생했습니다.");
+                }
+            });
+        });
+
+        // 폼 제출 시 중복체크 여부 확인
+        $("form").submit(function() {
+            if ($("#check").val() === 'no') {
+                alert("중복체크를 해주세요.");
+                return false; // 폼 제출 취소
+            }
+        });
+    });
+</script>
 
 
 <div style="display: flex; justify-content: center; align-items: center; height: 80vh; flex-direction: column; line-height: 3;">
@@ -45,6 +115,10 @@
             <input autocomplete="off" type="password" placeholder="비밀번호" name="loginPw" style="width: 350px; border-radius: 5px; outline-color: #ffc0cd;" />
         </div>
         <div style="margin-bottom: 10px; font-size: 16px;">
+            <input autocomplete="off" type="password" placeholder="비밀번호체크" name="loginPwCheck" style="width: 350px; border-radius: 5px; outline-color: #ffc0cd;" />
+        	<span id="passMatchMsg" class="pass-match"></span>
+        </div>
+        <div style="margin-bottom: 10px; font-size: 16px;">
             <input autocomplete="off" type="text" placeholder="이름" name="name" style="width: 350px; border-radius: 5px; outline-color: #ffc0cd;" />
         </div>
         <div style="margin-bottom: 10px; font-size: 16px;">
@@ -59,7 +133,7 @@
         <button type="submit" style="background-color: #CCCCCC; color: white; width: 350px; border-radius: 10px; padding: 0px;">회원가입</button>
     </form>
     <div style="margin-top: 20px; width: 350px; display: flex; justify-content: space-between;">
-        <a href="login/" style="text-decoration: none; color: green; font-size: 14px;">로그인</a>
+        <a href="login" style="text-decoration: none; color: green; font-size: 14px;">로그인</a>
     </div>
 </div>
 
