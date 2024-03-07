@@ -7,7 +7,7 @@
     .section-padding {
         padding-left: 400px; 
         padding-right: 400px;
-        padding-top: 50px;
+        padding-top: 80px;
     }
     
     .search-form-container {
@@ -28,7 +28,7 @@
     }
     
     .search-form input[type="text"] {
-        margin-right: 10px; /* Add margin to the right */
+        margin-right: 8px; /* Add margin to the right */
         border-width: 2px;
     }
     
@@ -51,19 +51,19 @@
 <section class="mt-8 text-xl px-4 section-padding">
     <div class="mx-auto overflow-x-auto">
         <div class="mb-4 search-form-container">
-            <a href="#" class="write-link btn-ghost btn-sm" style="background-color: #ffc0cd;">글쓰기</a>
-            <form action="" class="search-form">
-                <input type="hidden" name="boardId" value="${param.boardId }" />
-                <select data-value="${param.searchKeywordTypeCode }" class="select select-bordered select-sm w-full max-w-xs"
-                    name="searchKeywordTypeCode">
-                    <option value="title">제목</option>
-                    <option value="body">내용</option>
-                    <option value="title,body">제목+내용</option>
-                </select>
-                <input value="${param.searchKeyword }" name="searchKeyword" type="text" placeholder="검색어 입력"
-                    class="input-sm input input-bordered w-48 max-w-xs" />
-                <button class="btn btn-ghost btn-sm" style="width: 20%; background-color: #ffc0cd;" type="submit">검색</button>
-            </form>
+            <a href="/usr/article/freeBoard/write" class="write-link btn-ghost btn-sm" style="background-color: #ffc0cd;">글쓰기</a>
+            <form action="" class="search-form" style="margin-right: 20px;">
+    			<input type="hidden" name="boardId" value="${param.boardId}" />
+   				<select style="width: 120px;" class="select select-bordered select-sm w-full max-w-xs" name="searchKeywordTypeCode">
+        			<option value="title" ${param.searchKeywordTypeCode == 'title' ? 'selected' : ''}>제목</option>
+        			<option value="body" ${param.searchKeywordTypeCode == 'body' ? 'selected' : ''}>내용</option>
+        			<option value="extra__writer" ${param.searchKeywordTypeCode == 'extra__writer' ? 'selected' : ''}>작성자</option>
+        			<option value="title,body" ${param.searchKeywordTypeCode == 'title,body' ? 'selected' : ''}>제목+내용</option>
+    			</select>
+    			<input value="${param.searchKeyword}" name="searchKeyword" type="text" placeholder="검색어 입력"
+        			class="input-sm input input-bordered w-48 max-w-xs" />
+    			<button class="btn btn-ghost btn-sm" style="width: 20%; background-color: #ffc0cd;" type="submit">검색</button>
+			</form>
         </div>
     </div>
     <table class="table-box-1 table" border="1">
@@ -110,7 +110,7 @@
 
 
     <!-- 	원래 페이징 -->
-  <div class="pagination flex justify-center mt-3">
+  <div class="pagination flex justify-center mt-10">
     <div class="btn-group">
         <a class="btn btn-sm ${param.page == 1 ? 'btn-disabled' : '' }" href="?page=1&boardId=${param.boardId}">
             <i class="fas fa-angle-double-left"></i> First

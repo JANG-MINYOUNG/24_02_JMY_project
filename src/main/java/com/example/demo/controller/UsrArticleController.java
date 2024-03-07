@@ -49,7 +49,7 @@ public class UsrArticleController {
 	@RequestMapping("/usr/article/freeBoard/list")
 	public String showList(HttpServletRequest req, Model model, @RequestParam(defaultValue = "1") int boardId,
 			@RequestParam(defaultValue = "1") int page,
-			@RequestParam(defaultValue = "title,body") String searchKeywordTypeCode,
+			@RequestParam(defaultValue = "title,body,extra__writer") String searchKeywordTypeCode,
 			@RequestParam(defaultValue = "") String searchKeyword) {
 
 		Rq rq = (Rq) req.getAttribute("rq");

@@ -20,7 +20,7 @@ public class NeedLoginInterceptor implements HandlerInterceptor {
 			System.out.println("==============로그인 하고 써============");
 //			resp.getWriter().append("<script>~~~")
 
-			rq.printHistoryBack("로그인 하고 써라");
+			rq.printHistoryBack("로그인 후 이용 가능합니다.");
 
 			return false;
 
