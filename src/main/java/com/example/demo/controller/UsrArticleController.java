@@ -153,7 +153,7 @@ public class UsrArticleController {
 
 		Article article = articleService.getArticle(id);
 
-		return Ut.jsReplace(writeArticleRd.getResultCode(), writeArticleRd.getMsg(), "../article/freeBoard/detail?id=" + id);
+		return Ut.jsReplace(writeArticleRd.getResultCode(), writeArticleRd.getMsg(), "/usr/article/freeBoard/detail?id=" + id);
 
 	}
 

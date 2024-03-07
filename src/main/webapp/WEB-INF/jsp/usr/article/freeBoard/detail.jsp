@@ -62,7 +62,7 @@
 		if(isNaN(params.memberId) == true){
 			if(confirm('로그인 후 이용해주세요.')){
 				var currentUri = encodeURIComponent(window.location.href);
-				window.location.href = '../../member/login?afterLoginUri=' + currentUri; // 로그인 페이지에 원래 페이지의 uri를 같이 보냄
+				window.location.href = '../member/login?afterLoginUri=' + currentUri; // 로그인 페이지에 원래 페이지의 uri를 같이 보냄
 			}
 			return;
 		}
@@ -117,7 +117,7 @@
 		if(isNaN(params.memberId) == true){
 			if(confirm('로그인 후 이용해주세요.')){
 				var currentUri = encodeURIComponent(window.location.href);
-				window.location.href = '../../member/login?afterLoginUri=' + currentUri; // 로그인 페이지에 원래 페이지의 uri를 같이 보냄
+				window.location.href = '../member/login?afterLoginUri=' + currentUri; // 로그인 페이지에 원래 페이지의 uri를 같이 보냄
 			}
 			return;
 		}
@@ -239,7 +239,7 @@ function doModifyReply(replyId) {
 </script>
 
 
-<section class="mt-8 text-xl px-4 ">
+<section class="mt-8 text-xl px-4 "  >
 	<div class="">
 		<table class="table-box-1 " border="1">
 			<tbody>
@@ -296,7 +296,7 @@ function doModifyReply(replyId) {
 		<div class="btns mt-5">
 			<button class="btn btn-outline" type="button" onclick="history.back();">뒤로가기</button>
 			<c:if test="${article.userCanModify }">
-				<a class="btn btn-outline" href="../article/modify?id=${article.id }">수정</a>
+				<a class="btn btn-outline" href="../freeBoard/modify?id=${article.id }">수정</a>
 			</c:if>
 			<c:if test="${article.userCanDelete }">
 				<a class="btn btn-outline" onclick="if(confirm('정말 삭제하시겠습니까?') == false) return false;"
@@ -308,7 +308,7 @@ function doModifyReply(replyId) {
 
 <section class="mt-5 px-3">
 	<c:if test="${rq.isLogined() }">
-		<form action="../../reply/doWrite" method="POST" onsubmit="ReplyWrite__submit(this); return false;">
+		<form action="/usr/reply/doWrite" method="POST" onsubmit="ReplyWrite__submit(this); return false;">
 			<input type="hidden" name="relTypeCode" value="article" />
 			<input type="hidden" name="relId" value="${article.id }" />
 			<table class="write-box table-box-1" border="1">
@@ -331,7 +331,7 @@ function doModifyReply(replyId) {
 		</form>
 	</c:if>
 	<c:if test="${!rq.isLogined() }">
-		<a class="btn btn-outline btn-ghost" href="../../member/login">LOGIN</a>
+		<a class="btn btn-outline btn-ghost" href="../member/login">LOGIN</a> 하고 댓글 써
 	</c:if>
 	<div class="mx-auto">
 		<h2>댓글 리스트(${repliesCount })</h2>

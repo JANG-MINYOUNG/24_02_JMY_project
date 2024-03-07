@@ -61,7 +61,7 @@
                         <a href="/" class="flex flex-ai-c height-100p">커뮤니티</a>
                         <ul>
                             <li><a href="/usr/article/freeBoard/list?boardId=1&page=1">자유게시판</a></li>
-                            <li><a href="#">나의 여행일지</a></li>
+                            <li><a href="/usr/article/freeBoard/list?boardId=2&page=1">나의 여행일지</a></li>
                         </ul>
                     </li>
                 </ul>

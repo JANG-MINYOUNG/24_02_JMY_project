@@ -2,6 +2,7 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <c:set var="pageTitle" value="ARTICLE MODIFY"></c:set>
 <%@ include file="../../common/head.jspf"%>
+<%@ include file="../../common/toastUiEditorLib.jspf"%>
 
 <!-- Article modify 관련 -->
 <script type="text/javascript">
