@@ -3,36 +3,57 @@
 <c:set var="pageTitle" value=""></c:set>
 <%@ include file="../common/head.jspf"%>
 
-<div class="home-box">
+<script>
+	document.addEventListener("DOMContentLoaded", function() {
+    const videos = document.querySelectorAll('.fullscreen-video');
+    let currentVideoIndex = 0;
+
+    function changeVideo() {
+        videos.forEach((video, index) => {
+            if (index === currentVideoIndex) {
+                video.classList.add('active');
+                video.play();
+            } else {
+                video.classList.remove('active');
+                video.pause();
+            }
+        });
+
+        currentVideoIndex++;
+        if (currentVideoIndex >= videos.length) {
+            currentVideoIndex = 0;
+        }
+    }
+
+    // Change video every 5 seconds (5000 milliseconds)
+    setInterval(changeVideo, 5000);
+});
+</script>
+
+<div class="jb-box">
+    <div class="video-container">
+        <video muted autoplay loop class="fullscreen-video active">
+            <source src="https://cdn.pixabay.com/vimeo/520427411/66824.mp4?width=1280&hash=6c4ada6a92bd57883cca37907d498a441bd15e62">
+        </video>
+        <video muted autoplay loop class="fullscreen-video">
+            <source src="https://cdn.pixabay.com/vimeo/520427439/66836.mp4?width=1280&hash=e4de1b3a5991ebe3fef02d733167be5680c6f16d">
+        </video>
+        <video muted autoplay loop class="fullscreen-video">
+            <source src="https://cdn.pixabay.com/vimeo/331216046/22865.mp4?width=1280&hash=dc24307d8be3334125292c394a7e2f9388a85a03">
+        </video>
+    </div>
     <div class="text-box">
         <h2 style="color: white;">2024년 벚꽃 개화 시즌</h2>
-        <p class="spring-info" style="color: #ff69b4;">대전, 충청도 벚꽃 보러가자!</p>
+        <p class="spring-info" style="color: #ff69b4;">대전, 충청도 <span style="font-size: 32px;">벚꽃 보러가자!</span></p>
         <p class="spring-greeting" style="color: white; font-size: 24px;">안녕, 봄!</p>
         <p style="color: white; font-size: 24px;">올 봄엔 GABODA와 함께!</p>
     </div>
-    <div class="img-box" >
-        <img src="https://cdn.chungnamilbo.co.kr/news/photo/202208/673955_257859_2551.jpg" alt="">
-    </div>
-</div>
-
-<div class="arrow-container">
-    <button class="arrow left">
-        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="60" height="40" viewBox="0 0 50 80" xml:space="preserve">
-            <polyline fill="none" stroke="#000000" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" points="45.63,75.8 0.375,38.087 45.63,0.375"/>
-        </svg>  
-    </button>
-    <div class="separator"></div>
-    <button class="arrow right">
-        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="60" height="40" viewBox="0 0 50 80" xml:space="preserve">
-            <polyline fill="none" stroke="#000000" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" points="0.375,0.375 45.63,38.087 0.375,75.8"/>
-        </svg>  
-    </button>
 </div>
 
 <div class="nav-box">
 	<div class="text-box2">
 		<h2>봄, 시즌 <span class="bold" style="font-weight: 800;">여행지</span></h2>
-		<a href="">추천 여행지 바로가기</a>
+		<a href="/usr/trip/main">추천 여행지 바로가기</a>
 	</div>
 	
 	<div class="img-box2">

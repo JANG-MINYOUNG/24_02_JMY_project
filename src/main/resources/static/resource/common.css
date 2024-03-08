@@ -198,10 +198,12 @@ body {
 /* 배경 텍스트 */
 .text-box {
 	position: absolute;
-	top: 290px;
+	top: 340px;
 	left: 21%; /* 이미지의 오른쪽에 위치하도록 설정 */
-	font-size: 28px;
+	font-size: 35px;
 	z-index: 1; /* 이미지 위로 텍스트 박스를 올리기 위해 z-index 설정 */
+	background-color: rgba(0, 0, 0, 0.4); 
+	padding: 35px;
 }
 
 .text-box .spring-info, .text-box .spring-greeting {
@@ -254,7 +256,7 @@ body {
 	width: 700px;
 	height: 279px;
 	left: 400px;
-	top: 750px;
+	top: 800px;
 	background-color: #F8EFD1;
 	display: inline-block;
 }
@@ -594,7 +596,7 @@ body {
     width: 90px; /* 이미지의 너비 설정 */
     height: auto; /* 높이를 자동으로 조정하여 가로세로 비율 유지 */
     display: block; /* 이미지를 블록 수준 요소로 표시 */
-	margin-top: 1110px;
+	margin-top: 920px;
 	margin-left: 650px;
 }
 
@@ -760,57 +762,205 @@ body {
 
 .trip-header {
 	text-align: center;
-	margin-top: 150px;
 }
 
 .trip-header > h2{
-	font-size: 40px;
+	font-size: 35px;
+	color: black;
+	margin-left: 50px;
+}
+.trip-header > p{
+	color: black;
+	margin-left: 50px;
 }
 
 .지역별 {
-    margin: 20px; /* Adjust the value to increase or decrease the gap */
+    text-align: center; 
+    margin-right: 80px;
 }
 
-.daejeon {
-    width: 100px; 
-    height: 100px;
-    background-image: url('https://i.ibb.co/HXHzGBp/image.jpg');
+.지역별 a {
+    display: inline-block; 
+    margin: 30px 0px 0px 120px; 
+    text-decoration: none; 
+    color: black; 
+}
+
+.지역별 a:hover {
+    color: #ff69b4; 
+}
+
+.지역별 .daejeon, .Chungbuk, .Chungnam {
+    width: 120px;
+    height: 120px;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    border-radius: 50%; 
-    display: inline-block;
+    border-radius: 50%;
     overflow: hidden;
-}
-.daejeon-container {
-    text-align: center;
-    
+    border: 1px solid #ff69b4;
 }
 
-.Chungbuk {
-    width: 100px; 
-    height: 100px;
+.지역별 .daejeon {
+    background-image: url('https://i.ibb.co/HXHzGBp/image.jpg');
+}
+
+.지역별 .Chungbuk {
     background-image: url('https://i.ibb.co/hf2mzt5/image.jpg');
-    background-size: cover;
-    background-position: center;
-    border-radius: 50%; 
-    display: inline-block;
-    overflow: hidden;
-}
-.Chungbuk-container {
-    text-align: center;
 }
 
-.Chungnam {
-    width: 100px; 
-    height: 100px;
+.지역별 .Chungnam {
     background-image: url('https://i.ibb.co/wStF49s/jv11119403.jpg');
-    background-size: cover;
-    background-position: center;
-    border-radius: 50%; 
-    display: inline-block;
-    overflow: hidden;
 }
-.Chungnam-container {
+
+.지역별 .daejeon-container,
+.지역별 .Chungbuk-container,
+.지역별 .Chungnam-container {
+    margin-top: 10px; 
     text-align: center;
+    font-size: 18px;
 }
+
+.jb-box {
+   width: 100%; 
+   height: 700px;
+   margin-top: 50px;
+   position: relative;
+}
+
+.fullscreen-video {
+	width: 100%;
+	height: 700px;
+	object-fit: cover;
+	display: none;
+	
+}
+
+.fullscreen-video.active {
+    display: block;
+}
+
+.trip-header {
+    position: absolute;
+    top: 300px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    margin-bottom: 200px;
+}
+
+.trip-header > h2 {
+    font-size: 40px;
+}
+
+.local_site {
+	text-align: left;
+	margin-left: 10px;
+	font-size: 18px;
+	position: absolute;
+	top: 340px;
+}
+
+.local_site a {
+    display: inline-block;
+    margin-right: 10px; 
+    color: #ff69b4;
+    font-size: 14px;
+	left: 50px;
+	line-height: 70px;
+	
+}
+
+.trip_bg {
+	margin-top: 50px;
+	width: 100%;
+	height: 250px;
+	background-color: #F8EFD1;
+	z-index: -1000;
+}
+
+.main {
+  width: 700px;
+  margin-left: 550px;
+  margin-top: 300px;
+  margin-bottom: 0; 
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.main > a {
+  border-radius: 10px 0 0 10px;
+}
+
+.slider {
+  display: inline-block;
+  margin-top: 20px;
+  margin-bottom: 0; 
+}
+
+.slider-nav {
+  margin-top: 0px;
+  width: 800px;
+  height: 500px;
+  margin-left: 60px;
+}
+
+.slider-nav div {
+  margin-right: 15px;
+}
+
+.slider-nav img {
+  border-radius: 20px;
+  width: 600px;
+  height: 200px;
+}
+
+.slider-for {
+  justify-content: center;
+  width: 450px;
+  height: 370px;
+  align-items: center;
+}
+
+.slider-for img {
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  width: 500px;
+  height: 350px;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  color: #000 !important;
+  position: absolute;
+  top: -150px;
+  right: 20px;
+}
+
+.slick-dots {
+  position: absolute;
+  top: 200px;
+  left: 0;
+  right: 0;
+}
+
+.slider-text-box {
+	position: absolute;
+	width: 300px;
+	height: 35px;
+	left: 1025px;
+	top: 708px;
+
+	background: #000000;
+	border-radius: 50px;
+}
+
+.slider-text-container > p{
+	position: absolute;
+	margin-top: -870px;
+	margin-left: 500px;
+	color: #ffc0cd;
+	font-size: 25px;
+	z-index: 1000px;
+}
+
