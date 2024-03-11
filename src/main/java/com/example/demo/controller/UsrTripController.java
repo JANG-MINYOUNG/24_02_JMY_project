@@ -12,9 +12,21 @@ public class UsrTripController {
 		return "/usr/trip/main";
 	}
 	
-	@RequestMapping("/usr/trip/deajeon")
+	@RequestMapping("/usr/trip/deaJeon")
 	public String showDeajeon() {
 
-		return "/usr/trip/deajeon";
+		return "/usr/trip/deaJeon";
+	}
+	
+	@RequestMapping("/usr/trip/chungBuk")
+	public String showChungBuk() {
+
+		return "/usr/trip/chungBuk";
+	}
+	
+	@RequestMapping("/usr/trip/chungNam")
+	public String showChungNam() {
+
+		return "/usr/trip/chungNam";
 	}
 }

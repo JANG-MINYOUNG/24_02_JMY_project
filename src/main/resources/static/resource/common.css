@@ -840,6 +840,8 @@ body {
     display: block;
 }
 
+/* 지역별 엑티비티 */
+
 .trip-header {
     position: absolute;
     top: 300px;
@@ -871,6 +873,7 @@ body {
 	
 }
 
+
 .trip_bg > img{
 	position: reaction;
 	margin-top: 50px;
@@ -879,129 +882,83 @@ body {
 	z-index: -1000;
 }
 
-.trip_bg > h2 {
+.bg_text_box {
 	position: absolute;
-	font-size: 45px;
-	color: white;
-	font-weight: bold;
-	top: 200px;
-	left: 500px;
+	top: 500px;
+	left: 28%; /* 이미지의 오른쪽에 위치하도록 설정 */
+	font-size: 35px;
+	z-index: 1; /* 이미지 위로 텍스트 박스를 올리기 위해 z-index 설정 */
+	background-color: rgba(0, 0, 0, 0.4); 
+	padding: 35px;
 }
 
-.trip_bg > p {
-	position: absolute;
-	font-size: 30px;
-	color: white;
-	font-weight: bold;
-	top: 300px;
-	left: 500px;
+
+.지역별_nav a:hover {
+    color: #ff69b4; 
 }
 
-.main {
-  width: 700px;
-  margin-left: 550px;
-  margin-top: 160px;
-  margin-bottom: 0; 
-  font-size: 20px;
-  font-weight: bold;
+.지역별_nav .Daejeon, .Chungbuk, .Chungnam {
+    width: 120px;
+    height: 120px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 1px solid #ff69b4;
 }
 
-.main > a {
-  border-radius: 10px 0 0 10px;
+.지역별_nav .Daejeon {
+    background-image: url('https://i.ibb.co/HXHzGBp/image.jpg');
 }
 
-.slider {
-  display: inline-block;
-  margin-top: 20px;
-  margin-bottom: 0; 
+.지역별_nav .Chungbuk {
+    background-image: url('https://i.ibb.co/hf2mzt5/image.jpg');
 }
 
-.slider-nav {
-  margin-top: 0px;
-  width: 800px;
-  height: 500px;
-  margin-left: 60px;
+.지역별_nav .Chungnam {
+    background-image: url('https://i.ibb.co/wStF49s/jv11119403.jpg');
 }
 
-.slider-nav div {
-  margin-right: 15px;
+.지역별_nav .Daejeon-container,
+.지역별_nav .Chungbuk-container,
+.지역별_nav .Chungnam-container {
+    margin-top: 10px; 
+    text-align: center;
+    font-size: 12px;
 }
 
-.slider-nav img {
-  border-radius: 20px;
-  width: 600px;
-  height: 200px;
+/* 지역별 섹션에 대한 스타일링 */
+.지역별_nav {
+    position: fixed;
+    top: 90%; /* 필요에 따라 상단 위치 조정 */
+    left: 20px; /* 필요에 따라 왼쪽 위치 조정 */
+    transform: translateY(-50%);
+    text-align: center; 
+    margin-right: 80px;	
 }
 
-.slider-for {
-  justify-content: center;
-  width: 450px;
-  height: 370px;
-  align-items: center;
+/* 지역별 섹션 내 링크 스타일링 */
+.지역별_nav a {
+    display: block;
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    font-size: 12px;
+    margin: -40px 0px 0px 0px; 
+    text-decoration: none; 
+    color: black; 
 }
 
-.slider-for img {
-  border-top-left-radius: 20px;
-  border-bottom-left-radius: 20px;
-  width: 500px;
-  height: 350px;
-}
-
-.slick-prev:before,
-.slick-next:before {
-  color: #000 !important;
-  position: absolute;
-  top: -150px;
-  right: 20px;
-}
-
-.slick-dots {
-  position: absolute;
-  top: 200px;
-  left: 0;
-  right: 0;
-}
-
-.slider-text-box {
-	position: absolute;
-	width: 300px;
-	height: 35px;
-	left: 1025px;
-	top: 918px;
-
-	background: #000000;
-	border-radius: 50px;
-}
-
-.slider-text-container > p1{
-	position: absolute;
-	margin-top: -870px;
-	margin-left: 500px;
-	color: #ffc0cd;
-	font-size: 25px;
-	z-index: 1000px;
-}
-
-.slider-text-container > p2{
-	position: absolute;
-	margin-top: -800px;
-	margin-left: 500px;
-	font-size: 22px;
-	z-index: 1000px;
-}
-
-.slider-text-container > p3{
-	position: absolute;
-	margin-top: -730px;
-	margin-left: 500px;
-	font-size: 22px;
-	z-index: 1000px;
-}
-
-.slider-text-container > p4{
-	position: absolute;
-	margin-top: -660px;
-	margin-left: 500px;
-	font-size: 22px;
-	z-index: 1000px;
+/* 컨테이너 및 해당 내용 스타일링 */
+.지역별_nav .Chungnam,
+.지역별_nav .Chungbuk,
+.지역별_nav .Daejeon,
+.지역별_nav .Chungnam-container,
+.지역별_nav .Chungbuk-container,
+.지역별_nav .Daejeon-container {
+    vertical-align: middle;
+    width: 60px; /* 필요에 따라 너비 조정 */
+    height: 60px; /* 필요에 따라 높이 조정 */
+    margin-right: 10px; /* 필요에 따라 여백 조정 */
 }

@@ -98,7 +98,7 @@
 	            e.preventDefault(); // 폼 제출 취소
 	            alert("중복체크를 해주세요.");
 	        }
-
+		
 	        // 비밀번호가 일치하지 않은 경우 가입을 막음
 	        var password = $("input[name='loginPw']").val();
 	        var confirmPassword = $("input[name='loginPwCheck']").val();
