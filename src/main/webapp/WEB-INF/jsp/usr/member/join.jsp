@@ -91,12 +91,22 @@
 			});
 		});
 
-		$("form").submit(function() {
-			if ($("#check").val() === 'no') {
-				alert("중복체크를 해주세요.");
-				return false; // 폼 제출 취소
-			}
-		});
+	    // 폼 제출 이벤트
+	    $("form").submit(function(e) {
+	        // 중복 체크를 하지 않은 경우 가입을 막음
+	        if ($("#check").val() === 'no') {
+	            e.preventDefault(); // 폼 제출 취소
+	            alert("중복체크를 해주세요.");
+	        }
+
+	        // 비밀번호가 일치하지 않은 경우 가입을 막음
+	        var password = $("input[name='loginPw']").val();
+	        var confirmPassword = $("input[name='loginPwCheck']").val();
+	        if (password !== confirmPassword) {
+	            e.preventDefault(); // 폼 제출 취소
+	            alert("비밀번호가 일치하지 않습니다. 다시 확인해주세요.");
+	        }
+	    });
 	});
 
 	$(document).ready(function() {
