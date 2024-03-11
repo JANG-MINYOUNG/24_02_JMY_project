@@ -4,17 +4,17 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
-public class UsrHomeController {
+public class UsrTripController {
 
-	@RequestMapping("/usr/home/main")
+	@RequestMapping("/usr/trip/main")
 	public String showMain() {
 
-		return "/usr/home/main";
-	}
-	@RequestMapping("/")
-	public String showRoot() {
-
-		return "redirect:/usr/home/main";
+		return "/usr/trip/main";
 	}
 	
+	@RequestMapping("/usr/trip/deajeon")
+	public String showDeajeon() {
+
+		return "/usr/trip/deajeon";
+	}
 }
