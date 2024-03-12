@@ -962,3 +962,29 @@ body {
     height: 60px; /* 필요에 따라 높이 조정 */
     margin-right: 10px; /* 필요에 따라 여백 조정 */
 }
+
+.weather-container {
+    position: fixed;
+    top: 100px; /* 위에서 20px 위치에 고정 */
+    right: 100px; /* 오른쪽에서 20px 위치에 고정 */
+    background-color: rgba(0, 0, 0, 0.4); 
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    color: white;
+}
+
+.weather-icon {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+.weather-icon img {
+    width: 80px; /* 아이콘 크기 조정 */
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.temperature, .city {
+    margin-bottom: 5px;
+}
