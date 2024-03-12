@@ -12,10 +12,10 @@ public class UsrTripController {
 		return "/usr/trip/main";
 	}
 	
-	@RequestMapping("/usr/trip/deaJeon")
+	@RequestMapping("/usr/trip/daeJeon")
 	public String showDeajeon() {
 
-		return "/usr/trip/deaJeon";
+		return "/usr/trip/daeJeon";
 	}
 	
 	@RequestMapping("/usr/trip/chungBuk")

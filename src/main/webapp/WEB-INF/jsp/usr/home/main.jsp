@@ -61,7 +61,7 @@
 	<div class="nav-box2-container">	
 		<div class="nav-box2">
 			<a href="">추천! 테마여행</a>
-			<a href="">추천 여행지로 바로가기</a>
+			<a href="/usr/trip/daeJeon">추천 여행지로 바로가기</a>
 		</div>
 		<div class="img-box3">
 			<a href="#"><img src="https://i.ibb.co/2M657Lz/image.jpg" alt="image" border="0"></a>
@@ -130,6 +130,5 @@
 	</div>
 	<div class="theme_nav_bg"></div>
 </div>
-
 
 

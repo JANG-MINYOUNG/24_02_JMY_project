@@ -13,15 +13,15 @@
             <div class="Chungnam"></div>
             <div class="Chungnam-container">충남</div>
         </a>
-        <a href="/usr/trip/chungBuk">
-            <div class="Chungbuk"></div>
-            <div class="Chungbuk-container">충북</div>
-        </a>
-        <a href="/usr/trip/deaJeon">
+         <a href="/usr/trip/deaJeon">
             <div class="daejeon"></div>
             <div class="daejeon-container">대전</div>
         </a>
-    </div>
+        <a href="/usr/trip/chungBuk">
+            <div class="Chungbuk"></div>
+            <div class="Chungbuk-container">충북</div>
+        </a>  
+</div>
 
 
 

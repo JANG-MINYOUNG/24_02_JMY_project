@@ -966,12 +966,13 @@ body {
 .weather-container {
     position: fixed;
     top: 100px; /* 위에서 20px 위치에 고정 */
-    right: 100px; /* 오른쪽에서 20px 위치에 고정 */
+    right: 20px; /* 오른쪽에서 20px 위치에 고정 */
     background-color: rgba(0, 0, 0, 0.4); 
     padding: 10px;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     color: white;
+    z-index : 1000;
 }
 
 .weather-icon {
@@ -1049,7 +1050,7 @@ body {
 }
 
 .container img {
-  max-width: 1000px; /* Set the maximum width to 1600px */
+  max-width: 800px; /* Set the maximum width to 1600px */
   height: auto; /* Automatically adjust the height to maintain aspect ratio */
   max-height: 450px; /* Set the maximum height to 450px */
   width: auto; /* Ensure the image fills the container horizontally */
@@ -1059,8 +1060,12 @@ body {
 .section {
   margin: 0 auto;
   padding-block: 5rem;
-  margin-top: 80px;
-  
+  margin-top: 2%;
+  max-width: 1400px; /* Set the maximum width to 1600px */
+  height: auto; /* Automatically adjust the height to maintain aspect ratio */
+  max-height: 450px; /* Set the maximum height to 450px */
+  width: auto; /* Ensure the image fills the container horizontally */
+  margin-left: 18%;
 }
 
 .container {
@@ -1084,4 +1089,42 @@ body {
   border-radius: 50%;
   color: var(--white-100);
   background: var(--black-300);
+}
+
+.daejeon_hot {
+    margin-left: 24%;
+    margin-top: 8%;
+    margin-right: 10%;
+}
+
+.daejeon_hot > h2 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.daejeon_hot > p {
+    font-size: 18px;
+    line-height: 40px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+}
+
+.square-box {
+    width: calc(33.33%); /* 한 행에 3개의 상자를 배치하고 간격을 조정합니다. */
+    margin-bottom: 20px; /* 행 사이의 간격을 조정합니다. */
+	margin-top: 4%;
+}
+
+.square-box img {
+    width: 90%;
+    height: auto;
+}
+
+.square-box p {
+    margin-top: 10px;
 }

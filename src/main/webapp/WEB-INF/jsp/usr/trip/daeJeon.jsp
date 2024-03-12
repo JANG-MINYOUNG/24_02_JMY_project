@@ -3,6 +3,7 @@
 <c:set var="pageTitle" value=""></c:set>
 <%@ include file="../common/head.jspf"%>
 
+
 <a class="weather-container" href="/">
 	<div class="weather-icon"></div>
 	<div class="temperature"></div>
@@ -19,10 +20,9 @@ $(document).ready(function() {
 
     // API 요청을 위한 매개변수
     var params = {
-        q: 'Chungju',           // 도시 이름 (영어)
+        q: 'Daejeon',           // 도시 이름 (영어)
         appid: apiKey,          // 여러분의 API 키
         units: 'metric'         // 온도 단위 (섭씨)
-        
     };
 
     // 날씨 데이터를 가져오기 위한 AJAX 요청
@@ -52,28 +52,23 @@ $(document).ready(function() {
 });
 </script>
 
+
 <div class="trip_bg">
-	<img src="https://cdn.ccdailynews.com/news/photo/202303/2193215_641420_2630.jpg" alt="" />
+	<img src="https://img.freepik.com/free-photo/cityscape-incheon-bridge-korea_335224-415.jpg?t=st=1710130673~exp=1710134273~hmac=b0a0743fd21cf43f7d3220dd15fa0331819777d72c880071b9c529544bfc2909&w=1380" alt="" />
 	<div class="bg_text_box">
-		<h2 style="color: white;">충북지역 엑티비티</h2>
+		<h2 style="color: white;">대전지역 엑티비티</h2>
 		<p style="color: white;">봄, 축제 즐겨보자</p>
-	</div>	
+	</div>
 </div>
 
  <div class="local_site">
-  <div style="font-weight: bold; font-size: 20px;">충북<span style="font-size: 18px;"> 지역 문화관광 홈페이지 바로가기</span></div>	
-  <a href="https://www.goesan.go.kr/tour/index.do">괴산군</a>
-  <a href="https://www.danyang.go.kr/tour/527">단양군</a>
-  <a href="http://www.tourboeun.go.kr/">보은군</a>
-  <a href="https://yd21.go.kr/tour/">영동군</a>
-  <a href="https://www.oc.go.kr/tour/index.do">옥천군</a>
-  <a href="https://www.eumseong.go.kr/tour/index.do">음성군</a>
-  <a href="https://tour.jecheon.go.kr/base/main/view">제천시</a>
-  <a href="https://www.jincheon.go.kr/site/tour/main.do">진천군</a>
-  <a href="https://www.cheongju.go.kr/ktour/index.do">청주시</a>
-  <a href="https://www.chungju.go.kr/tour/index.do">충주시</a>
-  <a href="https://www.jp.go.kr/tour.do">증평군</a>
- </div>
+  <div style="font-weight: bold; font-size: 20px;">대전<span style="font-size: 18px;"> 지역 문화관광 홈페이지 바로가기</span></div>	
+  <a href="https://www.daedeok.go.kr/tour/index.do">대덕구</a>
+  <a href="https://www.donggu.go.kr/dg/tour">동구</a>
+  <a href="https://www.seogu.go.kr/tour/index.do">서구</a>
+  <a href="https://www.yuseong.go.kr/tour/">유성구</a>
+  <a href="https://www.djjunggu.go.kr/tour/index.do">중구</a>
+</div>
 
 
 <div class="지역별_nav">
@@ -95,12 +90,12 @@ $(document).ready(function() {
   <div class="container slider-column">
     <div class="swiper swiper-slider">
       <div class="swiper-wrapper">
-        <img class="swiper-slide" src="https://kfescdn.visitkorea.or.kr/kfes/upload/contents/db/a5f458df-cd30-4dd2-92d7-15d2de00c293_11.png" alt="Swiper">
-        <img class="swiper-slide" src="https://kfescdn.visitkorea.or.kr/kfes/upload/contents/db/a5f458df-cd30-4dd2-92d7-15d2de00c293_11.png" alt="Swiper">
-        <img class="swiper-slide" src="https://kfescdn.visitkorea.or.kr/kfes/upload/contents/db/a5f458df-cd30-4dd2-92d7-15d2de00c293_11.png" alt="Swiper">
-        <img class="swiper-slide" src="https://kfescdn.visitkorea.or.kr/kfes/upload/contents/db/a5f458df-cd30-4dd2-92d7-15d2de00c293_11.png" alt="Swiper">
-        <img class="swiper-slide" src="https://kfescdn.visitkorea.or.kr/kfes/upload/contents/db/a5f458df-cd30-4dd2-92d7-15d2de00c293_11.png" alt="Swiper">
-        <img class="swiper-slide" src="https://kfescdn.visitkorea.or.kr/kfes/upload/contents/db/a5f458df-cd30-4dd2-92d7-15d2de00c293_11.png" alt="Swiper">
+        <img class="swiper-slide" src="https://i.ytimg.com/vi/SHsqWfYirXA/maxresdefault.jpg" alt="Swiper">
+        <img class="swiper-slide" src="https://static.wixstatic.com/media/2a5481_9e678513bae34c1e8311958302f0bc9f~mv2.jpg/v1/fit/w_2500,h_1330,al_c/2a5481_9e678513bae34c1e8311958302f0bc9f~mv2.jpg" alt="Swiper">
+        <img class="swiper-slide" src=https://flexible.img.hani.co.kr/flexible/normal/755/426/imgdb/original/2023/0807/20230807501170.jpg alt="Swiper">
+        <img class="swiper-slide" src="https://djzerofe.com/theme/basic/img/festival_30.jpg" alt="Swiper">
+        <img class="swiper-slide" src="https://i.ytimg.com/vi/SHsqWfYirXA/maxresdefault.jpg" alt="Swiper">
+        <img class="swiper-slide" src="https://i.ytimg.com/vi/SHsqWfYirXA/maxresdefault.jpg" alt="Swiper">
       </div>
       <span class="swiper-pagination"></span>
       <span class="swiper-button-prev"></span>
@@ -110,8 +105,8 @@ $(document).ready(function() {
 </section>
 
 <div class="daejeon_hot">
-    <h2>충북 <span style="color: red; font-size: 28px;">'핫'</span> 플레이스</h2>
-    <p>노색도시 충북! <span style="color: red; font-size: 20px;">테마 별</span> 핫 플레이스 찾기</p>
+    <h2>대전 <span style="color: red; font-size: 28px;">'핫'</span> 플레이스</h2>
+    <p>대전 노잼? 노! 꿀잼! 대전 <span style="color: red; font-size: 20px;">테마 별</span> 핫 플레이스 찾기</p>
     <div class="row">
         <div class="square-box">
             <img src="https://www.daejeontour.co.kr/ko/atch/atchFileStreamOut.do?atchId=1361&fileSeCode=THUM_IMAGE_FILE" alt="이미지">
@@ -179,3 +174,4 @@ $(document).ready(function() {
     </div>
     <!-- 필요한 만큼 행을 추가합니다. -->
 </div>
+

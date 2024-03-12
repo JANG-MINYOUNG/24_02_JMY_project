@@ -78,14 +78,14 @@ $(document).ready(function() {
 		<div class="Chungnam"></div>
 		<div class="Chungnam-container">충남</div>
 	</a>
+	<a href="/usr/trip/daeJeon">
+            <div class="Daejeon"></div>
+            <div class="Daejeon-container">대전</div>
+    </a>
 	<a href="/usr/trip/chungBuk">
 		<div class="Chungbuk"></div>
 		<div class="Chungbuk-container">충북</div>
 	</a>
-	<a href="/usr/trip/deaJeon">
-            <div class="Daejeon"></div>
-            <div class="Daejeon-container">대전</div>
-    </a>
 </div>
 
 <section class="section slider-section">
@@ -106,3 +106,73 @@ $(document).ready(function() {
   </div>
 </section>
 
+<div class="daejeon_hot">
+    <h2>충남 <span style="color: red; font-size: 28px;">'핫'</span> 플레이스</h2>
+    <p>충남 여행 떠나자~ <span style="color: red; font-size: 20px;">테마 별</span> 핫 플레이스 찾기</p>
+    <div class="row">
+        <div class="square-box">
+            <img src="https://www.daejeontour.co.kr/ko/atch/atchFileStreamOut.do?atchId=1361&fileSeCode=THUM_IMAGE_FILE" alt="이미지">
+            <p>여기에 텍스트를 입력하세요</p>
+        </div>
+        <div class="square-box">
+            <img src="https://www.daejeontour.co.kr/ko/atch/atchFileStreamOut.do?atchId=1361&fileSeCode=THUM_IMAGE_FILE" alt="이미지">
+            <p>여기에 텍스트를 입력하세요</p>
+        </div>
+        <div class="square-box">
+            <img src="https://www.daejeontour.co.kr/ko/atch/atchFileStreamOut.do?atchId=1361&fileSeCode=THUM_IMAGE_FILE" alt="이미지">
+            <p>여기에 텍스트를 입력하세요</p>
+        </div>
+        <div class="square-box">
+            <img src="https://www.daejeontour.co.kr/ko/atch/atchFileStreamOut.do?atchId=1361&fileSeCode=THUM_IMAGE_FILE" alt="이미지">
+            <p>여기에 텍스트를 입력하세요</p>
+        </div>
+        <div class="square-box">
+            <img src="https://www.daejeontour.co.kr/ko/atch/atchFileStreamOut.do?atchId=1361&fileSeCode=THUM_IMAGE_FILE" alt="이미지">
+            <p>여기에 텍스트를 입력하세요</p>
+        </div>
+        <div class="square-box">
+            <img src="https://www.daejeontour.co.kr/ko/atch/atchFileStreamOut.do?atchId=1361&fileSeCode=THUM_IMAGE_FILE" alt="이미지">
+            <p>여기에 텍스트를 입력하세요</p>
+        </div>
+        <div class="square-box">
+            <img src="https://www.daejeontour.co.kr/ko/atch/atchFileStreamOut.do?atchId=1361&fileSeCode=THUM_IMAGE_FILE" alt="이미지">
+            <p>여기에 텍스트를 입력하세요</p>
+        </div>
+        <div class="square-box">
+            <img src="https://www.daejeontour.co.kr/ko/atch/atchFileStreamOut.do?atchId=1361&fileSeCode=THUM_IMAGE_FILE" alt="이미지">
+            <p>여기에 텍스트를 입력하세요</p>
+        </div>
+        <div class="square-box">
+            <img src="https://www.daejeontour.co.kr/ko/atch/atchFileStreamOut.do?atchId=1361&fileSeCode=THUM_IMAGE_FILE" alt="이미지">
+            <p>여기에 텍스트를 입력하세요</p>
+        </div>
+         <div class="square-box">
+            <img src="https://www.daejeontour.co.kr/ko/atch/atchFileStreamOut.do?atchId=1361&fileSeCode=THUM_IMAGE_FILE" alt="이미지">
+            <p>여기에 텍스트를 입력하세요</p>
+        </div>
+         <div class="square-box">
+            <img src="https://www.daejeontour.co.kr/ko/atch/atchFileStreamOut.do?atchId=1361&fileSeCode=THUM_IMAGE_FILE" alt="이미지">
+            <p>여기에 텍스트를 입력하세요</p>
+        </div>
+         <div class="square-box">
+            <img src="https://www.daejeontour.co.kr/ko/atch/atchFileStreamOut.do?atchId=1361&fileSeCode=THUM_IMAGE_FILE" alt="이미지">
+            <p>여기에 텍스트를 입력하세요</p>
+        </div>
+         <div class="square-box">
+            <img src="https://www.daejeontour.co.kr/ko/atch/atchFileStreamOut.do?atchId=1361&fileSeCode=THUM_IMAGE_FILE" alt="이미지">
+            <p>여기에 텍스트를 입력하세요</p>
+        </div>
+         <div class="square-box">
+            <img src="https://www.daejeontour.co.kr/ko/atch/atchFileStreamOut.do?atchId=1361&fileSeCode=THUM_IMAGE_FILE" alt="이미지">
+            <p>여기에 텍스트를 입력하세요</p>
+        </div>
+         <div class="square-box">
+            <img src="https://www.daejeontour.co.kr/ko/atch/atchFileStreamOut.do?atchId=1361&fileSeCode=THUM_IMAGE_FILE" alt="이미지">
+            <p>여기에 텍스트를 입력하세요</p>
+        </div>
+        
+        
+        <!-- 나머지 상자를 추가합니다. 필요한 만큼 복사하여 붙여넣으세요. -->
+    </div>
+    <!-- 필요한 만큼 행을 추가합니다. -->
+</div>

@@ -45,13 +45,13 @@
                     <li>
                         <a href="/usr/trip/main" class="flex flex-ai-c height-100p">시즌별 여행지</a>
                         <ul>
-                            <li><a href="/usr/trip/deaJeon">대전</a></li>
+                            <li><a href="/usr/trip/daeJeon">대전</a></li>
                             <li><a href="/usr/trip/chungBuk">충청북도</a></li>
                             <li><a href="/usr/trip/chungNam">충청남도</a></li>
                         </ul>
                     </li>
                     <li>
-                        <a href="#" class="flex flex-ai-c height-100p">날시별 여행지</a>
+                        <a href="#" class="flex flex-ai-c height-100p">날씨별 여행지</a>
                         <ul>
                             <li><a href="#">대전</a></li>
                             <li><a href="#">충청북도</a></li>
