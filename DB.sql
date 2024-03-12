@@ -35,6 +35,7 @@ updateDate = NOW(),
 title = '제목1',
 `body` = '내용1';
 
+
 INSERT INTO article
 SET regDate = NOW(),
 updateDate = NOW(),
@@ -91,6 +92,10 @@ email = 'abcdef@gmail.com';
 ALTER TABLE article ADD COLUMN memberId INT(10) UNSIGNED NOT NULL AFTER updateDate;
 
 UPDATE article
+SET memberId = 1
+WHERE memberId = 0;
+
+UPDATE article
 SET memberId = 2
 WHERE id IN (1,2);
 
@@ -130,6 +135,10 @@ updateDate = NOW(),
 `name` = '질의응답';
 
 ALTER TABLE article ADD COLUMN boardId INT(10) UNSIGNED NOT NULL AFTER `memberId`;
+
+UPDATE article
+SET boardId = 1
+WHERE boardId = 0;
 
 UPDATE article
 SET boardId = 1
