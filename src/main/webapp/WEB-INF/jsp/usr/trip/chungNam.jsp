@@ -3,11 +3,11 @@
 <c:set var="pageTitle" value=""></c:set>
 <%@ include file="../common/head.jspf"%>
 
-<div class="weather-container">
+<a class="weather-container" href="/">
 	<div class="weather-icon"></div>
 	<div class="temperature"></div>
 	<div class="city"></div>
-</div>
+</a>
 
 <script>
 $(document).ready(function() {
@@ -88,5 +88,21 @@ $(document).ready(function() {
     </a>
 </div>
 
-
+<section class="section slider-section">
+  <div class="container slider-column">
+    <div class="swiper swiper-slider">
+      <div class="swiper-wrapper">
+        <img class="swiper-slide" src="https://www.cbiz.kr/news/photo/201810/14888_18089_5555.jpg" alt="Swiper">
+        <img class="swiper-slide" src="https://www.cbiz.kr/news/photo/201810/14888_18089_5555.jpg" alt="Swiper">
+        <img class="swiper-slide" src="https://www.cbiz.kr/news/photo/201810/14888_18089_5555.jpg" alt="Swiper">
+        <img class="swiper-slide" src="https://www.cbiz.kr/news/photo/201810/14888_18089_5555.jpg" alt="Swiper">
+        <img class="swiper-slide" src="https://www.cbiz.kr/news/photo/201810/14888_18089_5555.jpg" alt="Swiper">
+        <img class="swiper-slide" src="https://www.cbiz.kr/news/photo/201810/14888_18089_5555.jpg" alt="Swiper">
+      </div>
+      <span class="swiper-pagination"></span>
+      <span class="swiper-button-prev"></span>
+      <span class="swiper-button-next"></span>
+    </div>
+  </div>
+</section>
 

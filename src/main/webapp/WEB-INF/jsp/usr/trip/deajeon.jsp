@@ -4,11 +4,11 @@
 <%@ include file="../common/head.jspf"%>
 
 
-<div class="weather-container">
+<a class="weather-container" href="/">
 	<div class="weather-icon"></div>
 	<div class="temperature"></div>
 	<div class="city"></div>
-</div>
+</a>
 
 <script>
 $(document).ready(function() {
@@ -86,43 +86,20 @@ $(document).ready(function() {
     </a>
 </div>
 
-<div class="nav-box">
-	<div class="text-box2">
-		<h2>봄, 시즌 <span class="bold" style="font-weight: 800;">여행지</span></h2>
-		<a href="/usr/trip/main">추천 여행지 바로가기</a>
-	</div>
-	
-	<div class="img-box2">
-	<img src="https://i.ibb.co/nPZh7qf/20.png" alt="" /></div>
-	<div class="nav-box2-container">	
-		<div class="nav-box2">
-			<a href="">추천! 테마여행</a>
-			<a href="">추천 여행지로 바로가기</a>
-		</div>
-		<div class="img-box3">
-			<a href="#"><img src="https://i.ibb.co/2M657Lz/image.jpg" alt="image" border="0"></a>
-		</div>
-	</div>		
-	<div class="nav-box3-container">	
-		<div class="nav-box3">
-			<a href="">날씨별! 엑티비티</a>
-			<a href="">날씨별 여행지 바로가기</a>
-		</div>
-		<div class="img-box4">
-			<a href="#"><img src="https://lh3.googleusercontent.com/p/AF1QipNWcAVvjkMq1iLowvG5YwVy6Vh0DxZpcoWqk1Po=s680-w680-h510" alt="image" border="0"></a>
-		</div>
-	</div>
-	<div class="nav-box4-container">	
-		<div class="nav-box4">
-			<a href="">동행자 찾기!</a>
-			<a href="">함께 떠날 동료 찾기</a>
-		</div>
-	</div>
-	<div class="nav-box5-container">	
-		<div class="nav-box5">
-			<a href="">나만의 여행 일지 남기기</a>
-			<a href="">여행일지 바로가기</a>
-		</div>
-	</div>
-	<div class="nav-box-bg"></div>
-</div>
+<section class="section slider-section">
+  <div class="container slider-column">
+    <div class="swiper swiper-slider">
+      <div class="swiper-wrapper">
+        <img class="swiper-slide" src="https://i.ytimg.com/vi/SHsqWfYirXA/maxresdefault.jpg" alt="Swiper">
+        <img class="swiper-slide" src="https://static.wixstatic.com/media/2a5481_9e678513bae34c1e8311958302f0bc9f~mv2.jpg/v1/fit/w_2500,h_1330,al_c/2a5481_9e678513bae34c1e8311958302f0bc9f~mv2.jpg" alt="Swiper">
+        <img class="swiper-slide" src=https://flexible.img.hani.co.kr/flexible/normal/755/426/imgdb/original/2023/0807/20230807501170.jpg alt="Swiper">
+        <img class="swiper-slide" src="https://djzerofe.com/theme/basic/img/festival_30.jpg" alt="Swiper">
+        <img class="swiper-slide" src="https://i.ytimg.com/vi/SHsqWfYirXA/maxresdefault.jpg" alt="Swiper">
+        <img class="swiper-slide" src="https://i.ytimg.com/vi/SHsqWfYirXA/maxresdefault.jpg" alt="Swiper">
+      </div>
+      <span class="swiper-pagination"></span>
+      <span class="swiper-button-prev"></span>
+      <span class="swiper-button-next"></span>
+    </div>
+  </div>
+</section>

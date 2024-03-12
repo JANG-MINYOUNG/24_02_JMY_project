@@ -3,11 +3,11 @@
 <c:set var="pageTitle" value=""></c:set>
 <%@ include file="../common/head.jspf"%>
 
-<div class="weather-container">
+<a class="weather-container" href="/">
 	<div class="weather-icon"></div>
 	<div class="temperature"></div>
 	<div class="city"></div>
-</div>
+</a>
 
 <script>
 $(document).ready(function() {
@@ -91,3 +91,20 @@ $(document).ready(function() {
     </a>
 </div>
 
+<section class="section slider-section">
+  <div class="container slider-column">
+    <div class="swiper swiper-slider">
+      <div class="swiper-wrapper">
+        <img class="swiper-slide" src="https://kfescdn.visitkorea.or.kr/kfes/upload/contents/db/a5f458df-cd30-4dd2-92d7-15d2de00c293_11.png" alt="Swiper">
+        <img class="swiper-slide" src="https://kfescdn.visitkorea.or.kr/kfes/upload/contents/db/a5f458df-cd30-4dd2-92d7-15d2de00c293_11.png" alt="Swiper">
+        <img class="swiper-slide" src="https://kfescdn.visitkorea.or.kr/kfes/upload/contents/db/a5f458df-cd30-4dd2-92d7-15d2de00c293_11.png" alt="Swiper">
+        <img class="swiper-slide" src="https://kfescdn.visitkorea.or.kr/kfes/upload/contents/db/a5f458df-cd30-4dd2-92d7-15d2de00c293_11.png" alt="Swiper">
+        <img class="swiper-slide" src="https://kfescdn.visitkorea.or.kr/kfes/upload/contents/db/a5f458df-cd30-4dd2-92d7-15d2de00c293_11.png" alt="Swiper">
+        <img class="swiper-slide" src="https://kfescdn.visitkorea.or.kr/kfes/upload/contents/db/a5f458df-cd30-4dd2-92d7-15d2de00c293_11.png" alt="Swiper">
+      </div>
+      <span class="swiper-pagination"></span>
+      <span class="swiper-button-prev"></span>
+      <span class="swiper-button-next"></span>
+    </div>
+  </div>
+</section>
