@@ -29,4 +29,10 @@ public class UsrTripController {
 
 		return "/usr/trip/chungNam";
 	}
+	
+	@RequestMapping("/usr/trip/detail")
+	public String showDetail() {
+
+		return "/usr/trip/detail";
+	}
 }

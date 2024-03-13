@@ -30,6 +30,38 @@
 });
 </script>
 
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        // <a> 태그 요소 가져오기
+        const scrollToDestinationLink = document.getElementById('scrollToDestination');
+
+        // <a> 태그에 클릭 이벤트 리스너 추가
+        scrollToDestinationLink.addEventListener('click', function(event) {
+            event.preventDefault(); // 기본 탐색 동작 방지
+
+            // 대상 JSP 파일 내에서 원하는 위치로 스크롤
+            // x와 y 좌표를 원하는 값으로 변경하세요
+            scrollToPosition("/usr/trip/daeJeon", 0, 0);
+        });
+    });
+
+    // 대상 JSP 파일 내에서 특정 위치로 스크롤하는 함수
+    function scrollToPosition(targetUrl, x, y) {
+        // 대상 JSP 파일 가져오기
+        fetch(targetUrl)
+            .then(response => response.text())
+            .then(html => {
+                // HTML을 구문 분석하기 위한 임시 컨테이너 요소 생성
+                const tempContainer = document.createElement('div');
+                tempContainer.innerHTML = html;
+
+                // 구문 분석된 HTML 내에서 원하는 위치로 스크롤
+                window.scrollTo(x, y);
+            })
+            .catch(error => console.error('HTML 가져오기 또는 구문 분석 오류:', error));
+    }
+</script>
+
 <div class="jb-box">
     <div class="video-container">
         <video muted autoplay loop class="fullscreen-video active">
@@ -61,7 +93,7 @@
 	<div class="nav-box2-container">	
 		<div class="nav-box2">
 			<a href="">추천! 테마여행</a>
-			<a href="/usr/trip/daeJeon">추천 여행지로 바로가기</a>
+			<a href="/usr/trip/daeJeon" id="scrollToDestination">추천 여행지로 바로가기</a>
 		</div>
 		<div class="img-box3">
 			<a href="#"><img src="https://i.ibb.co/2M657Lz/image.jpg" alt="image" border="0"></a>
