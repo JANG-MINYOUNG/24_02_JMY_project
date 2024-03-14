@@ -844,7 +844,7 @@ body {
 
 .trip-header {
     position: absolute;
-    top: 300px;
+    top: 400px;
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 1;
@@ -1107,6 +1107,17 @@ body {
     line-height: 40px;
 }
 
+.button-container {
+    text-align: right;
+    margin-right: 35px;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.button-container button {
+    margin-right: 10px;
+}
+
 .row {
     display: flex;
     flex-wrap: wrap;
@@ -1117,7 +1128,7 @@ body {
 .square-box {
     width: calc(33.33%); /* 한 행에 3개의 상자를 배치하고 간격을 조정합니다. */
     margin-bottom: 20px; /* 행 사이의 간격을 조정합니다. */
-	margin-top: 4%;
+	margin-top: 2%;
 }
 
 .square-box img {
@@ -1221,7 +1232,7 @@ body {
 .slick-prev:before {
     background-color: rgba(0, 0, 0, 0.4); 
     position: absolute;
-    top: -300px;
+    top: -200px;
     left: 350px;
     z-index: 1000;
 }
@@ -1229,7 +1240,7 @@ body {
 .slick-next:before {
 	background-color: rgba(0, 0, 0, 0.4);  
     position: absolute;
-    top: -300px;
+    top: -200px;
     left: -360px;
     z-index: 1000;
 }
@@ -1248,7 +1259,7 @@ body {
 
 .slider-nav {
   width: 800px;
-  height: 500px;
+  height: 300px;
   margin-top: 10px;
 }
 
@@ -1257,3 +1268,46 @@ body {
   height: 200px;
 }
 
+/* 날씨별 엑티비티 */
+
+.weather_recommend_place {
+	text-align: center;
+	margin-top: 100px;
+}
+
+.weater-container-box {
+	position: fixed; /* 고정 위치 요소로 만듭니다. */
+    transform: translateY(-50%); /* 수직 방향으로 중앙 정렬됩니다. */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* 그림자 효과 추가 */
+    z-index: 999; /* 다른 요소 위에 나타나도록 z-index 설정 */
+}
+
+.weater-container-box img {
+	background-color: rgba(0, 0, 0, 0.2);
+	border-radius: 10px;
+	margin-left: 130px;
+	position: absolute;
+	margin-top: -40px;
+	width: 120px;
+	height: 120px;
+}
+
+.recommend_place {
+    display: flex;
+    flex-wrap: wrap; /* 너비가 충분하지 않을 때 항목이 다음 줄로 내려가도록 합니다. */
+    gap: 20px; /* 각 상자 사이의 간격 */
+    margin-left: 500px;
+    margin-right: 400px;
+    margin-top: 50px;
+}
+
+.recommend_place_box {
+  	width: calc(25% - 20px); /* 수평으로 네 개의 상자를 배치하기 위해 너비를 조정합니다. */
+  	box-sizing: border-box; /* 테두리와 내부 여백을 너비에 포함시킵니다. */
+  	text-align: left; /* 텍스트를 가운데 정렬합니다. */	
+}
+
+.recommend_place_box > img {
+	border-radius: 10px;
+	object-fit: cover;
+}

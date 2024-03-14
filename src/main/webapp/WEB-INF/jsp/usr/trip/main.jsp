@@ -17,7 +17,7 @@
             <div class="Chungnam"></div>
             <div class="Chungnam-container">충남</div>
         </a>
-         <a href="/usr/trip/deaJeon">
+         <a href="/usr/trip/daeJeon">
             <div class="daejeon"></div>
             <div class="daejeon-container">대전</div>
         </a>

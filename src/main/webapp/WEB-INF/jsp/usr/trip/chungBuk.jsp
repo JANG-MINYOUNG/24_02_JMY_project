@@ -4,6 +4,9 @@
 <%@ include file="../common/head.jspf"%>
 
 <a class="weather-container" href="/">
+	<div class="clock">
+      <span id="Seoul"></span>
+    </div>
 	<div class="weather-icon"></div>
 	<div class="temperature"></div>
 	<div class="city"></div>

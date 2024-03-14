@@ -5,6 +5,9 @@
 
 
 <a class="weather-container" href="/">
+	<div class="clock">
+      <span id="Seoul"></span>
+    </div>
 	<div class="weather-icon"></div>
 	<div class="temperature"></div>
 	<div class="city"></div>
@@ -95,7 +98,7 @@ $(document).ready(function() {
         <img class="swiper-slide" src=https://flexible.img.hani.co.kr/flexible/normal/755/426/imgdb/original/2023/0807/20230807501170.jpg alt="Swiper">
         <img class="swiper-slide" src="https://djzerofe.com/theme/basic/img/festival_30.jpg" alt="Swiper">
         <img class="swiper-slide" src="https://i.ytimg.com/vi/SHsqWfYirXA/maxresdefault.jpg" alt="Swiper">
-        <img class="swiper-slide" src="https://i.ytimg.com/vi/SHsqWfYirXA/maxresdefault.jpg" alt="Swiper">
+        <img class="swiper-slide" src="https://i.ytimg.com/vi/SHsqWfYirXA/maxresdefault.jpg" at="Swiper">
       </div>
       <span class="swiper-pagination"></span>
       <span class="swiper-button-prev"></span>
@@ -107,6 +110,13 @@ $(document).ready(function() {
 <div class="daejeon_hot">
     <h2>대전 <span style="color: red; font-size: 28px;">'핫'</span> 플레이스</h2>
     <p>대전 노잼? 노! 꿀잼! 대전 <span style="color: red; font-size: 20px;">테마 별</span> 핫 플레이스 찾기</p>
+    <div class="button-container">
+        <button>공원</button>
+        <button>· 휴양림</button>
+        <button>· 박물관</button>
+        <button>· 미술관</button>
+        <button>· 유적지</button>
+    </div>
     <div class="row">
         <div class="square-box">
             <img src="https://www.daejeontour.co.kr/ko/atch/atchFileStreamOut.do?atchId=1361&fileSeCode=THUM_IMAGE_FILE" alt="이미지">

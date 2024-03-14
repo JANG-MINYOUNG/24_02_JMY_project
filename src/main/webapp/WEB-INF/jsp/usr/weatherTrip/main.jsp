@@ -10,8 +10,8 @@
 </div>
 
 <div class="trip-header">
-    <h2>시즌별 엑티비티</h2>
-    <p>따스한 <span class="bold" style="font-weight: 800; color: #ff69b4;">봄날</span> 완벽한 하루를 보내세요.</p>
+    <h2>날씨별 엑티비티</h2>
+    <p>오늘 <span class="bold" style="font-weight: 800; color: #ff69b4;">날씨에 맞는</span> 완벽한 하루를 보내세요.</p>
     <div class="지역별">
         <a href="/usr/trip/chungNam">
             <div class="Chungnam"></div>
