@@ -1091,9 +1091,44 @@ body {
   background: var(--black-300);
 }
 
+.monthly_festival{
+	margin-left: 24%;
+}
+.month_controller {
+	margin-top: 100px;
+	font-size: 30px;
+	font-weight: 700;
+}
+
+.month_controller h2 {
+    margin-right: 100px;
+}
+
+.festival_row {
+    display: flex;
+    flex-wrap: wrap;
+	margin-right: 100px;    
+}
+
+.festival-box {
+    width: calc(20% - 30px); /* 한 행에 3개의 상자를 배치하고 간격을 조정합니다. */
+    margin-bottom: 20px; /* 행 사이의 간격을 조정합니다. */
+	margin-top: 2%;
+	
+}
+
+.festival-box > p {
+	font-size: 16px;
+}
+
+.festival-box > img {
+	width: 200px;
+	height: 200px;
+	border-radius: 10px 10px 0px 0px;
+}
 .daejeon_hot {
     margin-left: 24%;
-    margin-top: 8%;
+    margin-top: 4%;
     margin-right: 10%;
 }
 
@@ -1109,7 +1144,7 @@ body {
 
 .button-container {
     text-align: right;
-    margin-right: 35px;
+    margin-right: 75px;
     font-size: 16px;
     font-weight: 700;
 }
@@ -1132,8 +1167,9 @@ body {
 }
 
 .square-box img {
-    width: 90%;
+    width: 80%;
     height: auto;
+    border-radius: 10px 10px 0 0;
 }
 
 .square-box p {

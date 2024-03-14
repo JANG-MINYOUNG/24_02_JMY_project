@@ -4,7 +4,7 @@
 <%@ include file="../common/head.jspf"%>
 
 
-<a class="weather-container" href="/">
+<a class="weather-container" href="/usr/weatherTrip/daeJeon">
 	<div class="clock">
       <span id="Seoul"></span>
     </div>
@@ -106,6 +106,64 @@ $(document).ready(function() {
     </div>
   </div>
 </section>
+
+<div class="monthly_festival">
+	<div class="month_controller">
+		<h2>3월 <span style="font-size: 20px; font-weight: 500; color: #ff69b4;">축제 모아 보기</span></h2>
+		<div class="festival_row">
+        	<div class="festival-box">
+            	<img src="https://www.daejeontour.co.kr/ko/atch/atchFileStreamOut.do?atchId=1361&fileSeCode=THUM_IMAGE_FILE" alt="이미지">
+            	<p>여기에 텍스트를 입력하세요</p>
+        	</div>
+        	<div class="festival-box">
+            	<img src="https://www.daejeontour.co.kr/ko/atch/atchFileStreamOut.do?atchId=1361&fileSeCode=THUM_IMAGE_FILE" alt="이미지">
+            	<p>여기에 텍스트를 입력하세요</p>
+        	</div>
+        	<div class="festival-box">
+            	<img src="https://www.daejeontour.co.kr/ko/atch/atchFileStreamOut.do?atchId=1361&fileSeCode=THUM_IMAGE_FILE" alt="이미지">
+            	<p>여기에 텍스트를 입력하세요</p>
+        	</div>        	
+        </div>
+		<h2>4월 <span style="font-size: 20px; font-weight: 500; color: #ff69b4;">축제 모아 보기</span></h2>
+		<div class="festival_row">
+        	<div class="festival-box">
+            	<img src="https://www.daejeontour.co.kr/ko/atch/atchFileStreamOut.do?atchId=1361&fileSeCode=THUM_IMAGE_FILE" alt="이미지">
+            	<p>여기에 텍스트를 입력하세요</p>
+        	</div>
+        	<div class="festival-box">
+            	<img src="https://www.daejeontour.co.kr/ko/atch/atchFileStreamOut.do?atchId=1361&fileSeCode=THUM_IMAGE_FILE" alt="이미지">
+            	<p>여기에 텍스트를 입력하세요</p>
+        	</div>
+        	<div class="festival-box">
+            	<img src="https://www.daejeontour.co.kr/ko/atch/atchFileStreamOut.do?atchId=1361&fileSeCode=THUM_IMAGE_FILE" alt="이미지">
+            	<p>여기에 텍스트를 입력하세요</p>
+        	</div>        	        	
+        	<div class="festival-box">
+            	<img src="https://www.daejeontour.co.kr/ko/atch/atchFileStreamOut.do?atchId=1361&fileSeCode=THUM_IMAGE_FILE" alt="이미지">
+            	<p>여기에 텍스트를 입력하세요</p>
+        	</div>
+        	<div class="festival-box">
+            	<img src="https://www.daejeontour.co.kr/ko/atch/atchFileStreamOut.do?atchId=1361&fileSeCode=THUM_IMAGE_FILE" alt="이미지">
+            	<p>여기에 텍스트를 입력하세요</p>
+        	</div>        	
+        </div>		
+		<h2>5월 <span style="font-size: 20px; font-weight: 500; color: #ff69b4;">축제 모아 보기</span></h2>
+		<div class="festival_row">
+        	<div class="festival-box">
+            	<img src="https://www.daejeontour.co.kr/ko/atch/atchFileStreamOut.do?atchId=1361&fileSeCode=THUM_IMAGE_FILE" alt="이미지">
+            	<p>여기에 텍스트를 입력하세요</p>
+        	</div>
+        	<div class="festival-box">
+            	<img src="https://www.daejeontour.co.kr/ko/atch/atchFileStreamOut.do?atchId=1361&fileSeCode=THUM_IMAGE_FILE" alt="이미지">
+            	<p>여기에 텍스트를 입력하세요</p>
+        	</div>
+        	<div class="festival-box">
+            	<img src="https://www.daejeontour.co.kr/ko/atch/atchFileStreamOut.do?atchId=1361&fileSeCode=THUM_IMAGE_FILE" alt="이미지">
+            	<p>여기에 텍스트를 입력하세요</p>
+        	</div>        	
+        </div>		
+	</div>
+</div>
 
 <div class="daejeon_hot">
     <h2>대전 <span style="color: red; font-size: 28px;">'핫'</span> 플레이스</h2>

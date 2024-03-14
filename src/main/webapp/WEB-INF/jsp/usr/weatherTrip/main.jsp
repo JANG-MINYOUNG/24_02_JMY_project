@@ -13,15 +13,15 @@
     <h2>날씨별 엑티비티</h2>
     <p>오늘 <span class="bold" style="font-weight: 800; color: #ff69b4;">날씨에 맞는</span> 완벽한 하루를 보내세요.</p>
     <div class="지역별">
-        <a href="/usr/trip/chungNam">
+        <a href="/usr/weatherTrip/chungNam">
             <div class="Chungnam"></div>
             <div class="Chungnam-container">충남</div>
         </a>
-         <a href="/usr/trip/deaJeon">
+         <a href="/usr/weatherTrip/daeJeon">
             <div class="daejeon"></div>
             <div class="daejeon-container">대전</div>
         </a>
-        <a href="/usr/trip/chungBuk">
+        <a href="/usr/weatherTrip/chungBuk">
             <div class="Chungbuk"></div>
             <div class="Chungbuk-container">충북</div>
         </a>  

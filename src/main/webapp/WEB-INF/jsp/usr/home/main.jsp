@@ -101,8 +101,8 @@
 	</div>		
 	<div class="nav-box3-container">	
 		<div class="nav-box3">
-			<a href="">날씨별! 엑티비티</a>
-			<a href="">날씨별 여행지 바로가기</a>
+			<a href="/usr/weatherTrip/main">날씨별! 엑티비티</a>
+			<a href="/usr/weatherTrip/main">날씨별 여행지 바로가기</a>
 		</div>
 		<div class="img-box4">
 			<a href="#"><img src="https://lh3.googleusercontent.com/p/AF1QipNWcAVvjkMq1iLowvG5YwVy6Vh0DxZpcoWqk1Po=s680-w680-h510" alt="image" border="0"></a>
@@ -110,14 +110,14 @@
 	</div>
 	<div class="nav-box4-container">	
 		<div class="nav-box4">
-			<a href="">동행자 찾기!</a>
-			<a href="">함께 떠날 동료 찾기</a>
+			<a href="/usr/companion/list">동행자 찾기!</a>
+			<a href="/usr/companion/list">함께 떠날 동료 찾기</a>
 		</div>
 	</div>
 	<div class="nav-box5-container">	
 		<div class="nav-box5">
-			<a href="">나만의 여행 일지 남기기</a>
-			<a href="">여행일지 바로가기</a>
+			<a href="/usr/article/freeBoard/list?boardId=2&page=1">나만의 여행 일지 남기기</a>
+			<a href="/usr/article/freeBoard/list?boardId=2&page=1">여행일지 바로가기</a>
 		</div>
 	</div>
 	<div class="nav-box-bg"></div>
