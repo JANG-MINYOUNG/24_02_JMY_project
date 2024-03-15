@@ -1040,22 +1040,14 @@ body {
 
 .swiper-wrapper {
 	width: 1920px;
-	height: 600px;
+	height: 450px;
 }
 
-.swiper-slide {
-	max-width: 1920px;
-	max-height: 400px;
-	
+.swiper-wrapper > img {
+	width: 1920px;
+	height: 450px;
 }
 
-.container img {
-  max-width: 800px; /* Set the maximum width to 1600px */
-  height: auto; /* Automatically adjust the height to maintain aspect ratio */
-  max-height: 450px; /* Set the maximum height to 450px */
-  width: auto; /* Ensure the image fills the container horizontally */
-  object-fit: cover; /* Ensure the image fills the container */
-}
 /* Elements */
 .section {
   margin: 0 auto;
@@ -1090,6 +1082,8 @@ body {
   color: var(--white-100);
   background: var(--black-300);
 }
+
+
 
 .monthly_festival{
 	margin-left: 24%;

@@ -98,12 +98,10 @@ $(document).ready(function() {
   <div class="container slider-column">
     <div class="swiper swiper-slider">
       <div class="swiper-wrapper">
-        <img class="swiper-slide" src="https://kfescdn.visitkorea.or.kr/kfes/upload/contents/db/a5f458df-cd30-4dd2-92d7-15d2de00c293_11.png" alt="Swiper">
-        <img class="swiper-slide" src="https://kfescdn.visitkorea.or.kr/kfes/upload/contents/db/a5f458df-cd30-4dd2-92d7-15d2de00c293_11.png" alt="Swiper">
-        <img class="swiper-slide" src="https://kfescdn.visitkorea.or.kr/kfes/upload/contents/db/a5f458df-cd30-4dd2-92d7-15d2de00c293_11.png" alt="Swiper">
-        <img class="swiper-slide" src="https://kfescdn.visitkorea.or.kr/kfes/upload/contents/db/a5f458df-cd30-4dd2-92d7-15d2de00c293_11.png" alt="Swiper">
-        <img class="swiper-slide" src="https://kfescdn.visitkorea.or.kr/kfes/upload/contents/db/a5f458df-cd30-4dd2-92d7-15d2de00c293_11.png" alt="Swiper">
-        <img class="swiper-slide" src="https://kfescdn.visitkorea.or.kr/kfes/upload/contents/db/a5f458df-cd30-4dd2-92d7-15d2de00c293_11.png" alt="Swiper">
+        <img class="swiper-slide" src="https://www.oc.go.kr/DATA/contents/main/20240228011439999_PLds.jpg" alt="Swiper">
+        <img class="swiper-slide" src="https://file2.nocutnews.co.kr/newsroom/image/2024/02/23/202402231414502960_2.jpg" alt="Swiper">
+        <img class="swiper-slide" src="https://file2.nocutnews.co.kr/newsroom/image/2024/02/23/202402231414502960_2.jpg" alt="Swiper">
+        <img class="swiper-slide" src="https://tong.visitkorea.or.kr/cms/resource/51/3106451_image2_1.jpg" alt="Swiper">
       </div>
       <span class="swiper-pagination"></span>
       <span class="swiper-button-prev"></span>
@@ -117,55 +115,27 @@ $(document).ready(function() {
 		<h2>3월 <span style="font-size: 20px; font-weight: 500; color: #ff69b4;">축제 모아 보기</span></h2>
 		<div class="festival_row">
         	<div class="festival-box">
-            	<img src="https://www.daejeontour.co.kr/ko/atch/atchFileStreamOut.do?atchId=1361&fileSeCode=THUM_IMAGE_FILE" alt="이미지">
-            	<p>여기에 텍스트를 입력하세요</p>
-        	</div>
-        	<div class="festival-box">
-            	<img src="https://www.daejeontour.co.kr/ko/atch/atchFileStreamOut.do?atchId=1361&fileSeCode=THUM_IMAGE_FILE" alt="이미지">
-            	<p>여기에 텍스트를 입력하세요</p>
-        	</div>
-        	<div class="festival-box">
-            	<img src="https://www.daejeontour.co.kr/ko/atch/atchFileStreamOut.do?atchId=1361&fileSeCode=THUM_IMAGE_FILE" alt="이미지">
-            	<p>여기에 텍스트를 입력하세요</p>
-        	</div>        	
+            	<img src="https://tong.visitkorea.or.kr/cms/resource/10/3099210_image2_1.jpg" alt="이미지">
+            	<p>옥천묘목축제</p>
+        	</div>       	
         </div>
 		<h2>4월 <span style="font-size: 20px; font-weight: 500; color: #ff69b4;">축제 모아 보기</span></h2>
-		<div class="festival_row">
-        	<div class="festival-box">
-            	<img src="https://www.daejeontour.co.kr/ko/atch/atchFileStreamOut.do?atchId=1361&fileSeCode=THUM_IMAGE_FILE" alt="이미지">
-            	<p>여기에 텍스트를 입력하세요</p>
-        	</div>
-        	<div class="festival-box">
-            	<img src="https://www.daejeontour.co.kr/ko/atch/atchFileStreamOut.do?atchId=1361&fileSeCode=THUM_IMAGE_FILE" alt="이미지">
-            	<p>여기에 텍스트를 입력하세요</p>
-        	</div>
-        	<div class="festival-box">
-            	<img src="https://www.daejeontour.co.kr/ko/atch/atchFileStreamOut.do?atchId=1361&fileSeCode=THUM_IMAGE_FILE" alt="이미지">
-            	<p>여기에 텍스트를 입력하세요</p>
-        	</div>        	        	
-        	<div class="festival-box">
-            	<img src="https://www.daejeontour.co.kr/ko/atch/atchFileStreamOut.do?atchId=1361&fileSeCode=THUM_IMAGE_FILE" alt="이미지">
-            	<p>여기에 텍스트를 입력하세요</p>
-        	</div>
-        	<div class="festival-box">
-            	<img src="https://www.daejeontour.co.kr/ko/atch/atchFileStreamOut.do?atchId=1361&fileSeCode=THUM_IMAGE_FILE" alt="이미지">
-            	<p>여기에 텍스트를 입력하세요</p>
-        	</div>        	
+		<div class="festival_row">       	
         </div>		
 		<h2>5월 <span style="font-size: 20px; font-weight: 500; color: #ff69b4;">축제 모아 보기</span></h2>
 		<div class="festival_row">
         	<div class="festival-box">
-            	<img src="https://www.daejeontour.co.kr/ko/atch/atchFileStreamOut.do?atchId=1361&fileSeCode=THUM_IMAGE_FILE" alt="이미지">
-            	<p>여기에 텍스트를 입력하세요</p>
+            	<img src="https://tong.visitkorea.or.kr/cms/resource/51/3106451_image2_1.jpg" alt="이미지">
+            	<p>대한민국와인축제</p>
         	</div>
         	<div class="festival-box">
-            	<img src="https://www.daejeontour.co.kr/ko/atch/atchFileStreamOut.do?atchId=1361&fileSeCode=THUM_IMAGE_FILE" alt="이미지">
-            	<p>여기에 텍스트를 입력하세요</p>
-        	</div>
+            	<img src="https://cdn.gukjenews.com/news/photo/202402/2928416_2995443_2356.jpg" alt="이미지">
+            	<p>괴산 빨간맛 페스티벌</p>
+        	</div> 
         	<div class="festival-box">
-            	<img src="https://www.daejeontour.co.kr/ko/atch/atchFileStreamOut.do?atchId=1361&fileSeCode=THUM_IMAGE_FILE" alt="이미지">
-            	<p>여기에 텍스트를 입력하세요</p>
-        	</div>        	
+            	<img src="https://tong.visitkorea.or.kr/cms/resource/51/3106451_image2_1.jpg" alt="이미지">
+            	<p>대한민국와인축제</p>
+        	</div>         	        	       	
         </div>		
 	</div>
 </div>
@@ -174,6 +144,13 @@ $(document).ready(function() {
 <div class="daejeon_hot">
     <h2>충북 <span style="color: red; font-size: 28px;">'핫'</span> 플레이스</h2>
     <p>노색도시 충북! <span style="color: red; font-size: 20px;">테마 별</span> 핫 플레이스 찾기</p>
+    <div class="button-container">
+        <button>공원</button>
+        <button>· 휴양림</button>
+        <button>· 박물관</button>
+        <button>· 미술관</button>
+        <button>· 유적지</button>
+    </div>
     <div class="row">
         <div class="square-box">
             <img src="https://www.daejeontour.co.kr/ko/atch/atchFileStreamOut.do?atchId=1361&fileSeCode=THUM_IMAGE_FILE" alt="이미지">

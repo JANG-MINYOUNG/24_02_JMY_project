@@ -276,9 +276,26 @@ relId = 2,
 ALTER TABLE reply ADD COLUMN goodReactionPoint INT(10) UNSIGNED NOT NULL DEFAULT 0;
 ALTER TABLE reply ADD COLUMN badReactionPoint INT(10) UNSIGNED NOT NULL DEFAULT 0;
 
+# parkPlace 테이블 생성
+CREATE TABLE parkPlace(
+    id INT(10) UNSIGNED NOT NULL PRIMARY KEY AUTO_INCREMENT,
+    parkName TEXT COMMENT '공원명',
+    `body` TEXT COMMENT '내용',
+    roadLocation TEXT COMMENT '소재지도로',
+    latitude DOUBLE COMMENT '위도',
+    longitude DOUBLE COMMENT '경도',
+    parkArea TEXT COMMENT '공원면적',
+    facility TEXT COMMENT '시설',
+    price TEXT COMMENT '비용',
+    phoneNumber TEXT COMMENT '전화번호',
+    imgAdr TEXT COMMENT '이미지주소'
+);
+
 
 
 ###############################################
+
+SELECT * FROM parkPlace;
 
 SELECT * FROM article;
 
