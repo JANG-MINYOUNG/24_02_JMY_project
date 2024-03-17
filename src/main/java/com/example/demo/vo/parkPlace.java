@@ -8,8 +8,9 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 public class parkPlace {
-    private int id; // Remove this if it's not necessary
+    private int id;
     private String parkName;
+    private String region;
     private String body;
     private String roadLocation;
     private double latitude; 

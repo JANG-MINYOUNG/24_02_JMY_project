@@ -10,6 +10,7 @@ import org.springframework.stereotype.Service;
 import com.example.demo.repository.CSVRepository;
 import com.example.demo.vo.Reply;
 import com.example.demo.vo.parkPlace;
+import com.example.demo.vo.recreationalForest;
 import com.opencsv.CSVReader;
 
 @Service
@@ -21,7 +22,7 @@ public class CSVService {
     public String readAndSaveToDB() {
         try {
             List<parkPlace> parkPlaceList = new ArrayList<>();
-
+            
             // 예시 파일들을 배열에 추가
             String[] fileNames = {"대전 공원.csv"};
             
@@ -39,22 +40,70 @@ public class CSVService {
                     parkPlace place = new parkPlace();
                     // 엔터티의 필드에 CSV 데이터를 할당
                     place.setParkName(csvRow[0]);
-                    place.setBody(csvRow[1]);
-                    place.setRoadLocation(csvRow[2]);
-                    place.setLatitude(Double.parseDouble(csvRow[3])); // double 타입으로 변환
-                    place.setLongitude(Double.parseDouble(csvRow[4])); // double 타입으로 변환
-                    place.setParkArea(csvRow[5]);
-                    place.setFacility(csvRow[6]);
-                    place.setPrice(csvRow[7]);
-                    place.setPhoneNumber(csvRow[8]);
-                    place.setImgAdr(csvRow[9]);
+                    place.setRegion(csvRow[1]);
+                    place.setBody(csvRow[2]);
+                    place.setRoadLocation(csvRow[3]);
+                    place.setLatitude(Double.parseDouble(csvRow[4])); // double 타입으로 변환
+                    place.setLongitude(Double.parseDouble(csvRow[5])); // double 타입으로 변환
+                    place.setParkArea(csvRow[6]);
+                    place.setFacility(csvRow[7]);
+                    place.setPrice(csvRow[8]);
+                    place.setPhoneNumber(csvRow[9]);
+                    place.setImgAdr(csvRow[10]);
                     
                     parkPlaceList.add(place);
                 }
             }
-
+            
+            
             // CSV 데이터를 데이터베이스에 저장
             csvRepository.insertCSVList(parkPlaceList);
+
+            return "CSV 데이터가 성공적으로 데이터베이스에 저장되었습니다.";
+
+        } catch (Exception e) {
+            e.printStackTrace();
+            return "CSV 데이터를 데이터베이스에 저장하는 중 오류가 발생했습니다.";
+        }
+    }
+
+    public String readAndSaveToDB2() {
+        try {
+            List<recreationalForest> recreationalForestList = new ArrayList<>();
+            
+            // 예시 파일들을 배열에 추가
+            String[] fileNames = {"휴양림.csv"};
+            
+
+            for (String fileName : fileNames) {
+                InputStreamReader is = new InputStreamReader(getClass().getClassLoader().getResourceAsStream("CSV/" + fileName), "EUC-KR");
+                CSVReader reader = new CSVReader(is);
+
+                // 첫 번째 줄(헤더) 건너뛰기
+                reader.skip(1);
+
+                List<String[]> list = reader.readAll();
+
+                for (String[] csvRow : list) {
+                	recreationalForest place = new recreationalForest();
+                    // 엔터티의 필드에 CSV 데이터를 할당
+                    place.setName(csvRow[0]);
+                    place.setRegion(csvRow[1]);
+                    place.setRoadLocation(csvRow[2]);
+                    place.setLatitude(Double.parseDouble(csvRow[3]));
+                    place.setLongitude(Double.parseDouble(csvRow[4])); // double 타입으로 변환
+                    place.setPhoneNumber(csvRow[5]);
+                    place.setBody(csvRow[6]);
+                    place.setPrice(csvRow[7]);
+                    place.setImgAdr(csvRow[8]);
+                    
+                    recreationalForestList.add(place);
+                }
+            }
+            
+            
+            // CSV 데이터를 데이터베이스에 저장
+            csvRepository.insertCSVList1(recreationalForestList);
 
             return "CSV 데이터가 성공적으로 데이터베이스에 저장되었습니다.";
 
