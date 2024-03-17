@@ -118,93 +118,19 @@ $(document).ready(function() {
 </section>
 
 <div class="monthly_festival">
-	<div class="month_controller">
-		<h2>3월 <span style="font-size: 20px; font-weight: 500; color: #ff69b4;">축제 모아 보기</span></h2>
-		<div class="festival_row">
-        	<div class="festival-box">
-            	<img src="https://tong.visitkorea.or.kr/cms/resource/76/2806476_image2_1.jpeg" alt="이미지">
-            	<p>논산 딸기 축제</p>
-        	</div>
-        	<div class="festival-box">
-            	<img src="https://tong.visitkorea.or.kr/cms/resource/93/3108893_image2_1.jpg" alt="이미지">
-            	<p>천리포수목원 목련축제</p>
-        	</div>
-        	<div class="festival-box">
-            	<img src="https://tong.visitkorea.or.kr/cms/resource/45/2948745_image2_1.jpg" alt="이미지">
-            	<p>서천 동백꽃 주꾸미 축제</p>
-        	</div>
-        	<div class="festival-box">
-            	<img src="https://tong.visitkorea.or.kr/cms/resource/66/3079066_image2_1.JPG" alt="이미지">
-            	<p>홍성남당항 새조개축제</p>
-        	</div>
-        	<div class="festival-box">
-            	<img src="https://tong.visitkorea.or.kr/cms/resource/24/3073224_image2_1.jpg" alt="이미지">
-            	<p>태안 빛축제</p>
-        	</div>
-        	<div class="festival-box">
-            	<img src="https://www.nie.re.kr/cmmn/file/imageSrc.do?atchFileId=2d0f707e90194f57870ddbfaa0e9457f&fileSn=2&thumb=Y" alt="이미지">
-            	<p>사라져 가는 친구들</p>
-        	</div>        	        	        	        	
+    <div class="month_controller">
+        <h2>3월, 4월, 5월 <span style="font-size: 20px; font-weight: 500; color: #ff69b4;">축제 모아 보기</span></h2>
+        <div class="festival_row">
+            <!-- Iterate through the festivals and display each one -->
+            <c:forEach items="${festivals}" var="festival">
+                <a class="festival-box" href="detail?id=${festival.id}">
+                    <img src="${festival.imgAdr}" alt="이미지">
+                    <p>${festival.name}</p>
+                </a>
+            </c:forEach>
         </div>
-		<h2>4월 <span style="font-size: 20px; font-weight: 500; color: #ff69b4;">축제 모아 보기</span></h2>
-		<div class="festival_row">
-        	<div class="festival-box">
-            	<img src="https://tong.visitkorea.or.kr/cms/resource/93/3108893_image2_1.jpg" alt="이미지">
-            	<p>천리포수목원 목련축제</p>
-        	</div>
-        	<div class="festival-box">
-            	<img src="https://lh3.googleusercontent.com/proxy/33aemUkGdu9kWB715t-fER5sddyG8Rl8VzU2itwMNYTfbxEwXRipqAnElCeJhJsr6uma4-9PjDo2f5lHtxwYZXOvNxHWufxsqOszZi6jJJQTmKdeEdE_wLY-CNheUDQ" alt="이미지">
-            	<p>2024 베리베리 빵빵데이 천안</p>
-        	</div>
-        	<div class="festival-box">
-            	<img src="https://i.ytimg.com/vi/XQp2FKQlsoE/maxresdefault.jpg" alt="이미지">
-            	<p>금산 보곡산골 산벚꽃 축제</p>
-        	</div>        	        	
-        	<div class="festival-box">
-            	<img src="https://tong.visitkorea.or.kr/cms/resource/28/3108628_image2_1.jpg" alt="이미지">
-            	<p>기지시줄다리기 축제</p>
-        	</div>
-        	<div class="festival-box">
-            	<img src="https://tong.visitkorea.or.kr/cms/resource/50/3105550_image2_1.jpg" alt="이미지">
-            	<p>아산 성웅 이순신축제</p>
-        	</div>
-        	<div class="festival-box">
-            	<img src="https://tong.visitkorea.or.kr/cms/resource/13/3103213_image2_1.JPG" alt="이미지">
-            	<p>부여 문화유산 야행</p>
-        	</div> 
-         	<div class="festival-box">
-            	<img src="https://tong.visitkorea.or.kr/cms/resource/24/3073224_image2_1.jpg" alt="이미지">
-            	<p>태안 빛축제</p>
-        	</div>
-        	<div class="festival-box">
-            	<img src="https://www.nie.re.kr/cmmn/file/imageSrc.do?atchFileId=2d0f707e90194f57870ddbfaa0e9457f&fileSn=2&thumb=Y" alt="이미지">
-            	<p>사라져 가는 친구들</p>
-        	</div>
-        	<div class="festival-box">
-            	<img src="https://tong.visitkorea.or.kr/cms/resource/40/2948040_image2_1.jpg" alt="이미지">
-            	<p>태안 세계튤립꽃박람회</p>
-        	</div>           	        	        	        	
-        </div>		
-		<h2>5월 <span style="font-size: 20px; font-weight: 500; color: #ff69b4;">축제 모아 보기</span></h2>
-		<div class="festival_row">
-        	<div class="festival-box">
-            	<img src="https://tong.visitkorea.or.kr/cms/resource/93/3107193_image2_1.jpg" alt="이미지">
-            	<p>보령·AMC 국제 모터 페스티벌</p>
-        	</div>
-         	<div class="festival-box">
-            	<img src="https://tong.visitkorea.or.kr/cms/resource/24/3073224_image2_1.jpg" alt="이미지">
-            	<p>태안 빛축제</p>
-        	</div>
-        	<div class="festival-box">
-            	<img src="https://www.nie.re.kr/cmmn/file/imageSrc.do?atchFileId=2d0f707e90194f57870ddbfaa0e9457f&fileSn=2&thumb=Y" alt="이미지">
-            	<p>사라져 가는 친구들</p>
-        	</div>
-        	<div class="festival-box">
-            	<img src="https://tong.visitkorea.or.kr/cms/resource/40/2948040_image2_1.jpg" alt="이미지">
-            	<p>태안 세계튤립꽃박람회</p>
-        	</div>       	
-        </div>		
-	</div>
+        <!-- Additional months and festivals go here -->
+    </div>
 </div>
 
 

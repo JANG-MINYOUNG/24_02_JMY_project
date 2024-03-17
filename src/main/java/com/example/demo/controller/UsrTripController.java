@@ -18,23 +18,19 @@ public class UsrTripController {
 //		return "usr/trip/daeJeon";
 //	}
 	
-	@RequestMapping("/usr/trip/chungBuk")
-	public String showChungBuk() {
-
-		return "usr/trip/chungBuk";
-	}
+//	@RequestMapping("/usr/trip/chungBuk")
+//	public String showChungBuk() {
+//
+//		return "usr/trip/chungBuk";
+//	}
+//	
+//	@RequestMapping("/usr/trip/chungNam")
+//	public String showChungNam() {
+//
+//		return "usr/trip/chungNam";
+//	}
 	
-	@RequestMapping("/usr/trip/chungNam")
-	public String showChungNam() {
 
-		return "usr/trip/chungNam";
-	}
-	
-	@RequestMapping("/usr/trip/detail")
-	public String showDetail() {
-
-		return "usr/trip/detail";
-	}
 	
 	@RequestMapping("/usr/weatherTrip/main")
 	public String showWeatherTripMain() {

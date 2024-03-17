@@ -6,6 +6,7 @@ import org.apache.ibatis.annotations.Insert;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Select;
 
+import com.example.demo.vo.Festival;
 import com.example.demo.vo.Reply;
 import com.example.demo.vo.parkPlace;
 import com.example.demo.vo.recreationalForest;
@@ -34,5 +35,15 @@ public interface CSVRepository {
         "</script>"
     })
 	void insertCSVList1(List<recreationalForest> csvList);
+    
+    @Insert({
+        "<script>",
+        "INSERT INTO festival (`name`, `period`, region, roadLocation, latitude, longitude, phoneNumber, `body`, price, homePage, imgAdr, imgAdrs) VALUES ",
+        "<foreach collection='list' item='item' index='index' separator=','>",
+        "(#{item.name}, #{item.period}, #{item.region}, #{item.roadLocation}, #{item.latitude}, #{item.longitude}, #{item.phoneNumber}, #{item.body}, #{item.price}, #{item.homePage}, #{item.imgAdr}, #{item.imgAdrs})",
+        "</foreach>",
+        "</script>"
+    })
+    void insertCSVList2(List<Festival> list);
 
 }

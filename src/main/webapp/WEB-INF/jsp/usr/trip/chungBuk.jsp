@@ -111,33 +111,19 @@ $(document).ready(function() {
 </section>
 
 <div class="monthly_festival">
-	<div class="month_controller">
-		<h2>3월 <span style="font-size: 20px; font-weight: 500; color: #ff69b4;">축제 모아 보기</span></h2>
-		<div class="festival_row">
-        	<div class="festival-box">
-            	<img src="https://tong.visitkorea.or.kr/cms/resource/10/3099210_image2_1.jpg" alt="이미지">
-            	<p>옥천묘목축제</p>
-        	</div>       	
+    <div class="month_controller">
+        <h2>3월, 4월, 5월 <span style="font-size: 20px; font-weight: 500; color: #ff69b4;">축제 모아 보기</span></h2>
+        <div class="festival_row">
+            <!-- Iterate through the festivals and display each one -->
+            <c:forEach items="${festivals}" var="festival">
+                <a class="festival-box" href="detail?id=${festival.id}">
+                    <img src="${festival.imgAdr}" alt="이미지">
+                    <p>${festival.name}</p>
+                </a>
+            </c:forEach>
         </div>
-		<h2>4월 <span style="font-size: 20px; font-weight: 500; color: #ff69b4;">축제 모아 보기</span></h2>
-		<div class="festival_row">       	
-        </div>		
-		<h2>5월 <span style="font-size: 20px; font-weight: 500; color: #ff69b4;">축제 모아 보기</span></h2>
-		<div class="festival_row">
-        	<div class="festival-box">
-            	<img src="https://tong.visitkorea.or.kr/cms/resource/51/3106451_image2_1.jpg" alt="이미지">
-            	<p>대한민국와인축제</p>
-        	</div>
-        	<div class="festival-box">
-            	<img src="https://cdn.gukjenews.com/news/photo/202402/2928416_2995443_2356.jpg" alt="이미지">
-            	<p>괴산 빨간맛 페스티벌</p>
-        	</div> 
-        	<div class="festival-box">
-            	<img src="https://tong.visitkorea.or.kr/cms/resource/51/3106451_image2_1.jpg" alt="이미지">
-            	<p>대한민국와인축제</p>
-        	</div>         	        	       	
-        </div>		
-	</div>
+        <!-- Additional months and festivals go here -->
+    </div>
 </div>
 
 

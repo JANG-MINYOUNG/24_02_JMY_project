@@ -87,7 +87,7 @@ $(document).ready(function() {
 
 <div class="trip_bg">
 	<img
-		src="https://img.freepik.com/free-photo/cityscape-incheon-bridge-korea_335224-415.jpg?t=st=1710130673~exp=1710134273~hmac=b0a0743fd21cf43f7d3220dd15fa0331819777d72c880071b9c529544bfc2909&w=1380"
+		src="https://img.khan.co.kr/news/2022/09/12/news-p.v1.20220912.c78a0cae3ac84ddca744181e724de603.jpg"
 		alt=""
 	/>
 	<div class="bg_text_box">
@@ -138,44 +138,19 @@ $(document).ready(function() {
 </section>
 
 <div class="monthly_festival">
-	<div class="month_controller">
-		<h2>3월 <span style="font-size: 20px; font-weight: 500; color: #ff69b4;">축제 모아 보기</span>
-		</h2>
-		<div class="festival_row">
-			<div class="festival-box">
-				<img src="https://www.e-fastnews.com/news/photo/202403/18263_35384_355.jpg" alt="이미지">
-				<p>전국 노래 자랑</p>
-			</div>
-			<div class="festival-box">
-				<img src="https://i.ytimg.com/vi/l1tCRSV2irk/hqdefault.jpg?sqp=-oaymwEmCOADEOgC8quKqQMa8AEB-AH-CYAC0AWKAgwIABABGEkgTChlMA8=&rs=AOn4CLCr1IDFfap3jkyujN-KVkiK-aL5Zg" alt="이미지">
-				<p>대덕 물빛 축제</p>
-			</div>
-			<div class="festival-box">
-				<img src="https://lh3.googleusercontent.com/proxy/ODccOLhP9ryB-qmutsuRdIzENe04vrNRa1o2166TF9Wa8RNc92DT8WmNzVVro0bHKHnf1PmQZZBRnr1TIk03dAmxDLToRlRDcc8Pz_sSyNcmJtnIPn66qhCGdAtvPEmBtCDluHemIEO7qYAzY1wQ_iTnP6kPs716l8ZAA8HMBngT0hgHGHNkU7lTGT828dOZbex-UvnSP7oFc-L95g3rxA9iDkv4k3vVEW8XcstcU4Hvbg" alt="이미지">
-				<p>테미 봄 축제</p>
-			</div>
-		</div>
-		<h2>4월 <span style="font-size: 20px; font-weight: 500; color: #ff69b4;">축제 모아 보기</span>
-		</h2>
-		<div class="festival_row">
-			<div class="festival-box">
-				<img src="https://pbs.twimg.com/media/GITL4gSaQAAnbmX.jpg" alt="이미지">
-				<p>대청호 대덕뮤직 페스티벌</p>
-			</div>
-			<div class="festival-box">
-				<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjc25r1ANgOnmUiKofmeSIA8mfaNWdHeYEFQ&usqp=CAU" alt="이미지">
-				<p>대덕 물빛축제</p>
-			</div>
-		</div>
-		<h2>5월 <span style="font-size: 20px; font-weight: 500; color: #ff69b4;">축제 모아 보기</span>
-		</h2>
-		<div class="festival_row">
-			<div class="festival-box">
-				<img src="https://cdn.cctoday.co.kr/news/photo/202305/2177793_613266_5003.jpg" alt="이미지">
-				<p>유성온천 문화축제</p>
-			</div>
-		</div>
-	</div>
+    <div class="month_controller">
+        <h2>3월, 4월, 5월 <span style="font-size: 20px; font-weight: 500; color: #ff69b4;">축제 모아 보기</span></h2>
+        <div class="festival_row">
+            <!-- Iterate through the festivals and display each one -->
+            <c:forEach items="${festivals}" var="festival">
+                <a class="festival-box" href="detail?id=${festival.id}">
+                    <img src="${festival.imgAdr}" alt="이미지">
+                    <p>${festival.name}</p>
+                </a>
+            </c:forEach>
+        </div>
+        <!-- Additional months and festivals go here -->
+    </div>
 </div>
 
 <div class="daejeon_hot">
