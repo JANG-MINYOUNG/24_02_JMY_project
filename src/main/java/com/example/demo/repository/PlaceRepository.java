@@ -61,4 +61,8 @@ public interface PlaceRepository {
 
 	
 
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 7aad889edecbe82ea1a348a70f830772dd18f98a
