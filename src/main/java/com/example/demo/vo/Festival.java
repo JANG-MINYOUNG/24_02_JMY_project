@@ -21,4 +21,5 @@ public class Festival {
     private String homePage;
     private String imgAdr;
     private String imgAdrs;
+    private String image_url;
 }

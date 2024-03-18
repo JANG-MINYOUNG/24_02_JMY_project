@@ -32,11 +32,10 @@ public class PlaceController {
 		model.addAttribute("parkPlaces", parkPlaces);
 		model.addAttribute("recreationalForests", recreationalForests);
 		model.addAttribute("festivals", festivals);
-		
 
 		return "usr/trip/daeJeon";
 	}
-	
+
 	@RequestMapping("/usr/trip/chungBuk")
 	public String showPlacesChungBuk(Model model) {
 
@@ -47,11 +46,10 @@ public class PlaceController {
 		model.addAttribute("parkPlaces", parkPlaces);
 		model.addAttribute("recreationalForests", recreationalForests);
 		model.addAttribute("festivals", festivals);
-		
 
 		return "usr/trip/chungBuk";
 	}
-	
+
 	@RequestMapping("/usr/trip/chungNam")
 	public String showPlacesChungNam(Model model) {
 
@@ -62,17 +60,18 @@ public class PlaceController {
 		model.addAttribute("parkPlaces", parkPlaces);
 		model.addAttribute("recreationalForests", recreationalForests);
 		model.addAttribute("festivals", festivals);
-		
 
 		return "usr/trip/chungNam";
 	}
 
 	@RequestMapping("/usr/trip/detail")
 	public String showDetail(Model model, int id) {
-		
+
 		Festival Allfestival = PlaceService.getAllFestival(id);
-		
+		List<Festival> Allfestival2 = PlaceService.getAllFestival2(id);
+
 		model.addAttribute("Allfestival", Allfestival);
+		model.addAttribute("Allfestival2", Allfestival2);
 
 		return "usr/trip/detail";
 	}

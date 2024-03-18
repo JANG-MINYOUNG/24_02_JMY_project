@@ -128,7 +128,7 @@ $(document).ready(function() {
         <img class="swiper-slide" src="https://www.ffestival.co.kr/img_up/shop_pds/kp575/design/my_xml/star_ex1661145769.jpg" alt="Swiper">
         <img class="swiper-slide" src="https://www.nie.re.kr/cmmn/file/imageSrc.do?atchFileId=2d0f707e90194f57870ddbfaa0e9457f&fileSn=2&thumb=Y" alt="Swiper">
         <img class="swiper-slide" src="https://www.hongseong.go.kr/thumbnail/tursmCn/920_TUCN_202401101106322711.jpg" alt="Swiper">
-        <img class="swiper-slide" src="https://lh3.googleusercontent.com/proxy/33aemUkGdu9kWB715t-fER5sddyG8Rl8VzU2itwMNYTfbxEwXRipqAnElCeJhJsr6uma4-9PjDo2f5lHtxwYZXOvNxHWufxsqOszZi6jJJQTmKdeEdE_wLY-CNheUDQ" alt="Swiper">
+        <img class="swiper-slide" src="https://lh3.googleusercontent.com/proxy/283C4Irffnj06zCZqu0_UzstVGdS88h8SmYZ11KY-Y34tAsqRbR5YGoJlgm4iEl1KVCLvftMyw7dYRgSQ64ktk_iHDl9wv-PhxUMGOAOQLYb1pOU4gYBrjqH-OO7tQU" alt="Swiper">
         <img class="swiper-slide" src="https://i.ytimg.com/vi/XQp2FKQlsoE/maxresdefault.jpg" alt="Swiper">
         <img class="swiper-slide" src="https://kfescdn.visitkorea.or.kr/kfes/upload/contents/db/df17f696-4b9f-4097-9c46-615ade39068a_3.png" alt="Swiper">
         <img class="swiper-slide" src="https://culture.asan.go.kr/upload_data/m_culture_set/lss_2.jpg" alt="Swiper">

@@ -45,4 +45,8 @@ public class PlaceService {
 		return PlaceRepository.getAllFestival(id);
 	}
 
+	public List<Festival> getAllFestival2(int id) {
+		return PlaceRepository.getAllFestival2(id);
+	}
+
 }

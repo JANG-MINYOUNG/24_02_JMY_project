@@ -54,4 +54,13 @@ public interface PlaceRepository {
 			""")
 	public Festival getAllFestival(int id);
 
+	@Select("""
+			SELECT *
+			FROM festival F
+			INNER JOIN festival_images I
+			ON F.id = I.festival_id
+			WHERE F.id = #{id}
+			""")
+	public List<Festival> getAllFestival2(int id);
+
 }
