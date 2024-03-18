@@ -340,7 +340,7 @@ INSERT INTO festival_images (festival_id, image_url) VALUES
 (1, 'https://cdn.newscj.com/news/photo/202403/3116546_3139328_1613.png'),
 (2, 'https://is1-ssl.mzstatic.com/image/thumb/Ym5PjvgawfiRlo_8-Uyg0Q/1200x675.jpg'),
 (2, 'https://entertainimg.kbsmedia.co.kr/cms/uploads/BBSIMAGE_20230527072303_a7e78c181fae7e02967762eaac69bf9e.jpg'),
-(2, 'https://lh3.googleusercontent.com/proxy/YNer0BKPAVlQMqw-lOFATz4HAilTGN5CMPEI9O-ohNd-e_TlXJjRj7XrK1T9neFqVLRvIZrr9tKU_yWZIfxyFVu2CdmIZuUiP5Pik7zNfoYZ03AO_w'),
+(2, 'https://img.newspim.com/news/2024/03/07/2403071114530680.jpg'),
 (2, 'https://newsimg-hams.hankookilbo.com/2024/03/04/e10e2a6e-0b4b-429c-861d-1441e42549a4.jpg'),
 (3, 'https://www.newstnt.com/news/photo/202304/264857_271440_4344.jpg'),
 (3, 'https://www.goodmorningcc.com/news/photo/202303/286351_314083_1026.jpg'),
@@ -428,6 +428,12 @@ SELECT * FROM recreationalForest;
 			SELECT *
 			FROM festival
 			WHERE id = 1
+			
+						SELECT *
+			FROM festival F
+			INNER JOIN festival_images I
+			ON F.id = I.festival_id
+			WHERE F.id = 1
 
 SELECT * FROM festival;
 
