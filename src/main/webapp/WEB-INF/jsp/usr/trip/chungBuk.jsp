@@ -55,6 +55,32 @@ $(document).ready(function() {
 });
 </script>
 
+<script>
+$(document).ready(function() {
+    // 페이지 로드 시 공원과 휴양림 컨테이너를 숨깁니다.
+    $("#parkPlacesContainer").show();
+    $("#recreationalForestsContainer").hide();
+
+    // 공원 버튼 클릭 시 공원 컨테이너를 표시하고 휴양림 컨테이너를 숨깁니다.
+    $("#parkButton").click(function() {
+        $("#parkPlacesContainer").show();
+        $("#recreationalForestsContainer").hide();
+    });
+
+    // 휴양림 버튼 클릭 시 휴양림 컨테이너를 표시하고 공원 컨테이너를 숨깁니다.
+    $("#recreationalButton").click(function() {
+        $("#parkPlacesContainer").hide();
+        $("#recreationalForestsContainer").show();
+    });
+
+    // 다른 버튼 클릭 시 모든 컨테이너를 숨깁니다.
+    $(".otherButtons").click(function() {
+        $("#parkPlacesContainer").hide();
+        $("#recreationalForestsContainer").hide();
+    });
+});
+</script>
+
 <div class="trip_bg">
 	<img src="https://cdn.ccdailynews.com/news/photo/202303/2193215_641420_2630.jpg" alt="" />
 	<div class="bg_text_box">
@@ -111,110 +137,61 @@ $(document).ready(function() {
 </section>
 
 <div class="monthly_festival">
-	<div class="month_controller">
-		<h2>3월 <span style="font-size: 20px; font-weight: 500; color: #ff69b4;">축제 모아 보기</span></h2>
-		<div class="festival_row">
-        	<div class="festival-box">
-            	<img src="https://tong.visitkorea.or.kr/cms/resource/10/3099210_image2_1.jpg" alt="이미지">
-            	<p>옥천묘목축제</p>
-        	</div>       	
+    <div class="month_controller">
+        <h2>3월, 4월, 5월 <span style="font-size: 20px; font-weight: 500; color: #ff69b4;">축제 모아 보기</span></h2>
+        <div class="festival_row">
+            <!-- Iterate through the festivals and display each one -->
+            <c:forEach items="${festivals}" var="festival">
+                <a class="festival-box" href="detail?id=${festival.id}">
+                    <img src="${festival.imgAdr}" alt="이미지">
+                    <p>${festival.name}</p>
+                </a>
+            </c:forEach>
         </div>
-		<h2>4월 <span style="font-size: 20px; font-weight: 500; color: #ff69b4;">축제 모아 보기</span></h2>
-		<div class="festival_row">       	
-        </div>		
-		<h2>5월 <span style="font-size: 20px; font-weight: 500; color: #ff69b4;">축제 모아 보기</span></h2>
-		<div class="festival_row">
-        	<div class="festival-box">
-            	<img src="https://tong.visitkorea.or.kr/cms/resource/51/3106451_image2_1.jpg" alt="이미지">
-            	<p>대한민국와인축제</p>
-        	</div>
-        	<div class="festival-box">
-            	<img src="https://cdn.gukjenews.com/news/photo/202402/2928416_2995443_2356.jpg" alt="이미지">
-            	<p>괴산 빨간맛 페스티벌</p>
-        	</div> 
-        	<div class="festival-box">
-            	<img src="https://tong.visitkorea.or.kr/cms/resource/51/3106451_image2_1.jpg" alt="이미지">
-            	<p>대한민국와인축제</p>
-        	</div>         	        	       	
-        </div>		
-	</div>
+        <!-- Additional months and festivals go here -->
+    </div>
 </div>
 
-
 <div class="daejeon_hot">
-    <h2>충북 <span style="color: red; font-size: 28px;">'핫'</span> 플레이스</h2>
+	<h2>충북 <span style="color: red; font-size: 28px;">'핫'</span> 플레이스</h2>
     <p>노색도시 충북! <span style="color: red; font-size: 20px;">테마 별</span> 핫 플레이스 찾기</p>
-    <div class="button-container">
-        <button>공원</button>
-        <button>· 휴양림</button>
-        <button>· 박물관</button>
-        <button>· 미술관</button>
-        <button>· 유적지</button>
-    </div>
-    <div class="row">
-        <div class="square-box">
-            <img src="https://www.daejeontour.co.kr/ko/atch/atchFileStreamOut.do?atchId=1361&fileSeCode=THUM_IMAGE_FILE" alt="이미지">
-            <p>여기에 텍스트를 입력하세요</p>
-        </div>
-        <div class="square-box">
-            <img src="https://www.daejeontour.co.kr/ko/atch/atchFileStreamOut.do?atchId=1361&fileSeCode=THUM_IMAGE_FILE" alt="이미지">
-            <p>여기에 텍스트를 입력하세요</p>
-        </div>
-        <div class="square-box">
-            <img src="https://www.daejeontour.co.kr/ko/atch/atchFileStreamOut.do?atchId=1361&fileSeCode=THUM_IMAGE_FILE" alt="이미지">
-            <p>여기에 텍스트를 입력하세요</p>
-        </div>
-        <div class="square-box">
-            <img src="https://www.daejeontour.co.kr/ko/atch/atchFileStreamOut.do?atchId=1361&fileSeCode=THUM_IMAGE_FILE" alt="이미지">
-            <p>여기에 텍스트를 입력하세요</p>
-        </div>
-        <div class="square-box">
-            <img src="https://www.daejeontour.co.kr/ko/atch/atchFileStreamOut.do?atchId=1361&fileSeCode=THUM_IMAGE_FILE" alt="이미지">
-            <p>여기에 텍스트를 입력하세요</p>
-        </div>
-        <div class="square-box">
-            <img src="https://www.daejeontour.co.kr/ko/atch/atchFileStreamOut.do?atchId=1361&fileSeCode=THUM_IMAGE_FILE" alt="이미지">
-            <p>여기에 텍스트를 입력하세요</p>
-        </div>
-        <div class="square-box">
-            <img src="https://www.daejeontour.co.kr/ko/atch/atchFileStreamOut.do?atchId=1361&fileSeCode=THUM_IMAGE_FILE" alt="이미지">
-            <p>여기에 텍스트를 입력하세요</p>
-        </div>
-        <div class="square-box">
-            <img src="https://www.daejeontour.co.kr/ko/atch/atchFileStreamOut.do?atchId=1361&fileSeCode=THUM_IMAGE_FILE" alt="이미지">
-            <p>여기에 텍스트를 입력하세요</p>
-        </div>
-        <div class="square-box">
-            <img src="https://www.daejeontour.co.kr/ko/atch/atchFileStreamOut.do?atchId=1361&fileSeCode=THUM_IMAGE_FILE" alt="이미지">
-            <p>여기에 텍스트를 입력하세요</p>
-        </div>
-         <div class="square-box">
-            <img src="https://www.daejeontour.co.kr/ko/atch/atchFileStreamOut.do?atchId=1361&fileSeCode=THUM_IMAGE_FILE" alt="이미지">
-            <p>여기에 텍스트를 입력하세요</p>
-        </div>
-         <div class="square-box">
-            <img src="https://www.daejeontour.co.kr/ko/atch/atchFileStreamOut.do?atchId=1361&fileSeCode=THUM_IMAGE_FILE" alt="이미지">
-            <p>여기에 텍스트를 입력하세요</p>
-        </div>
-         <div class="square-box">
-            <img src="https://www.daejeontour.co.kr/ko/atch/atchFileStreamOut.do?atchId=1361&fileSeCode=THUM_IMAGE_FILE" alt="이미지">
-            <p>여기에 텍스트를 입력하세요</p>
-        </div>
-         <div class="square-box">
-            <img src="https://www.daejeontour.co.kr/ko/atch/atchFileStreamOut.do?atchId=1361&fileSeCode=THUM_IMAGE_FILE" alt="이미지">
-            <p>여기에 텍스트를 입력하세요</p>
-        </div>
-         <div class="square-box">
-            <img src="https://www.daejeontour.co.kr/ko/atch/atchFileStreamOut.do?atchId=1361&fileSeCode=THUM_IMAGE_FILE" alt="이미지">
-            <p>여기에 텍스트를 입력하세요</p>
-        </div>
-         <div class="square-box">
-            <img src="https://www.daejeontour.co.kr/ko/atch/atchFileStreamOut.do?atchId=1361&fileSeCode=THUM_IMAGE_FILE" alt="이미지">
-            <p>여기에 텍스트를 입력하세요</p>
-        </div>
-        
-        
-        <!-- 나머지 상자를 추가합니다. 필요한 만큼 복사하여 붙여넣으세요. -->
-    </div>
-    <!-- 필요한 만큼 행을 추가합니다. -->
+	<div class="button-container">
+    <!-- 공원 버튼 -->
+    	<button id="parkButton">공원</button>
+    <!-- 휴양림 버튼 -->
+    	<button id="recreationalButton">휴양림</button>
+    <!-- 기타 버튼 -->
+    	<button class="otherButtons">박물관</button>
+    	<button class="otherButtons">미술관</button>
+    	<button class="otherButtons">유적지</button>
+	</div>
+<!-- 공원 컨테이너 -->
+	<div id="parkPlacesContainer">
+    <!-- 데이터베이스에서 가져온 공원 데이터를 표시할 컨테이너 -->
+    	<div class="row">
+        <!-- 공원 데이터 순회 -->
+        	<c:forEach items="${parkPlaces}" var="parkPlace">
+            	<div class="square-box">
+                <!-- 이미지와 이름 표시 -->
+                	<img src="${parkPlace.imgAdr}" alt="이미지">
+                	<p>${parkPlace.parkName}</p>
+            	</div>
+        	</c:forEach>
+    	</div>
+	</div>
+	<div id="recreationalForestsContainer">
+    <!-- 데이터베이스에서 가져온 recreationalForests를 보여줄 컨테이너 -->
+    	<div class="row">
+        <!-- 데이터베이스에서 검색한 데이터를 순회합니다. -->
+        <!-- 'recreationalForests'는 데이터베이스에서 가져온 'recreationalForest' 객체 목록을 가정합니다. -->
+        	<c:forEach items="${recreationalForests}" var="recreationalForest">
+            	<div class="square-box">
+                <!-- <img> 태그의 'src' 속성을 'recreationalForest' 객체의 'imgAdr' 필드 값으로 채웁니다. -->
+                	<img src="${recreationalForest.imgAdr}" alt="이미지">
+                <!-- <p> 태그의 내용을 'recreationalForest' 객체의 'name' 필드 값으로 채웁니다. -->
+                	<p>${recreationalForest.name}</p>
+            	</div>
+        	</c:forEach>
+    	</div>
+	</div>
 </div>

@@ -58,11 +58,36 @@
 			});
 </script>
 
+<script>
+$(document).ready(function() {
+    // 페이지 로드 시 공원과 휴양림 컨테이너를 숨깁니다.
+    $("#parkPlacesContainer").show();
+    $("#recreationalForestsContainer").hide();
+
+    // 공원 버튼 클릭 시 공원 컨테이너를 표시하고 휴양림 컨테이너를 숨깁니다.
+    $("#parkButton").click(function() {
+        $("#parkPlacesContainer").show();
+        $("#recreationalForestsContainer").hide();
+    });
+
+    // 휴양림 버튼 클릭 시 휴양림 컨테이너를 표시하고 공원 컨테이너를 숨깁니다.
+    $("#recreationalButton").click(function() {
+        $("#parkPlacesContainer").hide();
+        $("#recreationalForestsContainer").show();
+    });
+
+    // 다른 버튼 클릭 시 모든 컨테이너를 숨깁니다.
+    $(".otherButtons").click(function() {
+        $("#parkPlacesContainer").hide();
+        $("#recreationalForestsContainer").hide();
+    });
+});
+</script>
 
 
 <div class="trip_bg">
 	<img
-		src="https://img.freepik.com/free-photo/cityscape-incheon-bridge-korea_335224-415.jpg?t=st=1710130673~exp=1710134273~hmac=b0a0743fd21cf43f7d3220dd15fa0331819777d72c880071b9c529544bfc2909&w=1380"
+		src="https://img.khan.co.kr/news/2022/09/12/news-p.v1.20220912.c78a0cae3ac84ddca744181e724de603.jpg"
 		alt=""
 	/>
 	<div class="bg_text_box">
@@ -95,108 +120,79 @@
 </div>
 
 <section class="section slider-section">
-	<div class="container slider-column">
-		<div class="swiper swiper-slider">
-			<div class="swiper-wrapper">
-				<img class="swiper-slide"
-					src="https://i.ytimg.com/vi/Se1JfYcECY8/maxresdefault.jpg?sqp=-oaymwEmCIAKENAF8quKqQMa8AEB-AH-CYAC0AWKAgwIABABGH8gMShaMA8=&rs=AOn4CLCdFW1FPfMFdOSljlB3cweC77NyTQ"
-					alt="Swiper"
-				> <img class="swiper-slide" src="https://www.e-fastnews.com/news/photo/202403/18263_35384_355.jpg" alt="Swiper">
-				<img class="swiper-slide"
-					src=https://lh3.googleusercontent.com/proxy/BCeHvm3nQF1U8mhlRBF6puVYsNh2cLGGZ1p2hPrUDQxbJq_q3_q4SgEb59r6qGDpfh4TJMTvfs_f3JW9fI2XHVB_9cSNUGrarvyDESh2AHfJDmbTtNJ6NLydFx6oZv4ysrEdJcWZ_8QnuDLGL6kl7SwBkwNj_9FUM-pMpFClwFOfSSh56Y7bZdreAxjJxDYgbdYQZIMQs7RrLUcX5yLxPny96c1Q3Jrlx5MgX1HUPGTsNw
-					alt="Swiper"
-				> <img class="swiper-slide"
-					src="https://lh3.googleusercontent.com/proxy/g2eSF6EniCYMHnxgTCvv6LlQp5WlIA4pFHr6MaHpXSU4jemkrhVnbJCAuCFewy9ywghRWb53GxWsXZjRzdCOHuHK1g"
-					alt="Swiper"
-				> <img class="swiper-slide"
-					src="https://i.ytimg.com/vi/l1tCRSV2irk/hqdefault.jpg?sqp=-oaymwEmCOADEOgC8quKqQMa8AEB-AH-CYAC0AWKAgwIABABGEkgTChlMA8=&rs=AOn4CLCr1IDFfap3jkyujN-KVkiK-aL5Zg"
-					alt="Swiper"
-				> <img class="swiper-slide"
-					src="https://www.kclassicnews.com/data/photos/portnews/202403/20240312082859-83914.jpg" at="Swiper"
-				>
-			</div>
-			<span class="swiper-pagination"></span> <span class="swiper-button-prev"></span> <span class="swiper-button-next"></span>
-		</div>
-	</div>
+  <div class="container slider-column">
+    <div class="swiper swiper-slider">
+      <div class="swiper-wrapper">
+        <img class="swiper-slide" src="https://i.ytimg.com/vi/Se1JfYcECY8/maxresdefault.jpg?sqp=-oaymwEmCIAKENAF8quKqQMa8AEB-AH-CYAC0AWKAgwIABABGH8gMShaMA8=&rs=AOn4CLCdFW1FPfMFdOSljlB3cweC77NyTQ" alt="Swiper">
+        <img class="swiper-slide" src="https://www.e-fastnews.com/news/photo/202403/18263_35384_355.jpg" alt="Swiper">
+        <img class="swiper-slide" src=https://lh3.googleusercontent.com/proxy/tkdgXzGJ9l272inaIB_emhEUnuiEh8yQnpdsFGFa37Yl1Bl7MiYMslp68sIEk-UFqlRbAD8hoddqEOc0E3xs1AYhsuoIPL5x7ctI72fa6we4h7jg8JG_LkviQp1fsAbGF_7gY-JIzRE4_60wo1KawSBc0wh8ej_LxW8JT-z_bY1GWNDlQiaMYWPRoJJL6PTilbeuH3x6JN8DBH_4AY4-ixZRqVrQLXmCqFI_fuvtaC6keQ alt="Swiper">
+        <img class="swiper-slide" src="https://cdn.cctoday.co.kr/news/photo/202305/2177793_613266_5003.jpg" alt="Swiper">
+        <img class="swiper-slide" src="https://i.ytimg.com/vi/l1tCRSV2irk/hqdefault.jpg?sqp=-oaymwEmCOADEOgC8quKqQMa8AEB-AH-CYAC0AWKAgwIABABGEkgTChlMA8=&rs=AOn4CLCr1IDFfap3jkyujN-KVkiK-aL5Zg" alt="Swiper">
+        <img class="swiper-slide" src="https://www.kclassicnews.com/data/photos/portnews/202403/20240312082859-83914.jpg" alt="Swiper">
+      </div>
+      <span class="swiper-pagination"></span>
+      <span class="swiper-button-prev"></span>
+      <span class="swiper-button-next"></span>
+    </div>
+  </div>
 </section>
 
 <div class="monthly_festival">
-	<div class="month_controller">
-		<h2>
-			3월 <span style="font-size: 20px; font-weight: 500; color: #ff69b4;">축제 모아 보기</span>
-		</h2>
-		<div class="festival_row">
-			<div class="festival-box">
-				<img src="https://www.e-fastnews.com/news/photo/202403/18263_35384_355.jpg" alt="이미지">
-				<p>전국 노래 자랑</p>
-			</div>
-			<div class="festival-box">
-				<img
-					src="https://i.ytimg.com/vi/l1tCRSV2irk/hqdefault.jpg?sqp=-oaymwEmCOADEOgC8quKqQMa8AEB-AH-CYAC0AWKAgwIABABGEkgTChlMA8=&rs=AOn4CLCr1IDFfap3jkyujN-KVkiK-aL5Zg"
-					alt="이미지"
-				>
-				<p>대덕 물빛 축제</p>
-			</div>
-			<div class="festival-box">
-				<img
-					src="https://lh3.googleusercontent.com/proxy/BCeHvm3nQF1U8mhlRBF6puVYsNh2cLGGZ1p2hPrUDQxbJq_q3_q4SgEb59r6qGDpfh4TJMTvfs_f3JW9fI2XHVB_9cSNUGrarvyDESh2AHfJDmbTtNJ6NLydFx6oZv4ysrEdJcWZ_8QnuDLGL6kl7SwBkwNj_9FUM-pMpFClwFOfSSh56Y7bZdreAxjJxDYgbdYQZIMQs7RrLUcX5yLxPny96c1Q3Jrlx5MgX1HUPGTsNw"
-					alt="이미지"
-				>
-				<p>테미 봄 축제</p>
-			</div>
-		</div>
-		<h2>
-			4월 <span style="font-size: 20px; font-weight: 500; color: #ff69b4;">축제 모아 보기</span>
-		</h2>
-		<div class="festival_row">
-			<div class="festival-box">
-				<img src="https://pbs.twimg.com/media/GITL4gSaQAAnbmX.jpg" alt="이미지">
-				<p>대청호 대덕뮤직 페스티벌</p>
-			</div>
-			<div class="festival-box">
-				<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjc25r1ANgOnmUiKofmeSIA8mfaNWdHeYEFQ&usqp=CAU"
-					alt="이미지"
-				>
-				<p>대덕 물빛축제</p>
-			</div>
-		</div>
-		<h2>
-			5월 <span style="font-size: 20px; font-weight: 500; color: #ff69b4;">축제 모아 보기</span>
-		</h2>
-		<div class="festival_row">
-			<div class="festival-box">
-				<img src="https://cdn.cctoday.co.kr/news/photo/202305/2177793_613266_5003.jpg" alt="이미지">
-				<p>유성온천 문화축제</p>
-			</div>
-		</div>
-	</div>
-</div>
-
-<div class="daejeon_hot">
-	<h2>
-		대전 <span style="color: red; font-size: 28px;">'핫'</span> 플레이스
-	</h2>
-	<p>
-		대전 노잼? 노! 꿀잼! 대전 <span style="color: red; font-size: 20px;">테마 별</span> 핫 플레이스 찾기
-	</p>
-	<div class="button-container">
-		<button>공원</button>
-		<button>· 휴양림</button>
-		<button>· 박물관</button>
-		<button>· 미술관</button>
-		<button>· 유적지</button>
-	</div>
-    <div class="row">
-        <!-- 데이터베이스에서 검색한 데이터를 순회합니다. -->
-        <!-- 'parkPlaces'는 데이터베이스에서 가져온 'parkPlace' 객체 목록을 가정합니다. -->
-        <c:forEach items="${parkPlaces}" var="parkPlace">
-            <div class="square-box">
-                <!-- <img> 태그의 'src' 속성을 'parkPlace' 객체의 'imgAdr' 필드 값으로 채웁니다. -->
-                <img src="${parkPlace.imgAdr}" alt="이미지">
-                <!-- <p> 태그의 내용을 'parkPlace' 객체의 'parkName' 필드 값으로 채웁니다. -->
-                <p>${parkPlace.parkName}</p>
-            </div>
-        </c:forEach>
+    <div class="month_controller">
+        <h2>3월, 4월, 5월 <span style="font-size: 20px; font-weight: 500; color: #ff69b4;">축제 모아 보기</span></h2>
+        <div class="festival_row">
+            <!-- Iterate through the festivals and display each one -->
+            <c:forEach items="${festivals}" var="festival">
+                <a class="festival-box" href="detail?id=${festival.id}">
+                    <img src="${festival.imgAdr}" alt="이미지">
+                    <p>${festival.name}</p>
+                </a>
+            </c:forEach>
+        </div>
+        <!-- Additional months and festivals go here -->
     </div>
 </div>
 
+<div class="daejeon_hot">
+	<h2>대전 <span style="color: red; font-size: 28px;">'핫'</span> 플레이스</h2>
+	<p>대전 노잼? 노! 꿀잼! 대전 <span style="color: red; font-size: 20px;">테마 별</span> 핫 플레이스 찾기</p>
+	<div class="button-container">
+    <!-- 공원 버튼 -->
+    	<button id="parkButton">공원</button>
+    <!-- 휴양림 버튼 -->
+    	<button id="recreationalButton">휴양림</button>
+    <!-- 기타 버튼 -->
+    	<button class="otherButtons">박물관</button>
+    	<button class="otherButtons">미술관</button>
+    	<button class="otherButtons">유적지</button>
+	</div>
+<!-- 공원 컨테이너 -->
+	<div id="parkPlacesContainer">
+    <!-- 데이터베이스에서 가져온 공원 데이터를 표시할 컨테이너 -->
+    	<div class="row">
+        <!-- 공원 데이터 순회 -->
+        	<c:forEach items="${parkPlaces}" var="parkPlace">
+            	<div class="square-box">
+                <!-- 이미지와 이름 표시 -->
+                	<img src="${parkPlace.imgAdr}" alt="이미지">
+                	<p>${parkPlace.parkName}</p>
+            	</div>
+        	</c:forEach>
+    	</div>
+	</div>
+	<div id="recreationalForestsContainer">
+    <!-- 데이터베이스에서 가져온 recreationalForests를 보여줄 컨테이너 -->
+    	<div class="row">
+        <!-- 데이터베이스에서 검색한 데이터를 순회합니다. -->
+        <!-- 'recreationalForests'는 데이터베이스에서 가져온 'recreationalForest' 객체 목록을 가정합니다. -->
+        	<c:forEach items="${recreationalForests}" var="recreationalForest">
+            	<div class="square-box">
+                <!-- <img> 태그의 'src' 속성을 'recreationalForest' 객체의 'imgAdr' 필드 값으로 채웁니다. -->
+                	<img src="${recreationalForest.imgAdr}" alt="이미지">
+                <!-- <p> 태그의 내용을 'recreationalForest' 객체의 'name' 필드 값으로 채웁니다. -->
+                	<p>${recreationalForest.name}</p>
+            	</div>
+        	</c:forEach>
+    	</div>
+	</div>
+</div>

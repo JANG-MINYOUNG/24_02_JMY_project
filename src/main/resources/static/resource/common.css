@@ -1101,8 +1101,9 @@ body {
 .festival_row {
     display: flex;
     flex-wrap: wrap;
-	margin-right: 100px;    
+	margin-right: 100px; 
 }
+
 
 .festival-box {
     width: calc(20% - 30px); /* 한 행에 3개의 상자를 배치하고 간격을 조정합니다. */
@@ -1174,10 +1175,10 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-  height: 60%;
+  height: 80%;
   width: 100%;
   z-index: -1;
-  opacity: 0.3;
+  opacity: 0.5;
 }
 
 .bg-video__content {
@@ -1206,7 +1207,7 @@ body {
 
 .trip_detail_box > h2 {
 	position: absolute;
-	left: 45%;
+	left: 42%;
 	bottom: 70%;
 	font-size: 24px;
 	font-weight: 700;
@@ -1219,27 +1220,28 @@ body {
 } 
 
 .trip_detail_box > p2 {
-	left: 45%;
+	left: 42%;
 	bottom: 60%;
 } 
 
 .trip_detail_box > p3 {
-	left: 45%;
+	left: 42%;
 	bottom: 50%;
 } 
 
 .trip_detail_box > p4 {
-	left: 45%;
+	left: 42%;
 	bottom: 40%;
+	
 } 
 
 .trip_detail_box > p5 {
-	left: 45%;
+	left: 42%;
 	bottom: 30%;
 } 
 
 .trip_detail_box > p6 {
-	left: 45%;
+	left: 42%;
 	bottom: 20%;
 } 
 
@@ -1339,5 +1341,17 @@ body {
 
 .recommend_place_box > img {
 	border-radius: 10px;
+	object-fit: cover;
+}
+
+.square-box {
+    width: 300px; 
+    height: 300px; 
+    
+}
+
+.square-box > img {
+	width: 100%;
+	height: 100%;
 	object-fit: cover;
 }

@@ -7,17 +7,18 @@ import lombok.NoArgsConstructor;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class parkPlace {
+public class Festival {
     private int id;
-    private String parkName;
+    private String name;
+    private String period;
     private String region;
-    private String body;
     private String roadLocation;
     private double latitude; 
     private double longitude;
-    private String parkArea;
-    private String facility;
-    private String price;
     private String phoneNumber;
+    private String body;
+    private String price;
+    private String homePage;
     private String imgAdr;
+    private String imgAdrs;
 }
