@@ -1178,11 +1178,8 @@ body {
   height: 80%;
   width: 100%;
   z-index: -1;
-<<<<<<< HEAD
   opacity: 0.5;
-=======
-  opacity: 0.1;
->>>>>>> 7aad889edecbe82ea1a348a70f830772dd18f98a
+
 }
 
 .bg-video__content {

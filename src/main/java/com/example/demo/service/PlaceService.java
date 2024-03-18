@@ -32,26 +32,17 @@ public class PlaceService {
 	public List<Festival> getDaeJeonFestivals() {
 		return PlaceRepository.getDaeJeonFestivals();
 	}
-	
+
 	public List<Festival> getChungBukFestivals() {
 		return PlaceRepository.getChungBukFestivals();
 	}
-	
+
 	public List<Festival> getChungNamFestivals() {
 		return PlaceRepository.getChungNamFestivals();
 	}
-	
 
 	public Festival getAllFestival(int id) {
 		return PlaceRepository.getAllFestival(id);
 	}
 
-
-
-
-
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> 7aad889edecbe82ea1a348a70f830772dd18f98a

@@ -32,14 +32,14 @@ public interface PlaceRepository {
 			WHERE region = '대전';
 			""")
 	public List<Festival> getDaeJeonFestivals();
-	
+
 	@Select("""
 			SELECT *
 			FROM festival
 			WHERE region LIKE '충북%';
 			""")
 	public List<Festival> getChungBukFestivals();
-	
+
 	@Select("""
 			SELECT *
 			FROM festival
@@ -47,10 +47,6 @@ public interface PlaceRepository {
 			""")
 	public List<Festival> getChungNamFestivals();
 
-	
-
-	
-	
 	@Select("""
 			SELECT *
 			FROM festival
@@ -58,11 +54,4 @@ public interface PlaceRepository {
 			""")
 	public Festival getAllFestival(int id);
 
-
-	
-
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> 7aad889edecbe82ea1a348a70f830772dd18f98a
