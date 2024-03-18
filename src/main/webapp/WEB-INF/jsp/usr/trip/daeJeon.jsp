@@ -125,11 +125,7 @@ $(document).ready(function() {
       <div class="swiper-wrapper">
         <img class="swiper-slide" src="https://i.ytimg.com/vi/Se1JfYcECY8/maxresdefault.jpg?sqp=-oaymwEmCIAKENAF8quKqQMa8AEB-AH-CYAC0AWKAgwIABABGH8gMShaMA8=&rs=AOn4CLCdFW1FPfMFdOSljlB3cweC77NyTQ" alt="Swiper">
         <img class="swiper-slide" src="https://www.e-fastnews.com/news/photo/202403/18263_35384_355.jpg" alt="Swiper">
-<<<<<<< HEAD
         <img class="swiper-slide" src=https://lh3.googleusercontent.com/proxy/tkdgXzGJ9l272inaIB_emhEUnuiEh8yQnpdsFGFa37Yl1Bl7MiYMslp68sIEk-UFqlRbAD8hoddqEOc0E3xs1AYhsuoIPL5x7ctI72fa6we4h7jg8JG_LkviQp1fsAbGF_7gY-JIzRE4_60wo1KawSBc0wh8ej_LxW8JT-z_bY1GWNDlQiaMYWPRoJJL6PTilbeuH3x6JN8DBH_4AY4-ixZRqVrQLXmCqFI_fuvtaC6keQ alt="Swiper">
-=======
-        <img class="swiper-slide" src="https://lh3.googleusercontent.com/proxy/ODccOLhP9ryB-qmutsuRdIzENe04vrNRa1o2166TF9Wa8RNc92DT8WmNzVVro0bHKHnf1PmQZZBRnr1TIk03dAmxDLToRlRDcc8Pz_sSyNcmJtnIPn66qhCGdAtvPEmBtCDluHemIEO7qYAzY1wQ_iTnP6kPs716l8ZAA8HMBngT0hgHGHNkU7lTGT828dOZbex-UvnSP7oFc-L95g3rxA9iDkv4k3vVEW8XcstcU4Hvbg" alt="Swiper">
->>>>>>> 7aad889edecbe82ea1a348a70f830772dd18f98a
         <img class="swiper-slide" src="https://cdn.cctoday.co.kr/news/photo/202305/2177793_613266_5003.jpg" alt="Swiper">
         <img class="swiper-slide" src="https://i.ytimg.com/vi/l1tCRSV2irk/hqdefault.jpg?sqp=-oaymwEmCOADEOgC8quKqQMa8AEB-AH-CYAC0AWKAgwIABABGEkgTChlMA8=&rs=AOn4CLCr1IDFfap3jkyujN-KVkiK-aL5Zg" alt="Swiper">
         <img class="swiper-slide" src="https://www.kclassicnews.com/data/photos/portnews/202403/20240312082859-83914.jpg" alt="Swiper">
