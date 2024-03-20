@@ -83,7 +83,7 @@ $(document).ready(function() {
 <div class="trip_bg">
 	<img src="https://cdn.dtnews24.com/news/photo/202311/758815_372653_5326.jpg" alt="" />
 	<div class="bg_text_box">
-		<h2 style="color: white;">충남지역 엑티비티</h2>
+		<h2 style="color: white;">충남지역 액티비티</h2>
 		<p style="color: white;">봄, 축제 즐겨보자</p>
 	</div>
 </div>

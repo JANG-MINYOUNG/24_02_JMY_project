@@ -84,7 +84,7 @@ $(document).ready(function() {
 <div class="trip_bg">
 	<img src="https://cdn.ccdailynews.com/news/photo/202303/2193215_641420_2630.jpg" alt="" />
 	<div class="bg_text_box">
-		<h2 style="color: white;">충북지역 엑티비티</h2>
+		<h2 style="color: white;">충북지역 액티비티</h2>
 		<p style="color: white;">봄, 축제 즐겨보자</p>
 	</div>	
 </div>

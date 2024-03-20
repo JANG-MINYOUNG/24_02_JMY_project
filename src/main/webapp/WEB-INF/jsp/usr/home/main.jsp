@@ -101,7 +101,7 @@
 	</div>		
 	<div class="nav-box3-container">	
 		<div class="nav-box3">
-			<a href="/usr/weatherTrip/main">날씨별! 엑티비티</a>
+			<a href="/usr/weatherTrip/main">날씨별! 액티비티</a>
 			<a href="/usr/weatherTrip/main">날씨별 여행지 바로가기</a>
 		</div>
 		<div class="img-box4">
@@ -123,8 +123,8 @@
 	<div class="nav-box-bg"></div>
 </div>
 <div class="weather-box">
-	<h2>날씨별 엑티비티</h2>
-	<p1>GABODA 추천하는 엑티비티</p1>
+	<h2>날씨별 액티비티</h2>
+	<p1>GABODA 추천하는 액티비티</p1>
 	<p2>지역 날씨별 재밌는 활동을 찾아보세요.</p2>
 	<div class="search-box">
     <label class="input input-bordered">

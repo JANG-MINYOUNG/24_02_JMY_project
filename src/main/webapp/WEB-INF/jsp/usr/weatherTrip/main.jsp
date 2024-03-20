@@ -10,7 +10,7 @@
 </div>
 
 <div class="trip-header">
-    <h2>날씨별 엑티비티</h2>
+    <h2>날씨별 액티비티</h2>
     <p>오늘 <span class="bold" style="font-weight: 800; color: #ff69b4;">날씨에 맞는</span> 완벽한 하루를 보내세요.</p>
     <div class="지역별">
         <a href="/usr/weatherTrip/chungNam">

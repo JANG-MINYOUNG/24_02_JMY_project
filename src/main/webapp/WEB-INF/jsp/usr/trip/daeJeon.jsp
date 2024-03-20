@@ -91,7 +91,7 @@ $(document).ready(function() {
 		alt=""
 	/>
 	<div class="bg_text_box">
-		<h2 style="color: white;">대전지역 엑티비티</h2>
+		<h2 style="color: white;">대전지역 액티비티</h2>
 		<p style="color: white;">봄, 축제 즐겨보자</p>
 	</div>
 </div>
@@ -123,9 +123,9 @@ $(document).ready(function() {
   <div class="container slider-column">
     <div class="swiper swiper-slider">
       <div class="swiper-wrapper">
-        <img class="swiper-slide" src="https://i.ytimg.com/vi/Se1JfYcECY8/maxresdefault.jpg?sqp=-oaymwEmCIAKENAF8quKqQMa8AEB-AH-CYAC0AWKAgwIABABGH8gMShaMA8=&rs=AOn4CLCdFW1FPfMFdOSljlB3cweC77NyTQ" alt="Swiper">
+        <img class="swiper-slide" src="https://pbs.twimg.com/media/GISYc3Xa0AATcbP.jpg" alt="Swiper">
         <img class="swiper-slide" src="https://www.e-fastnews.com/news/photo/202403/18263_35384_355.jpg" alt="Swiper">
-        <img class="swiper-slide" src=https://lh3.googleusercontent.com/proxy/tkdgXzGJ9l272inaIB_emhEUnuiEh8yQnpdsFGFa37Yl1Bl7MiYMslp68sIEk-UFqlRbAD8hoddqEOc0E3xs1AYhsuoIPL5x7ctI72fa6we4h7jg8JG_LkviQp1fsAbGF_7gY-JIzRE4_60wo1KawSBc0wh8ej_LxW8JT-z_bY1GWNDlQiaMYWPRoJJL6PTilbeuH3x6JN8DBH_4AY4-ixZRqVrQLXmCqFI_fuvtaC6keQ alt="Swiper">
+        <img class="swiper-slide" src=https://i.ytimg.com/vi/pgW0T7tC9fo/maxresdefault.jpg alt="Swiper">
         <img class="swiper-slide" src="https://cdn.cctoday.co.kr/news/photo/202305/2177793_613266_5003.jpg" alt="Swiper">
         <img class="swiper-slide" src="https://i.ytimg.com/vi/l1tCRSV2irk/hqdefault.jpg?sqp=-oaymwEmCOADEOgC8quKqQMa8AEB-AH-CYAC0AWKAgwIABABGEkgTChlMA8=&rs=AOn4CLCr1IDFfap3jkyujN-KVkiK-aL5Zg" alt="Swiper">
         <img class="swiper-slide" src="https://www.kclassicnews.com/data/photos/portnews/202403/20240312082859-83914.jpg" alt="Swiper">
