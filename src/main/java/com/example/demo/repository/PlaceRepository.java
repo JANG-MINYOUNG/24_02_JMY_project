@@ -15,9 +15,17 @@ public interface PlaceRepository {
 	@Select("""
 			SELECT *
 			FROM parkPlace
-			where region = '대전';
+			WHERE region = '대전';
 			""")
 	public List<parkPlace> getAllParkPlaces();
+	
+	@Select("""
+			SELECT *
+			FROM parkPlace
+			WHERE region LIKE '충북%';
+			""")
+	public List<parkPlace> getAllParkPlacesChungBuk();
+
 
 	@Select("""
 			SELECT *
@@ -63,4 +71,5 @@ public interface PlaceRepository {
 			""")
 	public List<Festival> getAllFestival2(int id);
 
+	
 }

@@ -23,7 +23,11 @@ public class PlaceService {
 
 		return PlaceRepository.getAllParkPlaces();
 	}
-
+	
+	public List<parkPlace> getAllParkPlacesChungBuk() {
+		return PlaceRepository.getAllParkPlacesChungBuk();
+	}
+	
 	public List<recreationalForest> getAllRecreationalForests() {
 
 		return PlaceRepository.getAllRecreationalForests();
@@ -48,5 +52,7 @@ public class PlaceService {
 	public List<Festival> getAllFestival2(int id) {
 		return PlaceRepository.getAllFestival2(id);
 	}
+
+	
 
 }
