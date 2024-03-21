@@ -53,7 +53,7 @@ public class PlaceController {
 	@RequestMapping("/usr/trip/chungNam")
 	public String showPlacesChungNam(Model model) {
 
-		List<parkPlace> parkPlaces = PlaceService.getAllParkPlaces();
+		List<parkPlace> parkPlaces = PlaceService.getAllParkPlacesChungNam();
 		List<recreationalForest> recreationalForests = PlaceService.getAllRecreationalForests();
 		List<Festival> festivals = PlaceService.getChungNamFestivals();
 

@@ -25,7 +25,7 @@ public class CSVService {
 			List<parkPlace> parkPlaceList = new ArrayList<>();
 
 			// 예시 파일들을 배열에 추가
-			String[] fileNames = { "대전 공원.csv" };
+			String[] fileNames = { "공원.csv" };
 
 			for (String fileName : fileNames) {
 				InputStreamReader is = new InputStreamReader(

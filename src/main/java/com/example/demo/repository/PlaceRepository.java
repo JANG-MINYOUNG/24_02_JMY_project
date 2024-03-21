@@ -25,6 +25,13 @@ public interface PlaceRepository {
 			WHERE region LIKE '충북%';
 			""")
 	public List<parkPlace> getAllParkPlacesChungBuk();
+	
+	@Select("""
+			SELECT *
+			FROM parkPlace
+			WHERE region LIKE '충남%';
+			""")
+	public List<parkPlace> getAllParkPlacesChungNam();
 
 
 	@Select("""
