@@ -20,6 +20,12 @@ public class CSVController {
         return csvService.readAndSaveToDB();
     }
     
+    @GetMapping("/readAndSaveToDB1")
+    @ResponseBody
+    public String readAndSaveToDB1() {
+        return csvService.readAndSaveToDB1();
+    }
+    
     @GetMapping("/readAndSaveToDB2")
     @ResponseBody
     public String readAndSaveToDB2() {

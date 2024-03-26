@@ -63,17 +63,27 @@ $(document).ready(function() {
     // 페이지 로드 시 공원과 휴양림 컨테이너를 숨깁니다.
     $("#parkPlacesContainer").show();
     $("#recreationalForestsContainer").hide();
+    $("#museumContainer").hide();
 
-    // 공원 버튼 클릭 시 공원 컨테이너를 표시하고 휴양림 컨테이너를 숨깁니다.
+    // 공원 버튼 클릭 시 공원 컨테이너를 표시하고 다른 컨테이너를 숨깁니다.
     $("#parkButton").click(function() {
         $("#parkPlacesContainer").show();
         $("#recreationalForestsContainer").hide();
+        $("#museumContainer").hide();
     });
 
-    // 휴양림 버튼 클릭 시 휴양림 컨테이너를 표시하고 공원 컨테이너를 숨깁니다.
+    // 휴양림 버튼 클릭 시 휴양림 컨테이너를 표시하고 다른 컨테이너를 숨깁니다.
     $("#recreationalButton").click(function() {
         $("#parkPlacesContainer").hide();
+        $("#museumContainer").hide();
         $("#recreationalForestsContainer").show();
+    });
+    
+    // 박물관 버튼 클릭 시 박물관 컨테이너를 표시하고 다른 컨테이너를 숨깁니다.
+    $("#museumButton").click(function() {
+        $("#parkPlacesContainer").hide();
+        $("#recreationalForestsContainer").hide();
+        $("#museumContainer").show();
     });
 
     // 다른 버튼 클릭 시 모든 컨테이너를 숨깁니다.
@@ -162,7 +172,7 @@ $(document).ready(function() {
     <!-- 휴양림 버튼 -->
     	<button id="recreationalButton">휴양림</button>
     <!-- 기타 버튼 -->
-    	<button class="otherButtons">박물관</button>
+    	<button id="museumButton">박물관</button>
     	<button class="otherButtons">미술관</button>
     	<button class="otherButtons">유적지</button>
 	</div>
@@ -195,4 +205,17 @@ $(document).ready(function() {
         	</c:forEach>
     	</div>
 	</div>
+	<div id="museumContainer">
+    <!-- 데이터베이스에서 가져온 museum 데이터를 표시할 컨테이너 -->
+    	<div class="row">
+        <!-- 공원 데이터 순회 -->
+        	<c:forEach items="${museums}" var="museum">
+            	<div class="square-box">
+                <!-- 이미지와 이름 표시 -->
+                	<img src="${museum.imgAdr}" alt="이미지">
+                	<p>${museum.name}</p>
+            	</div>
+        	</c:forEach>
+    	</div>
+	</div>	
 </div>

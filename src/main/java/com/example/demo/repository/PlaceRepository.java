@@ -6,6 +6,7 @@ import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Select;
 
 import com.example.demo.vo.Festival;
+import com.example.demo.vo.Museum;
 import com.example.demo.vo.parkPlace;
 import com.example.demo.vo.recreationalForest;
 
@@ -40,7 +41,21 @@ public interface PlaceRepository {
 			where region = '대전';
 			""")
 	public List<recreationalForest> getAllRecreationalForests();
-
+	
+	@Select("""
+			SELECT *
+			FROM recreationalForest
+			WHERE region LIKE '충청북도%';
+			""")
+	public List<recreationalForest> getAllRecreationalForestsChungBuk();
+	
+	@Select("""
+			SELECT *
+			FROM recreationalForest
+			WHERE region LIKE '충청남도%';
+			""")
+	public List<recreationalForest> getAllRecreationalForestsChungNam();
+	
 	@Select("""
 			SELECT *
 			FROM festival
@@ -77,6 +92,30 @@ public interface PlaceRepository {
 			WHERE F.id = #{id}
 			""")
 	public List<Festival> getAllFestival2(int id);
+	
+	@Select("""
+			SELECT *
+			FROM museum
+			WHERE region = '대전';
+			""")
+	public List<Museum> getAllMuseums();
+	
+	@Select("""
+			SELECT *
+			FROM museum
+			WHERE region LIKE '충북%';
+			""")
+	public List<Museum> getAllMuseumsChungBuk();
+	
+	@Select("""
+			SELECT *
+			FROM museum
+			WHERE region LIKE '충남%';
+			""")
+	public List<Museum> getAllMuseumsChungNam();
+
+
+	
 
 	
 }

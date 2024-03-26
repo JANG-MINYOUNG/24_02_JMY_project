@@ -7,6 +7,7 @@ import org.springframework.stereotype.Service;
 
 import com.example.demo.repository.PlaceRepository;
 import com.example.demo.vo.Festival;
+import com.example.demo.vo.Museum;
 import com.example.demo.vo.parkPlace;
 import com.example.demo.vo.recreationalForest;
 
@@ -37,7 +38,15 @@ public class PlaceService {
 
 		return PlaceRepository.getAllRecreationalForests();
 	}
-
+	
+	public List<recreationalForest> getAllRecreationalForestsChungBuk() {
+		return PlaceRepository.getAllRecreationalForestsChungBuk();
+	}
+	
+	public List<recreationalForest> getAllRecreationalForestsChungNam() {
+		return PlaceRepository.getAllRecreationalForestsChungNam();
+	}
+	
 	public List<Festival> getDaeJeonFestivals() {
 		return PlaceRepository.getDaeJeonFestivals();
 	}
@@ -57,6 +66,19 @@ public class PlaceService {
 	public List<Festival> getAllFestival2(int id) {
 		return PlaceRepository.getAllFestival2(id);
 	}
+
+	public List<Museum> getAllMuseums() {
+		return PlaceRepository.getAllMuseums();
+	}
+
+	public List<Museum> getAllMuseumsChungBuk() {
+		return PlaceRepository.getAllMuseumsChungBuk();
+	}
+
+	public List<Museum> getAllMuseumsChungNam() {
+		return PlaceRepository.getAllMuseumsChungNam();
+	}
+
 
 
 	
