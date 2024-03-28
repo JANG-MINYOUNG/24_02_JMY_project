@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.example.demo.repository.PlaceRepository;
+import com.example.demo.vo.ArtMuseum;
 import com.example.demo.vo.Festival;
 import com.example.demo.vo.Museum;
 import com.example.demo.vo.parkPlace;
@@ -79,6 +80,17 @@ public class PlaceService {
 		return PlaceRepository.getAllMuseumsChungNam();
 	}
 
+	public List<ArtMuseum> getDaeJeonArtMuseums() {
+		return PlaceRepository.getDaeJeonArtMuseums();
+	}
+
+	public List<ArtMuseum> getChungBukArtMuseums() {
+		return PlaceRepository.getChungBukArtMuseums();
+	}
+
+	public List<ArtMuseum> getChungNamArtMuseums() {
+		return PlaceRepository.getChungNamArtMuseums();
+	}
 
 
 	

@@ -1151,14 +1151,17 @@ body {
 .row {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    
+    justify-content: flex-start; /* 아이템을 왼쪽으로 정렬합니다 */
 }
 
 .square-box {
-    width: calc(33.33%); /* 한 행에 3개의 상자를 배치하고 간격을 조정합니다. */
-    margin-bottom: 20px; /* 행 사이의 간격을 조정합니다. */
-	margin-top: 2%;
+    width: 33.33%; /* 각 항목의 너비를 설정합니다 */
+    margin-bottom: 20px; /* 행 간의 마진을 추가합니다 */
+    margin-right: 10px; /* 항목 간의 마진을 추가합니다 */
+    margin-top: 2%; /* 위쪽 마진을 추가합니다 */
+    display: flex; /* 플렉스박스를 사용합니다 */
+    flex-direction: column; /* 항목을 세로로 정렬합니다 */
+    align-items: flex-start; /* 항목을 왼쪽으로 정렬합니다 */
 }
 
 .square-box img {

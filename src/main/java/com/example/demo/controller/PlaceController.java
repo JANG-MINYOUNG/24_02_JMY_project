@@ -8,6 +8,7 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 import com.example.demo.service.PlaceService;
+import com.example.demo.vo.ArtMuseum;
 import com.example.demo.vo.Festival;
 import com.example.demo.vo.Museum;
 import com.example.demo.vo.parkPlace;
@@ -29,12 +30,14 @@ public class PlaceController {
 		List<parkPlace> parkPlaces = PlaceService.getAllParkPlaces();
 		List<recreationalForest> recreationalForests = PlaceService.getAllRecreationalForests();
 		List<Museum> museums = PlaceService.getAllMuseums();
+		List<ArtMuseum> artMuseums = PlaceService.getDaeJeonArtMuseums();
 		List<Festival> festivals = PlaceService.getDaeJeonFestivals();
 
 		model.addAttribute("parkPlaces", parkPlaces);
 		model.addAttribute("recreationalForests", recreationalForests);
 		model.addAttribute("festivals", festivals);
 		model.addAttribute("museums", museums);
+		model.addAttribute("artMuseums", artMuseums);
 
 		return "usr/trip/daeJeon";
 	}
@@ -45,12 +48,14 @@ public class PlaceController {
 		List<parkPlace> parkPlaces = PlaceService.getAllParkPlacesChungBuk();
 		List<recreationalForest> recreationalForests = PlaceService.getAllRecreationalForestsChungBuk();
 		List<Museum> museums = PlaceService.getAllMuseumsChungBuk();
+		List<ArtMuseum> artMuseums = PlaceService.getChungBukArtMuseums();
 		List<Festival> festivals = PlaceService.getChungBukFestivals();
 
 		model.addAttribute("parkPlaces", parkPlaces);
 		model.addAttribute("recreationalForests", recreationalForests);
 		model.addAttribute("festivals", festivals);
 		model.addAttribute("museums", museums);
+		model.addAttribute("artMuseums", artMuseums);
 
 		return "usr/trip/chungBuk";
 	}
@@ -61,12 +66,14 @@ public class PlaceController {
 		List<parkPlace> parkPlaces = PlaceService.getAllParkPlacesChungNam();
 		List<recreationalForest> recreationalForests = PlaceService.getAllRecreationalForestsChungNam();
 		List<Museum> museums = PlaceService.getAllMuseumsChungNam();
+		List<ArtMuseum> artMuseums = PlaceService.getChungNamArtMuseums();
 		List<Festival> festivals = PlaceService.getChungNamFestivals();
 
 		model.addAttribute("parkPlaces", parkPlaces);
 		model.addAttribute("recreationalForests", recreationalForests);
 		model.addAttribute("festivals", festivals);
 		model.addAttribute("museums", museums);
+		model.addAttribute("artMuseums", artMuseums);
 
 		return "usr/trip/chungNam";
 	}
