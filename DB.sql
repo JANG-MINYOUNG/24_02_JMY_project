@@ -476,7 +476,9 @@ SELECT * FROM `member`;
 
 SELECT * FROM `board`;
 
-select * from museum;
+SELECT * FROM museum;
+
+SELECT * FROM artMuseum;
 
 SELECT * FROM reactionPoint;
 
