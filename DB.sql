@@ -332,7 +332,7 @@ CREATE TABLE artMuseum(
     `body` TEXT COMMENT '내용',    
     price TEXT COMMENT '비용',
     imgAdr TEXT COMMENT '이미지주소',
-    `type` TEXT COMMENT '타입'
+    `type` text comment '타입'
 );
 
 # RecreationalForest 테이블 생성
@@ -476,7 +476,7 @@ SELECT * FROM `member`;
 
 SELECT * FROM `board`;
 
-SELECT * FROM museum;
+select * from museum;
 
 SELECT * FROM artMuseum;
 
