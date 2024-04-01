@@ -43,4 +43,10 @@ public class CSVController {
     public String readAndSaveToDB4() {
         return csvService.readAndSaveToDB4();
     }
+    
+    @GetMapping("/readAndSaveToDB5")
+    @ResponseBody
+    public String readAndSaveToDB5() {
+        return csvService.readAndSaveToDB5();
+    }
 }

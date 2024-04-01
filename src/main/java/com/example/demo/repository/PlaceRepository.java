@@ -7,6 +7,7 @@ import org.apache.ibatis.annotations.Select;
 
 import com.example.demo.vo.ArtMuseum;
 import com.example.demo.vo.Festival;
+import com.example.demo.vo.HistoricalSite;
 import com.example.demo.vo.Museum;
 import com.example.demo.vo.parkPlace;
 import com.example.demo.vo.recreationalForest;
@@ -135,6 +136,27 @@ public interface PlaceRepository {
 			WHERE region LIKE '충남%';
 			""")
 	public List<ArtMuseum> getChungNamArtMuseums();
+	
+	@Select("""
+			SELECT *
+			FROM historicalSite
+			WHERE region LIKE '대전%';
+			""")
+	public List<HistoricalSite> getDaeJeonHistoricalSites();
+	
+	@Select("""
+			SELECT *
+			FROM historicalSite
+			WHERE region LIKE '충남%';
+			""")
+	public List<HistoricalSite> getChungBukHistoricalSites();
+	
+	@Select("""
+			SELECT *
+			FROM historicalSite
+			WHERE region LIKE '충남%';
+			""")
+	public List<HistoricalSite> getChungNamHistoricalSites();
 
 
 	

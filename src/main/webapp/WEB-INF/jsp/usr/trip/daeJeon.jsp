@@ -65,21 +65,24 @@ $(document).ready(function() {
     $("#recreationalForestsContainer").hide();
     $("#museumContainer").hide();
     $("#artMuseumContainer").hide();
+    $("#historicalSiteContainer").hide();
 
-    // 공원 버튼 클릭 시 공원 컨테이너를 표시하고 다른 컨테이너를 숨깁니다.
+    // 공원 버튼 클릭 시 공원 컨테이너를 표시하고 휴양림 컨테이너를 숨깁니다.
     $("#parkButton").click(function() {
         $("#parkPlacesContainer").show();
         $("#recreationalForestsContainer").hide();
         $("#museumContainer").hide();
         $("#artMuseumContainer").hide();
+        $("#historicalSiteContainer").hide();
     });
 
-    // 휴양림 버튼 클릭 시 휴양림 컨테이너를 표시하고 다른 컨테이너를 숨깁니다.
+    // 휴양림 버튼 클릭 시 휴양림 컨테이너를 표시하고 공원 컨테이너를 숨깁니다.
     $("#recreationalButton").click(function() {
         $("#parkPlacesContainer").hide();
         $("#museumContainer").hide();
         $("#recreationalForestsContainer").show();
         $("#artMuseumContainer").hide();
+        $("#historicalSiteContainer").hide();
     });
     
     // 박물관 버튼 클릭 시 박물관 컨테이너를 표시하고 다른 컨테이너를 숨깁니다.
@@ -88,6 +91,7 @@ $(document).ready(function() {
         $("#recreationalForestsContainer").hide();
         $("#museumContainer").show();
         $("#artMuseumContainer").hide();
+        $("#historicalSiteContainer").hide();
     });
     
     // 미술관 버튼 클릭 시 미술관 컨테이너를 표시하고 다른 컨테이너를 숨깁니다.
@@ -96,13 +100,16 @@ $(document).ready(function() {
         $("#recreationalForestsContainer").hide();
         $("#museumContainer").hide();
         $("#artMuseumContainer").show();
+        $("#historicalSiteContainer").hide();
     });
 
-    // 다른 버튼 클릭 시 모든 컨테이너를 숨깁니다.
-    $(".otherButtons").click(function() {
+    // 유적지 버튼 클릭 시 유적지 컨테이너를 표시하고 다른 컨테이너를 숨깁니다.
+    $("#historicalSiteButton").click(function() {
         $("#parkPlacesContainer").hide();
         $("#recreationalForestsContainer").hide();
+        $("#museumContainer").hide();
         $("#artMuseumContainer").hide();
+        $("#historicalSiteContainer").show();
     });
 });
 </script>
@@ -188,7 +195,8 @@ $(document).ready(function() {
     	<button id="museumButton">박물관</button>
     <!-- 미술관 버튼 -->
     	<button id="artMuseumButton">미술관</button>
-    	<button class="otherButtons">유적지</button>
+    <!-- 유적지 버튼 -->
+    	<button id="historicalSiteButton">유적지</button>
 	</div>
 <!-- 공원 컨테이너 -->
 	<div id="parkPlacesContainer" >
@@ -244,5 +252,18 @@ $(document).ready(function() {
             	</div>
         	</c:forEach>
     	</div>
-	</div>			
+	</div>
+	<div id="historicalSiteContainer">
+    <!-- 데이터베이스에서 가져온 museum 데이터를 표시할 컨테이너 -->
+    	<div class="row">
+        <!-- 공원 데이터 순회 -->
+        	<c:forEach items="${historicalSites}" var="historicalSite">
+            	<div class="square-box">
+                <!-- 이미지와 이름 표시 -->
+                	<img src="${historicalSite.imgAdr}" alt="이미지">
+                	<p>${historicalSite.name}</p>
+            	</div>
+        	</c:forEach>
+    	</div>
+	</div>						
 </div>

@@ -7,6 +7,7 @@ import org.apache.ibatis.annotations.Mapper;
 
 import com.example.demo.vo.ArtMuseum;
 import com.example.demo.vo.Festival;
+import com.example.demo.vo.HistoricalSite;
 import com.example.demo.vo.Museum;
 import com.example.demo.vo.parkPlace;
 import com.example.demo.vo.recreationalForest;
@@ -48,5 +49,12 @@ public interface CSVRepository {
 			"(#{item.name}, #{item.region}, #{item.roadLocation}, #{item.latitude}, #{item.longitude}, #{item.phoneNumber}, #{item.body}, #{item.price}, #{item.imgAdr}, #{item.type})",
 			"</foreach>", "</script>" })
 	void insertCSVList4(List<ArtMuseum> artMuseumList);
+
+	@Insert({ "<script>",
+		"INSERT INTO historicalSite (`name`, region, roadLocation, latitude, longitude, phoneNumber, `body`, price, imgAdr, `type`) VALUES ",
+		"<foreach collection='list' item='item' index='index' separator=','>",
+		"(#{item.name}, #{item.region}, #{item.roadLocation}, #{item.latitude}, #{item.longitude}, #{item.phoneNumber}, #{item.body}, #{item.price}, #{item.imgAdr}, #{item.type})",
+		"</foreach>", "</script>" })
+	void insertCSVList5(List<HistoricalSite> historicalSiteList);
 
 }

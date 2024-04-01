@@ -8,6 +8,7 @@ import org.springframework.stereotype.Service;
 import com.example.demo.repository.PlaceRepository;
 import com.example.demo.vo.ArtMuseum;
 import com.example.demo.vo.Festival;
+import com.example.demo.vo.HistoricalSite;
 import com.example.demo.vo.Museum;
 import com.example.demo.vo.parkPlace;
 import com.example.demo.vo.recreationalForest;
@@ -92,6 +93,17 @@ public class PlaceService {
 		return PlaceRepository.getChungNamArtMuseums();
 	}
 
+	public List<HistoricalSite> getDaeJeonHistoricalSites() {
+		return PlaceRepository.getDaeJeonHistoricalSites();
+	}
+	
+	public List<HistoricalSite> getChungBukHistoricalSites() {
+		return PlaceRepository.getChungBukHistoricalSites();
+	}
+	
+	public List<HistoricalSite> getChungNamHistoricalSites() {
+		return PlaceRepository.getChungNamHistoricalSites();
+	}
 
 	
 
