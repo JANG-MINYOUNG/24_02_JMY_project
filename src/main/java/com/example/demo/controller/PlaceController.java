@@ -27,24 +27,48 @@ public class PlaceController {
 
 	@RequestMapping("/usr/trip/daeJeon")
 	public String showPlacesDaeJeon(Model model) {
+	    // PlaceService를 사용하여 관련 데이터 가져오기
+	    List<parkPlace> parkPlaces = PlaceService.getAllParkPlaces();
+	    List<recreationalForest> recreationalForests = PlaceService.getAllRecreationalForests();
+	    List<Museum> museums = PlaceService.getAllMuseums();
+	    List<ArtMuseum> artMuseums = PlaceService.getDaeJeonArtMuseums();
+	    List<Festival> festivals = PlaceService.getDaeJeonFestivals();
+	    List<HistoricalSite> historicalSites = PlaceService.getDaeJeonHistoricalSites();
 
-		List<parkPlace> parkPlaces = PlaceService.getAllParkPlaces();
-		List<recreationalForest> recreationalForests = PlaceService.getAllRecreationalForests();
-		List<Museum> museums = PlaceService.getAllMuseums();
-		List<ArtMuseum> artMuseums = PlaceService.getDaeJeonArtMuseums();
-		List<Festival> festivals = PlaceService.getDaeJeonFestivals();
-		List<HistoricalSite> historicalSites = PlaceService.getDaeJeonHistoricalSites();
+	    // 모델에 데이터 추가
+	    model.addAttribute("parkPlaces", parkPlaces);
+	    model.addAttribute("recreationalForests", recreationalForests);
+	    model.addAttribute("festivals", festivals);
+	    model.addAttribute("museums", museums);
+	    model.addAttribute("artMuseums", artMuseums);
+	    model.addAttribute("historicalSites", historicalSites);
 
-		model.addAttribute("parkPlaces", parkPlaces);
-		model.addAttribute("recreationalForests", recreationalForests);
-		model.addAttribute("festivals", festivals);
-		model.addAttribute("museums", museums);
-		model.addAttribute("artMuseums", artMuseums);
-		model.addAttribute("historicalSites", historicalSites);
-
-		return "usr/trip/daeJeon";
+	    // 해당 view 반환
+	    return "usr/trip/daeJeon";
 	}
 
+	@RequestMapping("/usr/weatherTrip/daeJeon")
+	public String showWeatherPlacesDaeJeon(Model model) {
+	    // PlaceService를 사용하여 관련 데이터 가져오기
+	    List<parkPlace> parkPlaces = PlaceService.getAllParkPlaces();
+	    List<recreationalForest> recreationalForests = PlaceService.getAllRecreationalForests();
+	    List<Museum> museums = PlaceService.getAllMuseums();
+	    List<ArtMuseum> artMuseums = PlaceService.getDaeJeonArtMuseums();
+	    List<Festival> festivals = PlaceService.getDaeJeonFestivals();
+	    List<HistoricalSite> historicalSites = PlaceService.getDaeJeonHistoricalSites();
+
+	    // 모델에 데이터 추가
+	    model.addAttribute("parkPlaces", parkPlaces);
+	    model.addAttribute("recreationalForests", recreationalForests);
+	    model.addAttribute("festivals", festivals);
+	    model.addAttribute("museums", museums);
+	    model.addAttribute("artMuseums", artMuseums);
+	    model.addAttribute("historicalSites", historicalSites);
+
+	    // 해당 view 반환
+	    return "usr/weatherTrip/daeJeon";
+	}
+	
 	@RequestMapping("/usr/trip/chungBuk")
 	public String showPlacesChungBuk(Model model) {
 

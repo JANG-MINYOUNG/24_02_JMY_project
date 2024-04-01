@@ -55,9 +55,15 @@
 					if (weatherDescription.includes('clear')) {
 						recommendation1 = '금일 날씨가 화창합니다.';
 						recommendation2 = '집에만 있지말고 밖에 나가서 놀아볼까요?';
+
 					} else if (weatherDescription.includes('clouds')) {
 						recommendation1 = '금일 구름이 많은 날씨입니다.';
 						recommendation2 = '이런 활동 어떠세요?';
+						$('#parkPlacesContainer').hide();
+						$('#recreationalForestsContainer').hide();
+						$('#museumContainer').hide();
+						$('#artMuseumContainer').hide();
+						$('#historicalSiteContainer').show();
 					} else if (weatherDescription.includes('rain')) {
 						recommendation1 = '금일 비가 오고 있습니다.';
 						recommendation2 = '야외활동 말고, 이런 실내 활동 어떠세요?';
@@ -88,89 +94,73 @@
 		<span id="Seoul"></span>
 	</div>
 </div>
-<div class="recommend_place">
-	<div class="recommend_place_box">
-		<img src="https://www.daejeontour.co.kr/ko/atch/atchFileStreamOut.do?atchId=1361&fileSeCode=THUM_IMAGE_FILE" alt="이미지">
-		<p>여기에 텍스트를 입력하세요</p>
-		<p>여기에 텍스트를 입력하세요</p>
-	</div>
-	<div class="recommend_place_box">
-		<img src="https://www.daejeontour.co.kr/ko/atch/atchFileStreamOut.do?atchId=1361&fileSeCode=THUM_IMAGE_FILE" alt="이미지">
-		<p>여기에 텍스트를 입력하세요</p>
-		<p>여기에 텍스트를 입력하세요</p>
-	</div>
-	<div class="recommend_place_box">
-		<img src="https://www.daejeontour.co.kr/ko/atch/atchFileStreamOut.do?atchId=1361&fileSeCode=THUM_IMAGE_FILE" alt="이미지">
-		<p>여기에 텍스트를 입력하세요</p>
-		<p>여기에 텍스트를 입력하세요</p>
-	</div>
-	<div class="recommend_place_box">
-		<img src="https://www.daejeontour.co.kr/ko/atch/atchFileStreamOut.do?atchId=1361&fileSeCode=THUM_IMAGE_FILE" alt="이미지">
-		<p>여기에 텍스트를 입력하세요</p>
-		<p>여기에 텍스트를 입력하세요</p>
-	</div>
-	<div class="recommend_place_box">
-		<img src="https://www.daejeontour.co.kr/ko/atch/atchFileStreamOut.do?atchId=1361&fileSeCode=THUM_IMAGE_FILE" alt="이미지">
-		<p>여기에 텍스트를 입력하세요</p>
-		<p>여기에 텍스트를 입력하세요</p>
-	</div>
-	<div class="recommend_place_box">
-		<img src="https://www.daejeontour.co.kr/ko/atch/atchFileStreamOut.do?atchId=1361&fileSeCode=THUM_IMAGE_FILE" alt="이미지">
-		<p>여기에 텍스트를 입력하세요</p>
-		<p>여기에 텍스트를 입력하세요</p>
-	</div>
-	<div class="recommend_place_box">
-		<img src="https://www.daejeontour.co.kr/ko/atch/atchFileStreamOut.do?atchId=1361&fileSeCode=THUM_IMAGE_FILE" alt="이미지">
-		<p>여기에 텍스트를 입력하세요</p>
-		<p>여기에 텍스트를 입력하세요</p>
-	</div>
-	<div class="recommend_place_box">
-		<img src="https://www.daejeontour.co.kr/ko/atch/atchFileStreamOut.do?atchId=1361&fileSeCode=THUM_IMAGE_FILE" alt="이미지">
-		<p>여기에 텍스트를 입력하세요</p>
-		<p>여기에 텍스트를 입력하세요</p>
-	</div>
-	<div class="recommend_place_box">
-		<img src="https://www.daejeontour.co.kr/ko/atch/atchFileStreamOut.do?atchId=1361&fileSeCode=THUM_IMAGE_FILE" alt="이미지">
-		<p>여기에 텍스트를 입력하세요</p>
-		<p>여기에 텍스트를 입력하세요</p>
-	</div>
-	<div class="recommend_place_box">
-		<img src="https://www.daejeontour.co.kr/ko/atch/atchFileStreamOut.do?atchId=1361&fileSeCode=THUM_IMAGE_FILE" alt="이미지">
-		<p>여기에 텍스트를 입력하세요</p>
-		<p>여기에 텍스트를 입력하세요</p>
-	</div>
-	<div class="recommend_place_box">
-		<img src="https://www.daejeontour.co.kr/ko/atch/atchFileStreamOut.do?atchId=1361&fileSeCode=THUM_IMAGE_FILE" alt="이미지">
-		<p>여기에 텍스트를 입력하세요</p>
-		<p>여기에 텍스트를 입력하세요</p>
-	</div>
-	<div class="recommend_place_box">
-		<img src="https://www.daejeontour.co.kr/ko/atch/atchFileStreamOut.do?atchId=1361&fileSeCode=THUM_IMAGE_FILE" alt="이미지">
-		<p>여기에 텍스트를 입력하세요</p>
-		<p>여기에 텍스트를 입력하세요</p>
-	</div>
-	<div class="recommend_place_box">
-		<img src="https://www.daejeontour.co.kr/ko/atch/atchFileStreamOut.do?atchId=1361&fileSeCode=THUM_IMAGE_FILE" alt="이미지">
-		<p>여기에 텍스트를 입력하세요</p>
-		<p>여기에 텍스트를 입력하세요</p>
-	</div>
-	<div class="recommend_place_box">
-		<img src="https://www.daejeontour.co.kr/ko/atch/atchFileStreamOut.do?atchId=1361&fileSeCode=THUM_IMAGE_FILE" alt="이미지">
-		<p>여기에 텍스트를 입력하세요</p>
-		<p>여기에 텍스트를 입력하세요</p>
-	</div>
-	<div class="recommend_place_box">
-		<img src="https://www.daejeontour.co.kr/ko/atch/atchFileStreamOut.do?atchId=1361&fileSeCode=THUM_IMAGE_FILE" alt="이미지">
-		<p>여기에 텍스트를 입력하세요</p>
-		<p>여기에 텍스트를 입력하세요</p>
-	</div>
-	<div class="recommend_place_box">
-		<img src="https://www.daejeontour.co.kr/ko/atch/atchFileStreamOut.do?atchId=1361&fileSeCode=THUM_IMAGE_FILE" alt="이미지">
-		<p>여기에 텍스트를 입력하세요</p>
-		<p>여기에 텍스트를 입력하세요</p>
-	</div>
 
-
-	<!-- 나머지 상자를 추가합니다. 필요한 만큼 복사하여 붙여넣으세요. -->
+<!-- 공원 컨테이너 -->
+<div id="parkPlacesContainer">
+	<!-- 데이터베이스에서 가져온 공원 데이터를 표시할 컨테이너 -->
+	<div class="row">
+		<!-- 공원 데이터 순회 -->
+		<c:forEach items="${parkPlaces}" var="parkPlace">
+			<div class="square-box">
+				<!-- 이미지와 이름 표시 -->
+				<img src="${parkPlace.imgAdr}" alt="이미지">
+				<p>${parkPlace.parkName}</p>
+			</div>
+		</c:forEach>
+	</div>
+</div>
+<div id="recreationalForestsContainer">
+	<!-- 데이터베이스에서 가져온 recreationalForests를 보여줄 컨테이너 -->
+	<div class="row">
+		<!-- 데이터베이스에서 검색한 데이터를 순회합니다. -->
+		<!-- 'recreationalForests'는 데이터베이스에서 가져온 'recreationalForest' 객체 목록을 가정합니다. -->
+		<c:forEach items="${recreationalForests}" var="recreationalForest">
+			<div class="square-box">
+				<!-- <img> 태그의 'src' 속성을 'recreationalForest' 객체의 'imgAdr' 필드 값으로 채웁니다. -->
+				<img src="${recreationalForest.imgAdr}" alt="이미지">
+				<!-- <p> 태그의 내용을 'recreationalForest' 객체의 'name' 필드 값으로 채웁니다. -->
+				<p>${recreationalForest.name}</p>
+			</div>
+		</c:forEach>
+	</div>
+</div>
+<div id="museumContainer">
+	<!-- 데이터베이스에서 가져온 museum 데이터를 표시할 컨테이너 -->
+	<div class="row">
+		<!-- 공원 데이터 순회 -->
+		<c:forEach items="${museums}" var="museum">
+			<div class="square-box">
+				<!-- 이미지와 이름 표시 -->
+				<img src="${museum.imgAdr}" alt="이미지">
+				<p>${museum.name}</p>
+			</div>
+		</c:forEach>
+	</div>
+</div>
+<div id="artMuseumContainer">
+	<!-- 데이터베이스에서 가져온 museum 데이터를 표시할 컨테이너 -->
+	<div class="row">
+		<!-- 공원 데이터 순회 -->
+		<c:forEach items="${artMuseums}" var="artMuseum">
+			<div class="square-box">
+				<!-- 이미지와 이름 표시 -->
+				<img src="${artMuseum.imgAdr}" alt="이미지">
+				<p>${artMuseum.name}</p>
+			</div>
+		</c:forEach>
+	</div>
+</div>
+<div id="historicalSiteContainer">
+	<!-- 데이터베이스에서 가져온 museum 데이터를 표시할 컨테이너 -->
+	<div class="row">
+		<!-- 공원 데이터 순회 -->
+		<c:forEach items="${historicalSites}" var="historicalSite">
+			<div class="square-box">
+				<!-- 이미지와 이름 표시 -->
+				<img src="${historicalSite.imgAdr}" alt="이미지">
+				<p>${historicalSite.name}</p>
+			</div>
+		</c:forEach>
+	</div>
 </div>
 

@@ -332,7 +332,22 @@ CREATE TABLE artMuseum(
     `body` TEXT COMMENT '내용',    
     price TEXT COMMENT '비용',
     imgAdr TEXT COMMENT '이미지주소',
-    `type` text comment '타입'
+    `type` TEXT COMMENT '타입'
+);
+
+# HistoricalSite 테이블 생성
+CREATE TABLE historicalSite(
+    id INT(10) UNSIGNED NOT NULL PRIMARY KEY AUTO_INCREMENT,
+    `name` TEXT COMMENT '박물관명칭',
+    region TEXT COMMENT '지역',
+    roadLocation TEXT COMMENT '소재지도로',
+    latitude DOUBLE COMMENT '위도',
+    longitude DOUBLE COMMENT '경도',
+    phoneNumber TEXT COMMENT '전화번호',
+    `body` TEXT COMMENT '내용',    
+    price TEXT COMMENT '비용',
+    imgAdr TEXT COMMENT '이미지주소',
+    `type` TEXT COMMENT '타입'
 );
 
 # RecreationalForest 테이블 생성
@@ -476,9 +491,11 @@ SELECT * FROM `member`;
 
 SELECT * FROM `board`;
 
-select * from museum;
+SELECT * FROM museum;
 
 SELECT * FROM artMuseum;
+
+SELECT * FROM historicalSite;
 
 SELECT * FROM reactionPoint;
 

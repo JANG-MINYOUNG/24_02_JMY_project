@@ -32,29 +32,29 @@ public class UsrTripController {
 	
 
 	
-	@RequestMapping("/usr/weatherTrip/main")
-	public String showWeatherTripMain() {
-
-		return "usr/weatherTrip/main";
-	}
-	
-	@RequestMapping("/usr/weatherTrip/daeJeon")
-	public String showWeatherTripDeajeon() {
-
-		return "usr/weatherTrip/daeJeon";
-	}
-	
-	@RequestMapping("/usr/weatherTrip/chungBuk")
-	public String showWeatherTripChungBuk() {
-
-		return "usr/weatherTrip/chungBuk";
-	}
-	
-	@RequestMapping("/usr/weatherTrip/chungNam")
-	public String showWeatherTripChungNam() {
-
-		return "usr/weatherTrip/chungNam";
-	}
+//	@RequestMapping("/usr/weatherTrip/main")
+//	public String showWeatherTripMain() {
+//
+//		return "usr/weatherTrip/main";
+//	}
+//	
+//	@RequestMapping("/usr/weatherTrip/daeJeon")
+//	public String showWeatherTripDeajeon() {
+//
+//		return "usr/weatherTrip/daeJeon";
+//	}
+//	
+//	@RequestMapping("/usr/weatherTrip/chungBuk")
+//	public String showWeatherTripChungBuk() {
+//
+//		return "usr/weatherTrip/chungBuk";
+//	}
+//	
+//	@RequestMapping("/usr/weatherTrip/chungNam")
+//	public String showWeatherTripChungNam() {
+//
+//		return "usr/weatherTrip/chungNam";
+//	}
 	
 	@RequestMapping("/usr/weatherTrip/main2")
 	public String showWeatherTripMain2() {
