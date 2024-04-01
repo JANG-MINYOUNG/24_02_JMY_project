@@ -147,7 +147,7 @@ public interface PlaceRepository {
 	@Select("""
 			SELECT *
 			FROM historicalSite
-			WHERE region LIKE '충남%';
+			WHERE region LIKE '충북%';
 			""")
 	public List<HistoricalSite> getChungBukHistoricalSites();
 	
