@@ -8,18 +8,18 @@
 <div class="trip_detail">
     <div class="trip_detail_box" style="margin-top: 20px;">
         <p1 style="font-size: 30px; font-weight: 700;">
-           ${Allfestival.name }
+           ${allThemePlace.name }
             <a href="/" style="font-size: 14px; margin-left: 700px; margin-right: 10px;">홈</a>
             <a href="/usr/trip/main" style="font-size: 14px; margin-right: 10px;">시즌별 여행지</a>
             <a href="/usr/weatherTrip/main/" style="font-size: 14px;">날씨별 여행지</a>
         </p1>
         <hr style="color: #c0c0c0; margin-top: 20px; width: 85%;"/>
-        <img style="margin-top:20px; width: 500px; height: 400px;" src="${Allfestival.imgAdr }" alt="" />
+        <img style="margin-top:20px; width: 500px; height: 400px;" src="${allThemePlace.imgAdr }" alt="" />
         <h2>${Allfestival.name }</h2>
-        <p3>· 축제 시기 <span style="font-size: 14px; color: black;">${Allfestival.period }</span></p3>
-        <p4>· 축제 장소 <span style="font-size: 14px; color: black;">${Allfestival.roadLocation }</span></p4>
-        <p5>· 문의처 <span style="font-size: 14px; color: black;">${Allfestival.phoneNumber }</span></p5>
-        <p6>· 홈페이지 <a style="font-size: 14px; color: black;" href="${Allfestival.homePage }" >${Allfestival.homePage }</a></p6>
+        <p3>· 축제 시기 <span style="font-size: 14px; color: black;">${allThemePlace.period }</span></p3>
+        <p4>· 축제 장소 <span style="font-size: 14px; color: black;">${allThemePlace.roadLocation }</span></p4>
+        <p5>· 문의처 <span style="font-size: 14px; color: black;">${allThemePlace.phoneNumber }</span></p5>
+        <p6>· 홈페이지 <a style="font-size: 14px; color: black;" href="${allThemePlace.homePage }" >${Allfestival.homePage }</a></p6>
     </div>
     <div class="detail_nav">
         <a href="" style="font-size: 20px; margin-right: 20px;">축제 소개</a>
@@ -64,7 +64,7 @@
 <script>
 var mapContainer = document.getElementById('map'), // 지도를 표시할 div 
     mapOption = { 
-        center: new kakao.maps.LatLng(${Allfestival.longitude}, ${Allfestival.latitude}), // 지도의 중심좌표
+        center: new kakao.maps.LatLng(${allThemePlace.longitude}, ${allThemePlace.latitude}), // 지도의 중심좌표
         level: 4 // 지도의 확대 레벨
     };
 
@@ -72,7 +72,7 @@ var mapContainer = document.getElementById('map'), // 지도를 표시할 div
 var map = new kakao.maps.Map(mapContainer, mapOption); 
 
 //마커가 표시될 위치입니다 
-var markerPosition  = new kakao.maps.LatLng(${Allfestival.longitude}, ${Allfestival.latitude}); 
+var markerPosition  = new kakao.maps.LatLng(${allThemePlace.longitude}, ${allThemePlace.latitude}); 
 
 //마커를 생성합니다
 var marker = new kakao.maps.Marker({
@@ -82,8 +82,8 @@ var marker = new kakao.maps.Marker({
 // 마커가 지도 위에 표시되도록 설정합니다
 marker.setMap(map);
 
-var iwContent = '<div style="padding:5px;">${Allfestival.name } <br><a href="https://map.kakao.com/link/map/${Allfestival.name } ,${Allfestival.longitude}, ${Allfestival.latitude}" style="color:blue" target="_blank">큰지도보기</a> <a href="https://map.kakao.com/link/to/${Allfestival.name } <br><a href="https://map.kakao.com/link/map/${Allfestival.name } ,${Allfestival.longitude}, ${Allfestival.latitude}" style="color:blue" target="_blank">길찾기</a></div>', // 인포윈도우에 표출될 내용으로 HTML 문자열이나 document element가 가능합니다
-iwPosition = new kakao.maps.LatLng(${Allfestival.longitude}, ${Allfestival.latitude}); //인포윈도우 표시 위치입니다
+var iwContent = '<div style="padding:5px;">${allThemePlace.name } <br><a href="https://map.kakao.com/link/map/${Allfestival.name } ,${allThemePlace.longitude}, ${allThemePlace.latitude}" style="color:blue" target="_blank">큰지도보기</a> <a href="https://map.kakao.com/link/to/${allThemePlace.name } <br><a href="https://map.kakao.com/link/map/${allThemePlace.name } ,${allThemePlace.longitude}, ${allThemePlace.latitude}" style="color:blue" target="_blank">길찾기</a></div>', // 인포윈도우에 표출될 내용으로 HTML 문자열이나 document element가 가능합니다
+iwPosition = new kakao.maps.LatLng(${allThemePlace.longitude}, ${allThemePlace.latitude}); //인포윈도우 표시 위치입니다
 
 //인포윈도우를 생성합니다
 var infowindow = new kakao.maps.InfoWindow({

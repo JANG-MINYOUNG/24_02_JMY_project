@@ -1335,17 +1335,7 @@ body {
     margin-left: 500px;
     margin-right: 400px;
     margin-top: 50px;
-}
-
-.recommend_place_box {
-  	width: calc(25% - 20px); /* 수평으로 네 개의 상자를 배치하기 위해 너비를 조정합니다. */
-  	box-sizing: border-box; /* 테두리와 내부 여백을 너비에 포함시킵니다. */
-  	text-align: left; /* 텍스트를 가운데 정렬합니다. */	
-}
-
-.recommend_place_box > img {
-	border-radius: 10px;
-	object-fit: cover;
+    
 }
 
 .square-box {

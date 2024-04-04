@@ -5,7 +5,7 @@ import java.util.List;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Select;
 
-import com.example.demo.vo.parkPlace;
+import com.example.demo.vo.ThemePlace;
 
 @Mapper
 public interface ReactionalForestRepository {
@@ -15,6 +15,6 @@ public interface ReactionalForestRepository {
 			FROM parkPlace
 			where region = '대전';
 			""")
-	public List<parkPlace> getAllParkPlaces();
+	public List<ThemePlace> getAllParkPlaces();
 
 }

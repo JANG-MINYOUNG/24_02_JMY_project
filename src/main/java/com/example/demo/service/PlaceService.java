@@ -6,12 +6,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.example.demo.repository.PlaceRepository;
-import com.example.demo.vo.ArtMuseum;
 import com.example.demo.vo.Festival;
-import com.example.demo.vo.HistoricalSite;
-import com.example.demo.vo.Museum;
-import com.example.demo.vo.parkPlace;
-import com.example.demo.vo.recreationalForest;
+import com.example.demo.vo.ThemePlace;
 
 @Service
 public class PlaceService {
@@ -22,30 +18,30 @@ public class PlaceService {
 		this.PlaceRepository = placeRepository;
 	}
 
-	public List<parkPlace> getAllParkPlaces() {
+	public List<ThemePlace> getAllParkPlaces() {
 
 		return PlaceRepository.getAllParkPlaces();
 	}
 	
-	public List<parkPlace> getAllParkPlacesChungBuk() {
+	public List<ThemePlace> getAllParkPlacesChungBuk() {
 		return PlaceRepository.getAllParkPlacesChungBuk();
 	}
 	
-	public List<parkPlace> getAllParkPlacesChungNam() {
+	public List<ThemePlace> getAllParkPlacesChungNam() {
 		return PlaceRepository.getAllParkPlacesChungNam();
 	}
 
 	
-	public List<recreationalForest> getAllRecreationalForests() {
+	public List<ThemePlace> getAllRecreationalForests() {
 
 		return PlaceRepository.getAllRecreationalForests();
 	}
 	
-	public List<recreationalForest> getAllRecreationalForestsChungBuk() {
+	public List<ThemePlace> getAllRecreationalForestsChungBuk() {
 		return PlaceRepository.getAllRecreationalForestsChungBuk();
 	}
 	
-	public List<recreationalForest> getAllRecreationalForestsChungNam() {
+	public List<ThemePlace> getAllRecreationalForestsChungNam() {
 		return PlaceRepository.getAllRecreationalForestsChungNam();
 	}
 	
@@ -69,42 +65,43 @@ public class PlaceService {
 		return PlaceRepository.getAllFestival2(id);
 	}
 
-	public List<Museum> getAllMuseums() {
+	public List<ThemePlace> getAllMuseums() {
 		return PlaceRepository.getAllMuseums();
 	}
 
-	public List<Museum> getAllMuseumsChungBuk() {
+	public List<ThemePlace> getAllMuseumsChungBuk() {
 		return PlaceRepository.getAllMuseumsChungBuk();
 	}
 
-	public List<Museum> getAllMuseumsChungNam() {
+	public List<ThemePlace> getAllMuseumsChungNam() {
 		return PlaceRepository.getAllMuseumsChungNam();
 	}
 
-	public List<ArtMuseum> getDaeJeonArtMuseums() {
+	public List<ThemePlace> getDaeJeonArtMuseums() {
 		return PlaceRepository.getDaeJeonArtMuseums();
 	}
 
-	public List<ArtMuseum> getChungBukArtMuseums() {
+	public List<ThemePlace> getChungBukArtMuseums() {
 		return PlaceRepository.getChungBukArtMuseums();
 	}
 
-	public List<ArtMuseum> getChungNamArtMuseums() {
+	public List<ThemePlace> getChungNamArtMuseums() {
 		return PlaceRepository.getChungNamArtMuseums();
 	}
 
-	public List<HistoricalSite> getDaeJeonHistoricalSites() {
+	public List<ThemePlace> getDaeJeonHistoricalSites() {
 		return PlaceRepository.getDaeJeonHistoricalSites();
 	}
 	
-	public List<HistoricalSite> getChungBukHistoricalSites() {
+	public List<ThemePlace> getChungBukHistoricalSites() {
 		return PlaceRepository.getChungBukHistoricalSites();
 	}
 	
-	public List<HistoricalSite> getChungNamHistoricalSites() {
+	public List<ThemePlace> getChungNamHistoricalSites() {
 		return PlaceRepository.getChungNamHistoricalSites();
 	}
-
 	
-
+	public ThemePlace getThemePlaceById(int id) {
+		return PlaceRepository.getThemePlaceById(id);
+	}
 }

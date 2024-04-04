@@ -5,58 +5,60 @@ import java.util.List;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Select;
 
-import com.example.demo.vo.ArtMuseum;
 import com.example.demo.vo.Festival;
-import com.example.demo.vo.HistoricalSite;
-import com.example.demo.vo.Museum;
-import com.example.demo.vo.parkPlace;
-import com.example.demo.vo.recreationalForest;
+import com.example.demo.vo.ThemePlace;
 
 @Mapper
 public interface PlaceRepository {
 
 	@Select("""
 			SELECT *
-			FROM parkPlace
-			WHERE region = '대전';
+			FROM themePlace
+			WHERE region = '대전'
+			AND `type` = '공원';
 			""")
-	public List<parkPlace> getAllParkPlaces();
+	public List<ThemePlace> getAllParkPlaces();
 	
 	@Select("""
 			SELECT *
-			FROM parkPlace
-			WHERE region LIKE '충북%';
+			FROM themePlace
+			WHERE region LIKE '충북%'
+			AND `type` = '공원';
 			""")
-	public List<parkPlace> getAllParkPlacesChungBuk();
+	public List<ThemePlace> getAllParkPlacesChungBuk();
 	
 	@Select("""
 			SELECT *
-			FROM parkPlace
-			WHERE region LIKE '충남%';
+			FROM themePlace
+			WHERE region LIKE '충남%'
+			AND `type` = '공원';
 			""")
-	public List<parkPlace> getAllParkPlacesChungNam();
+	public List<ThemePlace> getAllParkPlacesChungNam();
 
 
 	@Select("""
 			SELECT *
-			FROM recreationalForest
-			where region = '대전';
+			FROM themePlace
+			where region = '대전'
+			AND `type` = '휴양림';
 			""")
-	public List<recreationalForest> getAllRecreationalForests();
+	public List<ThemePlace> getAllRecreationalForests();
 	
 	@Select("""
 			SELECT *
-			FROM recreationalForest
-			WHERE region LIKE '충청북도%';
+			FROM themePlace
+			WHERE region LIKE '충청북도%'
+			AND `type` = '휴양림';
 			""")
-	public List<recreationalForest> getAllRecreationalForestsChungBuk();
+	public List<ThemePlace> getAllRecreationalForestsChungBuk();
 	
 	@Select("""
 			SELECT *
-			FROM recreationalForest
-			WHERE region LIKE '충청남도%';
+			FROM themePlace
+			WHERE region LIKE '충청남도%'
+			AND `type` = '휴양림';
 			""")
-	public List<recreationalForest> getAllRecreationalForestsChungNam();
+	public List<ThemePlace> getAllRecreationalForestsChungNam();
 	
 	@Select("""
 			SELECT *
@@ -97,69 +99,84 @@ public interface PlaceRepository {
 	
 	@Select("""
 			SELECT *
-			FROM museum
-			WHERE region = '대전';
+			FROM themePlace
+			WHERE region = '대전'
+			AND `type` = '박물관';
 			""")
-	public List<Museum> getAllMuseums();
+	public List<ThemePlace> getAllMuseums();
 	
 	@Select("""
 			SELECT *
-			FROM museum
-			WHERE region LIKE '충북%';
+			FROM themePlace
+			WHERE region LIKE '충북%'
+			AND `type` = '박물관';
 			""")
-	public List<Museum> getAllMuseumsChungBuk();
+	public List<ThemePlace> getAllMuseumsChungBuk();
 	
 	@Select("""
 			SELECT *
-			FROM museum
-			WHERE region LIKE '충남%';
+			FROM themePlace
+			WHERE region LIKE '충남%'
+			AND `type` = '박물관';
 			""")
-	public List<Museum> getAllMuseumsChungNam();
+	public List<ThemePlace> getAllMuseumsChungNam();
 	
 	@Select("""
 			SELECT *
-			FROM artMuseum
-			WHERE region = '대전';
+			FROM themePlace
+			WHERE region = '대전'
+			AND `type` = '미술관';
 			""")
-	public List<ArtMuseum> getDaeJeonArtMuseums();
+	public List<ThemePlace> getDaeJeonArtMuseums();
 	
 	@Select("""
 			SELECT *
-			FROM artMuseum
-			WHERE region LIKE '충북%';
+			FROM themePlace
+			WHERE region LIKE '충북%'
+			AND `type` = '미술관';
 			""")
-	public List<ArtMuseum> getChungBukArtMuseums();
+	public List<ThemePlace> getChungBukArtMuseums();
 	
 	@Select("""
 			SELECT *
-			FROM artMuseum
-			WHERE region LIKE '충남%';
+			FROM themePlace
+			WHERE region LIKE '충남%'
+			AND `type` = '미술관';
 			""")
-	public List<ArtMuseum> getChungNamArtMuseums();
+	public List<ThemePlace> getChungNamArtMuseums();
 	
 	@Select("""
 			SELECT *
-			FROM historicalSite
-			WHERE region LIKE '대전%';
+			FROM themePlace
+			WHERE region LIKE '대전%'
+			AND `type` = '유적지';
 			""")
-	public List<HistoricalSite> getDaeJeonHistoricalSites();
+	public List<ThemePlace> getDaeJeonHistoricalSites();
 	
 	@Select("""
 			SELECT *
-			FROM historicalSite
-			WHERE region LIKE '충북%';
+			FROM themePlace
+			WHERE region LIKE '충북%'
+			AND `type` = '유적지';
 			""")
-	public List<HistoricalSite> getChungBukHistoricalSites();
+	public List<ThemePlace> getChungBukHistoricalSites();
 	
 	@Select("""
 			SELECT *
-			FROM historicalSite
-			WHERE region LIKE '충남%';
+			FROM themePlace
+			WHERE region LIKE '충남%'
+			AND `type` = '유적지';
 			""")
-	public List<HistoricalSite> getChungNamHistoricalSites();
+	public List<ThemePlace> getChungNamHistoricalSites();
+	
+	@Select("""
+			SELECT *
+			FROM themePlace
+			WHERE id = #{id}
+			""")
+	public ThemePlace getThemePlaceById(int id);
+	
 
-
 	
-
 	
 }

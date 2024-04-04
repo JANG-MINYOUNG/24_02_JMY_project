@@ -6,7 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.example.demo.repository.PlaceRepository;
-import com.example.demo.vo.parkPlace;
+import com.example.demo.vo.ThemePlace;
 
 
 
@@ -19,7 +19,7 @@ public class RecreationalForestService {
 		this.parkPlaceRepository = parkPlaceRepository;
 	}
 	
-	public List<parkPlace> getAllParkPlaces() {
+	public List<ThemePlace> getAllParkPlaces() {
 
 		return parkPlaceRepository.getAllParkPlaces();
 	}

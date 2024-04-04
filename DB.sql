@@ -276,54 +276,11 @@ relId = 2,
 ALTER TABLE reply ADD COLUMN goodReactionPoint INT(10) UNSIGNED NOT NULL DEFAULT 0;
 ALTER TABLE reply ADD COLUMN badReactionPoint INT(10) UNSIGNED NOT NULL DEFAULT 0;
 
-# parkPlace 테이블 생성
-CREATE TABLE parkPlace(
-    id INT(10) UNSIGNED NOT NULL PRIMARY KEY AUTO_INCREMENT,
-    parkName TEXT COMMENT '공원명',
-    region TEXT COMMENT '지역',
-    `body` TEXT COMMENT '내용',
-    roadLocation TEXT COMMENT '소재지도로',
-    latitude DOUBLE COMMENT '위도',
-    longitude DOUBLE COMMENT '경도',
-    parkArea TEXT COMMENT '공원면적',
-    facility TEXT COMMENT '시설',
-    price TEXT COMMENT '비용',
-    phoneNumber TEXT COMMENT '전화번호',
-    imgAdr TEXT COMMENT '이미지주소'
-);
 
-# RecreationalForest 테이블 생성
-CREATE TABLE recreationalForest(
+# themePlace 테이블 생성
+CREATE TABLE themePlace(
     id INT(10) UNSIGNED NOT NULL PRIMARY KEY AUTO_INCREMENT,
-    `name` TEXT COMMENT '휴양림명칭',
-    region TEXT COMMENT '지역',
-    roadLocation TEXT COMMENT '소재지도로',
-    latitude DOUBLE COMMENT '위도',
-    longitude DOUBLE COMMENT '경도',
-    phoneNumber TEXT COMMENT '전화번호',
-    `body` TEXT COMMENT '내용',    
-    price TEXT COMMENT '비용',
-    imgAdr TEXT COMMENT '이미지주소'
-);
-
-# Museum 테이블 생성
-CREATE TABLE museum(
-    id INT(10) UNSIGNED NOT NULL PRIMARY KEY AUTO_INCREMENT,
-    `name` TEXT COMMENT '박물관명칭',
-    region TEXT COMMENT '지역',
-    roadLocation TEXT COMMENT '소재지도로',
-    latitude DOUBLE COMMENT '위도',
-    longitude DOUBLE COMMENT '경도',
-    phoneNumber TEXT COMMENT '전화번호',
-    `body` TEXT COMMENT '내용',    
-    price TEXT COMMENT '비용',
-    imgAdr TEXT COMMENT '이미지주소'
-);
-
-# ArtMuseum 테이블 생성
-CREATE TABLE artMuseum(
-    id INT(10) UNSIGNED NOT NULL PRIMARY KEY AUTO_INCREMENT,
-    `name` TEXT COMMENT '박물관명칭',
+    `name` TEXT COMMENT '명칭',
     region TEXT COMMENT '지역',
     roadLocation TEXT COMMENT '소재지도로',
     latitude DOUBLE COMMENT '위도',
@@ -335,22 +292,7 @@ CREATE TABLE artMuseum(
     `type` TEXT COMMENT '타입'
 );
 
-# HistoricalSite 테이블 생성
-CREATE TABLE historicalSite(
-    id INT(10) UNSIGNED NOT NULL PRIMARY KEY AUTO_INCREMENT,
-    `name` TEXT COMMENT '박물관명칭',
-    region TEXT COMMENT '지역',
-    roadLocation TEXT COMMENT '소재지도로',
-    latitude DOUBLE COMMENT '위도',
-    longitude DOUBLE COMMENT '경도',
-    phoneNumber TEXT COMMENT '전화번호',
-    `body` TEXT COMMENT '내용',    
-    price TEXT COMMENT '비용',
-    imgAdr TEXT COMMENT '이미지주소',
-    `type` TEXT COMMENT '타입'
-);
-
-# RecreationalForest 테이블 생성
+# festival 테이블 생성
 CREATE TABLE festival(
     id INT(10) UNSIGNED NOT NULL PRIMARY KEY AUTO_INCREMENT,
     `name` TEXT COMMENT '명칭',
@@ -467,6 +409,8 @@ INSERT INTO festival_images (festival_id, image_url) VALUES
 (22, 'https://dimg.donga.com/wps/NEWS/IMAGE/2018/08/29/91742430.1.jpg'),
 (22, 'https://cdn.cbinews.co.kr/news/photo/201808/124161_65228_3144.jpg');
 
+SELECT * FROM themePalce;
+
 SELECT * FROM recreationalForest;
 
 			SELECT *
@@ -490,12 +434,6 @@ SELECT * FROM article;
 SELECT * FROM `member`;
 
 SELECT * FROM `board`;
-
-SELECT * FROM museum;
-
-SELECT * FROM artMuseum;
-
-SELECT * FROM historicalSite;
 
 SELECT * FROM reactionPoint;
 

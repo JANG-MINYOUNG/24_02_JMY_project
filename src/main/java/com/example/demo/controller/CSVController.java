@@ -13,12 +13,6 @@ public class CSVController {
 
     @Autowired
     private CSVService csvService;
-
-    @GetMapping("/readAndSaveToDB")
-    @ResponseBody
-    public String readAndSaveToDB() {
-        return csvService.readAndSaveToDB();
-    }
     
     @GetMapping("/readAndSaveToDB1")
     @ResponseBody
@@ -30,23 +24,5 @@ public class CSVController {
     @ResponseBody
     public String readAndSaveToDB2() {
         return csvService.readAndSaveToDB2();
-    }
-    
-    @GetMapping("/readAndSaveToDB3")
-    @ResponseBody
-    public String readAndSaveToDB3() {
-        return csvService.readAndSaveToDB3();
-    }
-    
-    @GetMapping("/readAndSaveToDB4")
-    @ResponseBody
-    public String readAndSaveToDB4() {
-        return csvService.readAndSaveToDB4();
-    }
-    
-    @GetMapping("/readAndSaveToDB5")
-    @ResponseBody
-    public String readAndSaveToDB5() {
-        return csvService.readAndSaveToDB5();
     }
 }

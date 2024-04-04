@@ -7,7 +7,7 @@ import lombok.NoArgsConstructor;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class Museum {
+public class ThemePlace {
 	private int id;
 	private String name;
 	private String region;
@@ -18,4 +18,5 @@ public class Museum {
 	private String body;
 	private String price;
 	private String imgAdr;
+	private String type;
 }
