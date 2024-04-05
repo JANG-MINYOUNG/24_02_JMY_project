@@ -409,7 +409,15 @@ INSERT INTO festival_images (festival_id, image_url) VALUES
 (22, 'https://dimg.donga.com/wps/NEWS/IMAGE/2018/08/29/91742430.1.jpg'),
 (22, 'https://cdn.cbinews.co.kr/news/photo/201808/124161_65228_3144.jpg');
 
-SELECT * FROM themePalce;
+SELECT * FROM themePlace;
+
+SELECT * FROM themePlace
+WHERE region LIKE '충북%'
+AND `type` = '공원';
+
+SELECT * FROM themePlace
+WHERE region = '대전'
+AND `type` = '휴양림';
 
 SELECT * FROM recreationalForest;
 

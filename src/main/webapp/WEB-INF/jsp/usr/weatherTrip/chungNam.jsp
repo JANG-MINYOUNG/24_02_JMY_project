@@ -14,7 +14,7 @@
 
 				// API 요청을 위한 매개변수
 				var params = {
-					q : 'Ostrava', // 도시 이름 (영어)
+					q : 'Cheonan', // 도시 이름 (영어)
 					appid : apiKey, // 여러분의 API 키
 					units : 'metric' // 온도 단위 (섭씨)
 				};
