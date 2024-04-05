@@ -16,12 +16,13 @@
 		<p4>· 비용 <span style="font-size: 14px; color: black;">${themePlace.price }</span></p4>
 		<p5>· 문의처 <span style="font-size: 14px; color: black;">${themePlace.phoneNumber }</span></p5>
 	</div>
-	<div class="detail_nav" style="margin-left: 130px;">
-		<a href="" style="font-size: 20px; margin-right: 20px;">소개</a> <a href="" style="font-size: 20px; margin-right: 20px;">사진갤러리</a>
-		<a href="" style="font-size: 20px;">오시는길</a>
+	<div class="detail_nav">
+		<a href="#intro" style="font-size: 20px; margin-right: 20px;">축제 소개</a> <a href="#gallery"
+			style="font-size: 20px; margin-right: 20px;"
+		>사진갤러리</a> <a href="#directions" style="font-size: 20px;">오시는길</a>
 		<hr style="color: #c0c0c0;" />
 	</div>
-	<div class="detail_info">
+	<div class="detail_info" id="intro">
 		<h2 style="font-size: 25px; font-weight: 700; margin-left: 25%; padding: 80px 0 80px 0;">소개</h2>
 		<div class="festival_body"
 			style="margin-left: 35%; text-align: left; margin-top: -120px; margin-bottom: 80px; width: 1000px;"
@@ -30,7 +31,7 @@
 		</div>
 		<hr style="color: #c0c0c0; border: none; border-top: 3px dotted #c0c0c0;" />
 	</div>
-	<div class="detail_img">
+	<div class="detail_img" id="gallery">
 		<h2 style="font-size: 25px; font-weight: 700; margin-left: 25%; padding: 80px 0 80px 0;">갤러리</h2>
 		<div class="main">
 			<div class="slider slider-for">
@@ -51,7 +52,7 @@
 	</div>
 	<hr style="color: #c0c0c0; border: none; border-top: 3px dotted #c0c0c0;" />
 	<hr style="color: #c0c0c0; border: none; border-top: 3px dotted #c0c0c0;" />
-	<div class="place_nav">
+	<div class="place_nav" id="directions">
 		<h2 style="font-size: 25px; font-weight: 700; margin-left: 25%; padding: 80px 0 80px 0;">오시는 길</h2>
 		<div id="map" style="width: 43%; height: 550px; margin-left: 35%; bottom: 120px;"></div>
 	</div>
@@ -90,4 +91,39 @@ content : iwContent
 
 //마커 위에 인포윈도우를 표시합니다. 두번째 파라미터인 marker를 넣어주지 않으면 지도 위에 표시됩니다
 infowindow.open(map, marker); 
+</script>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    var introLink = document.querySelector('a[href="#intro"]');
+    var galleryLink = document.querySelector('a[href="#gallery"]');
+    var directionsLink = document.querySelector('a[href="#directions"]');
+
+    // 소개 태그 클릭 시
+    introLink.addEventListener('click', function(event) {
+        event.preventDefault();
+        console.log('Intro link clicked');
+        scrollToElement('intro');
+    });
+
+    // 사진갤러리 태그 클릭 시
+    galleryLink.addEventListener('click', function(event) {
+        event.preventDefault();
+        scrollToElement('gallery');
+    });
+
+    // 오시는길 태그 클릭 시
+    directionsLink.addEventListener('click', function(event) {
+        event.preventDefault();
+        scrollToElement('directions');
+    });
+
+    // 스크롤 이동 함수
+    function scrollToElement(elementId) {
+        var element = document.getElementById(elementId);
+        if (element) {
+            element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+    }
+});
 </script>

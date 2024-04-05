@@ -97,3 +97,5 @@ const swiper = new Swiper(".swiper-slider", {
    var slideno = $(this).data('slide');
    $('.slider-nav').slick('slickGoTo', slideno - 1);
  });
+ 
+ 
