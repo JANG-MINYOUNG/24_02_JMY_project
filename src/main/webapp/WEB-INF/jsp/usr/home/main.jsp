@@ -2,6 +2,7 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <c:set var="pageTitle" value=""></c:set>
 <%@ include file="../common/head.jspf"%>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
 <script>
 	document.addEventListener("DOMContentLoaded", function() {
@@ -123,21 +124,17 @@
 	<div class="nav-box-bg"></div>
 </div>
 <div class="weather-box">
-	<h2>날씨별 액티비티</h2>
-	<p1>GABODA 추천하는 액티비티</p1>
-	<p2>지역 날씨별 재밌는 활동을 찾아보세요.</p2>
-	<div class="search-box">
-    <label class="input input-bordered">
-        <input type="text" placeholder="지역을 입력해주세요." />
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor">
-            <path fill-rule="evenodd" d="M9.965 11.026a5 5 0 1 1 1.06-1.06l2.755 2.754a.75.75 0 1 1-1.06 1.06l-2.755-2.754ZM10.5 7a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Z" clip-rule="evenodd" />
-        </svg>
-    </label>
-	</div>
-	<p3>Daejeon</p3>
-	<p4>23일 (금) 오후 13:05</p4>
-	<img class="weather_img" src="data:image/png;base64,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" alt="" />
-	<img class="weather_place" src="https://img1.daumcdn.net/thumb/R800x0/?scode=mtistory2&fname=https%3A%2F%2Ft1.daumcdn.net%2Fcfile%2Ftistory%2F224568365460AA7607" alt="" />
+    <h2>날씨별 여행지</h2>
+    <div style="margin-top: 750px; font-size: 20px; margin-left: 400px">
+        <label for="searchInput">지역 검색:</label>
+        <input type="text" id="searchInput" placeholder="지역명을 입력하세요">
+        <button id="searchButton">검색</button>
+    </div>
+    <div class="weather-info" style="font-size: 40px; margin-left: 400px">
+        <div class="city" style="margin-top:10px"></div>
+        <div class="temperature"></div>
+        <div class="weather-icon" style="background-color: rgba(0, 0, 0, 0.2); position: absolute; border-radius: 10px;"></div>
+    </div>
 </div>
 <div class="theme_place">
 	<p>추천! 테마여행</p>
@@ -163,4 +160,62 @@
 	<div class="theme_nav_bg"></div>
 </div>
 
+<script>
+$(document).ready(function() {
+    // 여러분의 OpenWeatherMap API 키
+    var apiKey = '5d7a915f0fea8a335322d566d2ce04af';
 
+    // 현재 날씨 데이터를 가져오기 위한 API 엔드포인트
+    var apiUrl = 'https://api.openweathermap.org/data/2.5/weather';
+
+    // 날씨 데이터를 가져오는 함수
+    function getWeatherData(city) {
+        // API 요청을 위한 매개변수
+        var params = {
+            q: city, // 도시 이름 (영어)
+            appid: apiKey, // 여러분의 API 키
+            units: 'metric' // 온도 단위 (섭씨)
+        };
+
+        // AJAX 요청을 보냅니다.
+        $.ajax({
+            url: apiUrl,
+            data: params,
+            dataType: 'json',
+            success: function(data) {
+                // 날씨 정보를 표시합니다.
+                displayWeather(data);
+            },
+            error: function(xhr, status, error) {
+                // 오류 처리
+                console.error('날씨 데이터 가져오기 오류:', error);
+            }
+        });
+    }
+
+    // 날씨 정보를 화면에 표시하는 함수
+    function displayWeather(data) {
+        // 날씨 아이콘 처리
+        var weatherIcon = data.weather[0].icon;
+        var iconUrl = 'http://openweathermap.org/img/wn/' + weatherIcon + '.png';
+        $('.weather-icon').html('<img src="' + iconUrl + '">');
+
+        // 온도 처리
+        var temperature = Math.round(data.main.temp);
+        $('.temperature').text(temperature + '°C');
+
+        // 도시 이름 처리
+        var cityName = data.name;
+        $('.city').text(cityName);
+    }
+
+    // 검색 버튼 클릭 시
+    $('#searchButton').click(function() {
+        var city = $('#searchInput').val();
+        getWeatherData(city);
+    });
+
+    // 초기 로딩 시 기본 도시 날씨 정보 표시
+    getWeatherData('daejeon');
+});
+</script>
