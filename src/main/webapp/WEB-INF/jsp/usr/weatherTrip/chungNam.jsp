@@ -12,11 +12,13 @@
 				// 현재 날씨 데이터를 가져오기 위한 API 엔드포인트
 				var apiUrl = 'https://api.openweathermap.org/data/2.5/weather';
 
-				// API 요청을 위한 매개변수
+				var cityNameKorean = '천안'; // 도시 이름 한국어 표시용
+				var cityNameEnglish = 'Cheonan'; // 도시 이름 영어 API 요청용
+
 				var params = {
-					q : 'Cheonan', // 도시 이름 (영어)
-					appid : apiKey, // 여러분의 API 키
-					units : 'metric' // 온도 단위 (섭씨)
+					q: cityNameEnglish,
+					appid: apiKey,
+					units: 'metric'
 				};
 
 				// 날씨 데이터를 가져오기 위한 AJAX 요청
@@ -36,8 +38,7 @@
 						$('.temperature').text(temperature + '°C');
 
 						// 도시 이름 처리
-						var cityName = data.name;
-						$('.city').text(cityName);
+						$('.city').text(cityNameKorean);
 					},
 					error : function(xhr, status, error) {
 						// 오류 처리

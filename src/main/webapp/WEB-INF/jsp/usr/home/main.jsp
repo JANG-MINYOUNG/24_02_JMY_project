@@ -64,97 +64,108 @@
 </script>
 
 <div class="jb-box">
-    <div class="video-container">
-        <video muted autoplay loop class="fullscreen-video active">
-            <source src="https://cdn.pixabay.com/vimeo/520427411/66824.mp4?width=1280&hash=6c4ada6a92bd57883cca37907d498a441bd15e62">
-        </video>
-        <video muted autoplay loop class="fullscreen-video">
-            <source src="https://cdn.pixabay.com/vimeo/520427439/66836.mp4?width=1280&hash=e4de1b3a5991ebe3fef02d733167be5680c6f16d">
-        </video>
-        <video muted autoplay loop class="fullscreen-video">
-            <source src="https://cdn.pixabay.com/vimeo/331216046/22865.mp4?width=1280&hash=dc24307d8be3334125292c394a7e2f9388a85a03">
-        </video>
-    </div>
-    <div class="text-box">
-        <h2 style="color: white;">2024년 벚꽃 개화 시즌</h2>
-        <p class="spring-info" style="color: #ff69b4;">대전, 충청도 <span style="font-size: 32px;">벚꽃 보러가자!</span></p>
-        <p class="spring-greeting" style="color: white; font-size: 24px;">안녕, 봄!</p>
-        <p style="color: white; font-size: 24px;">올 봄엔 GABODA와 함께!</p>
-    </div>
+	<div class="video-container">
+		<video muted autoplay loop class="fullscreen-video active">
+			<source
+				src="https://cdn.pixabay.com/vimeo/520427411/66824.mp4?width=1280&hash=6c4ada6a92bd57883cca37907d498a441bd15e62"
+			>
+		</video>
+		<video muted autoplay loop class="fullscreen-video">
+			<source
+				src="https://cdn.pixabay.com/vimeo/520427439/66836.mp4?width=1280&hash=e4de1b3a5991ebe3fef02d733167be5680c6f16d"
+			>
+		</video>
+		<video muted autoplay loop class="fullscreen-video">
+			<source
+				src="https://cdn.pixabay.com/vimeo/331216046/22865.mp4?width=1280&hash=dc24307d8be3334125292c394a7e2f9388a85a03"
+			>
+		</video>
+	</div>
+	<div class="text-box">
+		<h2 style="color: white;">2024년 벚꽃 개화 시즌</h2>
+		<p class="spring-info" style="color: #ff69b4;">
+			대전, 충청도 <span style="font-size: 32px;">벚꽃 보러가자!</span>
+		</p>
+		<p class="spring-greeting" style="color: white; font-size: 24px;">안녕, 봄!</p>
+		<p style="color: white; font-size: 24px;">올 봄엔 GABODA와 함께!</p>
+	</div>
 </div>
 
 <div class="nav-box">
 	<div class="text-box2">
-		<h2>봄, 시즌 <span class="bold" style="font-weight: 800;">여행지</span></h2>
+		<h2>
+			봄, 시즌 <span class="bold" style="font-weight: 800;">여행지</span>
+		</h2>
 		<a href="/usr/trip/main">추천 여행지 바로가기</a>
 	</div>
-	
+
 	<div class="img-box2">
-	<img src="https://i.ibb.co/nPZh7qf/20.png" alt="" /></div>
-	<div class="nav-box2-container">	
+		<img src="https://i.ibb.co/nPZh7qf/20.png" alt="" />
+	</div>
+	<div class="nav-box2-container">
 		<div class="nav-box2">
-			<a href="">추천! 테마여행</a>
-			<a href="/usr/trip/daeJeon" id="scrollToDestination">추천 여행지로 바로가기</a>
+			<a href="">추천! 테마여행</a> <a href="/usr/trip/daeJeon" id="scrollToDestination">추천 여행지로 바로가기</a>
 		</div>
 		<div class="img-box3">
 			<a href="#"><img src="https://i.ibb.co/2M657Lz/image.jpg" alt="image" border="0"></a>
 		</div>
-	</div>		
-	<div class="nav-box3-container">	
+	</div>
+	<div class="nav-box3-container">
 		<div class="nav-box3">
-			<a href="/usr/weatherTrip/main">날씨별! 액티비티</a>
-			<a href="/usr/weatherTrip/main">날씨별 여행지 바로가기</a>
+			<a href="/usr/weatherTrip/main">날씨별! 액티비티</a> <a href="/usr/weatherTrip/main">날씨별 여행지 바로가기</a>
 		</div>
 		<div class="img-box4">
-			<a href="#"><img src="https://lh3.googleusercontent.com/p/AF1QipNWcAVvjkMq1iLowvG5YwVy6Vh0DxZpcoWqk1Po=s680-w680-h510" alt="image" border="0"></a>
+			<a href="#"><img
+				src="https://lh3.googleusercontent.com/p/AF1QipNWcAVvjkMq1iLowvG5YwVy6Vh0DxZpcoWqk1Po=s680-w680-h510" alt="image"
+				border="0"
+			></a>
 		</div>
 	</div>
-	<div class="nav-box4-container">	
+	<div class="nav-box4-container">
 		<div class="nav-box4">
-			<a href="/usr/companion/list">동행자 찾기!</a>
-			<a href="/usr/companion/list">함께 떠날 동료 찾기</a>
+			<a href="/usr/companion/list">동행자 찾기!</a> <a href="/usr/companion/list">함께 떠날 동료 찾기</a>
 		</div>
 	</div>
-	<div class="nav-box5-container">	
+	<div class="nav-box5-container">
 		<div class="nav-box5">
-			<a href="/usr/article/freeBoard/list?boardId=2&page=1">나만의 여행 일지 남기기</a>
-			<a href="/usr/article/freeBoard/list?boardId=2&page=1">여행일지 바로가기</a>
+			<a href="/usr/article/freeBoard/list?boardId=2&page=1">나만의 여행 일지 남기기</a> <a
+				href="/usr/article/freeBoard/list?boardId=2&page=1"
+			>여행일지 바로가기</a>
 		</div>
 	</div>
 	<div class="nav-box-bg"></div>
 </div>
 <div class="weather-box">
-    <h2>날씨별 여행지</h2>
-    <div style="margin-top: 750px; font-size: 20px; margin-left: 400px">
-        <label for="searchInput">지역 검색:</label>
-        <input type="text" id="searchInput" placeholder="지역명을 입력하세요">
-        <button id="searchButton">검색</button>
-    </div>
-    <div class="weather-info" style="font-size: 40px; margin-left: 400px">
-        <div class="city" style="margin-top:10px"></div>
-        <div class="temperature"></div>
-        <div class="weather-icon" style="background-color: rgba(0, 0, 0, 0.2); position: absolute; border-radius: 10px;"></div>
-    </div>
+	<h2>날씨별 여행지</h2>
+	<div style="margin-top: 750px; font-size: 20px; margin-left: 400px">
+		<label for="searchInput">지역 검색:</label> <input type="text" id="searchInput" placeholder="지역명을 입력하세요">
+		<button id="searchButton">검색</button>
+	</div>
+	<div class="weather-info" style="font-size: 40px; margin-left: 400px">
+		<div class="city" style="margin-top: 10px"></div>
+		<div class="temperature"></div>
+		<div class="weather-icon" style="background-color: rgba(0, 0, 0, 0.2); position: absolute; border-radius: 10px;"></div>
+	</div>
 </div>
 <div class="theme_place">
 	<p>추천! 테마여행</p>
 	<div class="theme_nav">
-		<a class="theme_nav_img1" style="color: #ffffff; text-align: center; line-height: 50px;" href="#">공원</a>
-		<a class="theme_nav_img2" style="color: #ffffff; text-align: center; line-height: 50px;" href="#">휴양림</a>
-		<a class="theme_nav_img3" style="color: #ffffff; text-align: center; line-height: 50px;" href="#">박물관</a>
-		<a class="theme_nav_img4" style="color: #ffffff; text-align: center; line-height: 50px;" href="#">미술관</a>
-		<a class="theme_nav_img5" style="color: #ffffff; text-align: center; line-height: 50px;" href="#">유적지</a>
+		<a class="theme_nav_img1" style="color: #ffffff; text-align: center; line-height: 50px;" href="#">공원</a> <a
+			class="theme_nav_img2" style="color: #ffffff; text-align: center; line-height: 50px;" href="#"
+		>휴양림</a> <a class="theme_nav_img3" style="color: #ffffff; text-align: center; line-height: 50px;" href="#">박물관</a> <a
+			class="theme_nav_img4" style="color: #ffffff; text-align: center; line-height: 50px;" href="#"
+		>미술관</a> <a class="theme_nav_img5" style="color: #ffffff; text-align: center; line-height: 50px;" href="#">유적지</a>
 	</div>
 	<div class="theme_nav_place1">
-		<img src="https://i.ibb.co/9W4DyNn/image.jpg" alt="" class="first-image" />
-    	<img src="https://i.ibb.co/7yMt3wP/1.jpg" alt="" class="second-image" />
-    	<img src="https://i.ibb.co/hZDmpFN/2.jpg" alt="" class="third-image" />
+		<img src="https://i.ibb.co/9W4DyNn/image.jpg" alt="" class="first-image" /> <img src="https://i.ibb.co/7yMt3wP/1.jpg"
+			alt="" class="second-image"
+		/> <img src="https://i.ibb.co/hZDmpFN/2.jpg" alt="" class="third-image" />
 		<p>대전지질박물관</p>
 	</div>
 	<div class="theme_nav_place2">
-		<img src="https://i.ibb.co/RvkgQg0/image.jpg" alt="" class="first-image" />
-    	<img src="https://i.ibb.co/j4GYkGk/1.jpg" alt="" class="second-image" />
-    	<img src="https://i.ibb.co/ggb5Cxs/2.jpg" alt="" class="third-image" />
+		<img src="https://i.ibb.co/RvkgQg0/image.jpg" alt="" class="first-image" /> <img src="https://i.ibb.co/j4GYkGk/1.jpg"
+			alt="" class="second-image"
+		/> <img src="https://i.ibb.co/ggb5Cxs/2.jpg" alt="" class="third-image" />
 		<p>국립청주박물관</p>
 	</div>
 	<div class="theme_nav_bg"></div>
@@ -172,9 +183,10 @@ $(document).ready(function() {
     function getWeatherData(city) {
         // API 요청을 위한 매개변수
         var params = {
-            q: city, // 도시 이름 (영어)
+            q: city, // 도시 이름 (한국어)
             appid: apiKey, // 여러분의 API 키
-            units: 'metric' // 온도 단위 (섭씨)
+            units: 'metric', // 온도 단위 (섭씨)
+            lang: 'kr' // 언어 설정 (한국어)
         };
 
         // AJAX 요청을 보냅니다.
@@ -219,3 +231,5 @@ $(document).ready(function() {
     getWeatherData('daejeon');
 });
 </script>
+
+
