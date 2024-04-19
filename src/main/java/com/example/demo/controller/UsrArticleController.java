@@ -1,6 +1,7 @@
 package com.example.demo.controller;
 
 import java.util.List;
+import java.util.Map;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -8,9 +9,12 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.multipart.MultipartFile;
+import org.springframework.web.multipart.MultipartRequest;
 
 import com.example.demo.service.ArticleService;
 import com.example.demo.service.BoardService;
+import com.example.demo.service.GenFileService;
 import com.example.demo.service.ReactionPointService;
 import com.example.demo.service.ReplyService;
 import com.example.demo.util.Ut;
@@ -38,6 +42,9 @@ public class UsrArticleController {
 	private ReplyService replyService;
 
 	@Autowired
+	private GenFileService genFileService;
+
+	@Autowired
 	private ReactionPointService reactionPointService;
 
 	public UsrArticleController() {
@@ -49,7 +56,7 @@ public class UsrArticleController {
 	@RequestMapping("/usr/article/freeBoard/list")
 	public String showList(HttpServletRequest req, Model model, @RequestParam(defaultValue = "1") int boardId,
 			@RequestParam(defaultValue = "1") int page,
-			@RequestParam(defaultValue = "title,body,extra__writer") String searchKeywordTypeCode,
+			@RequestParam(defaultValue = "title,body") String searchKeywordTypeCode,
 			@RequestParam(defaultValue = "") String searchKeyword) {
 
 		Rq rq = (Rq) req.getAttribute("rq");
@@ -81,7 +88,7 @@ public class UsrArticleController {
 		model.addAttribute("articlesCount", articlesCount);
 		model.addAttribute("articles", articles);
 
-		return "/usr/article/freeBoard/list";
+		return "usr/article/freeBoard/list";
 	}
 
 	@RequestMapping("/usr/article/freeBoard/detail")
@@ -107,7 +114,7 @@ public class UsrArticleController {
 		model.addAttribute("isAlreadyAddBadRp",
 				reactionPointService.isAlreadyAddBadRp(rq.getLoginedMemberId(), id, "article"));
 
-		return "/usr/article/freeBoard/detail";
+		return "usr/article/freeBoard/detail";
 	}
 
 	@RequestMapping("/usr/article/doIncreaseHitCountRd")
@@ -129,14 +136,19 @@ public class UsrArticleController {
 	}
 
 	@RequestMapping("/usr/article/freeBoard/write")
-	public String showJoin(HttpServletRequest req) {
+	public String showJoin(Model model) {
 
-		return "/usr/article/freeBoard/write";
+		int currentId = articleService.getCurrentArticleId();
+
+		model.addAttribute("currentId", currentId);
+
+		return "usr/article/freeBoard/write";
 	}
 
 	@RequestMapping("/usr/article/freeBoard/doWrite")
 	@ResponseBody
-	public String doWrite(HttpServletRequest req, String title, String body, int boardId) {
+	public String doWrite(HttpServletRequest req, int boardId, String title, String body, String replaceUri,
+			MultipartRequest multipartRequest) {
 
 		Rq rq = (Rq) req.getAttribute("rq");
 
@@ -152,6 +164,16 @@ public class UsrArticleController {
 		int id = (int) writeArticleRd.getData1();
 
 		Article article = articleService.getArticle(id);
+
+		Map<String, MultipartFile> fileMap = multipartRequest.getFileMap();
+
+		for (String fileInputName : fileMap.keySet()) {
+			MultipartFile multipartFile = fileMap.get(fileInputName);
+
+			if (multipartFile.isEmpty() == false) {
+				genFileService.save(multipartFile, id);
+			}
+		}
 
 		return Ut.jsReplace(writeArticleRd.getResultCode(), writeArticleRd.getMsg(), "/usr/article/freeBoard/detail?id=" + id);
 
@@ -169,7 +191,7 @@ public class UsrArticleController {
 
 		model.addAttribute("article", article);
 
-		return "/usr/article/freeBoard/modify";
+		return "usr/article/freeBoard/modify";
 	}
 
 	@RequestMapping("/usr/article/freeBoard/doModify")
@@ -190,7 +212,7 @@ public class UsrArticleController {
 		}
 
 		return Ut.jsReplace(loginedMemberCanModifyRd.getResultCode(), loginedMemberCanModifyRd.getMsg(),
-				"../article/freeBoard/detail?id=" + id);
+				"../freeBoard/detail?id=" + id);
 	}
 
 	// 로그인 체크 -> 유무 체크 -> 권한 체크 -> 삭제

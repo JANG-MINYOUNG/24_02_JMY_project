@@ -20,6 +20,12 @@
 		<jackson.version>2.12.5</jackson.version>
 	</properties>
 	<dependencies>
+		<!-- 파일 업로드를 위한 -->
+		<dependency>
+			<groupId>com.google.guava</groupId>
+			<artifactId>guava</artifactId>
+			<version>31.1-jre</version>
+		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>

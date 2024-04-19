@@ -1,6 +1,10 @@
 server:
   port: 8082
 spring:
+  servlet:
+    multipart:
+      max-file-size: 100MB
+      max-request-size: 100MB
   mvc:
     view:
       prefix: /WEB-INF/jsp/
@@ -11,3 +15,7 @@ spring:
     url: jdbc:log4jdbc:mysql://127.0.0.1:3306/JMY_project?useUnicode=true&characterEncoding=utf8&autoReconnect=true&serverTimezone=Asia/Seoul&useOldAliasMetadataBehavior=true&zeroDateTimeNehavior=convertToNull
     username: root
     password: 
+mybatis:
+  type-aliases-package: com.example.demo.vo
+custom:
+  genFileDirPath: C:\work\sts-4.21.0.RELEASE-workspace\24_02_JMY_project\images    
