@@ -18,4 +18,4 @@ spring:
 mybatis:
   type-aliases-package: com.example.demo.vo
 custom:
-  genFileDirPath: C:\work\sts-4.21.0.RELEASE-workspace\24_02_JMY_project\images    
+  genFileDirPath: C:\work\sts-4.21.0.RELEASE-workspace\24_02_JMY_project\images

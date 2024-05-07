@@ -135,7 +135,7 @@
 	<div style="margin-bottom: 20px; font-size: 18px;">회원가입</div>
 	<form method="POST" action="doJoin" onsubmit="JoinForm__submit(this); return false;">
 		<div style="margin-bottom: 10px; font-size: 16px;">
-			<label class="upload-btn"> <i class="fas fa-user"></i>프로필 사진 업로드 <input type="file" name="profileImage"
+			<label for="profileImage"> <i class="fas fa-user"></i> <input type="file" name="profileImage"
 				accept="image/*"
 			/>
 			</label>

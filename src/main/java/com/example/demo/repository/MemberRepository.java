@@ -44,4 +44,3 @@ public interface MemberRepository {
 	@Select("SELECT * FROM `member` WHERE id = #{id}")
 	public Member getMember(int id);
 }
-

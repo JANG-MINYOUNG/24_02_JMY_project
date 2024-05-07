@@ -136,7 +136,7 @@ public class UsrArticleController {
 	}
 
 	@RequestMapping("/usr/article/freeBoard/write")
-	public String showJoin(Model model) {
+	public String showWrite(Model model) {
 
 		int currentId = articleService.getCurrentArticleId();
 
