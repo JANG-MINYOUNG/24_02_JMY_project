@@ -132,13 +132,15 @@
 	                var likeCount = $('#likeCount');
 	                var DislikeButton = $('#DislikeButton');
 	                var DislikeCount = $('#DislikeCount');
-
+	                var bottomLikeCount = $('.bottom-bar span:eq(0)');
+	                
 	                if (data.resultCode == 'S-1') {
 	                    DislikeButton.toggleClass('btn-outline');
 	                    DislikeCount.text('싫어요 ' + data.data2);
 	                } else if (data.resultCode == 'S-2') {
 	                    likeButton.toggleClass('btn-outline');
 	                    likeCount.text('좋아요 ' + data.data1);
+	                    bottomLikeCount.text('좋아요: ' + data.data1);
 	                    DislikeButton.toggleClass('btn-outline');
 	                    DislikeCount.text('싫어요 ' + data.data2);
 
@@ -260,12 +262,10 @@ function doModifyReply(replyId) {
                     <th id="DislikeCount" >싫어요 ${article.badReactionPoint }</th>   
                 </tr>
                 <tr style="text-align: left;">
-                    <th>추천 ${usersReaction }</th>
-                    <td>
-                        <!-- href="/usr/reactionPoint/doGoodReaction?relTypeCode=article&relId=${param.id }&replaceUri=${rq.currentUri}" -->
-                        <button id="likeButton" class="btn btn-outline btn-success" onclick="doGoodReaction(${param.id})">좋아요</button>
-                        <button id="DislikeButton" class="btn btn-outline btn-error" onclick="doBadReaction(${param.id})">싫어요</button>
-                    </td>
+                    <th style="text-align: left;">추천 ${usersReaction}	  
+        				<button id="likeButton" class="btn btn-outline btn-success" onclick="doGoodReaction(${param.id})">좋아요</button>
+        				<button id="DislikeButton" class="btn btn-outline btn-error" onclick="doBadReaction(${param.id})">싫어요</button>
+    				</th>
                 </tr>
             </tbody>
         </table>
