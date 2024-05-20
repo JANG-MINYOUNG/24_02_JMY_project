@@ -67,34 +67,34 @@
 	<div class="video-container">
 		<video muted autoplay loop class="fullscreen-video active">
 			<source
-				src="https://cdn.pixabay.com/vimeo/520427411/66824.mp4?width=1280&hash=6c4ada6a92bd57883cca37907d498a441bd15e62"
+				src="https://cdn.pixabay.com/video/2021/05/22/74890-553838570_tiny.mp4"
 			>
 		</video>
 		<video muted autoplay loop class="fullscreen-video">
 			<source
-				src="https://cdn.pixabay.com/vimeo/520427439/66836.mp4?width=1280&hash=e4de1b3a5991ebe3fef02d733167be5680c6f16d"
+				src="https://cdn.pixabay.com/video/2019/07/19/25356-351366267_tiny.mp4"
 			>
 		</video>
 		<video muted autoplay loop class="fullscreen-video">
 			<source
-				src="https://cdn.pixabay.com/vimeo/331216046/22865.mp4?width=1280&hash=dc24307d8be3334125292c394a7e2f9388a85a03"
+				src="https://cdn.pixabay.com/video/2020/11/02/54077-476396626_tiny.mp4"
 			>
 		</video>
 	</div>
 	<div class="text-box">
-		<h2 style="color: white;">2024년 벚꽃 개화 시즌</h2>
-		<p class="spring-info" style="color: #ff69b4;">
-			대전, 충청도 <span style="font-size: 32px;">벚꽃 보러가자!</span>
+		<h2 style="color: white;">2024년 물놀이 시즌</h2>
+		<p class="spring-info" style="color: #5363CF;">
+			대전, 충청도 <span style="font-size: 32px;">바다 보러가자!</span>
 		</p>
-		<p class="spring-greeting" style="color: white; font-size: 24px;">안녕, 봄!</p>
-		<p style="color: white; font-size: 24px;">올 봄엔 GABODA와 함께!</p>
+		<p class="spring-greeting" style="color: white; font-size: 24px;">안녕, 여름!</p>
+		<p style="color: white; font-size: 24px;">올 여름엔 GABODA와 함께!</p>
 	</div>
 </div>
 
-<div class="nav-box">
+<div class="nav-box"  >
 	<div class="text-box2">
 		<h2>
-			봄, 시즌 <span class="bold" style="font-weight: 800;">여행지</span>
+			여름, 시즌 <span class="bold" style="font-weight: 800;">여행지</span>
 		</h2>
 		<a href="/usr/trip/main">추천 여행지 바로가기</a>
 	</div>

@@ -5,7 +5,7 @@
 
 <div class="bg-video">
   <video class="bg-video__content" autoplay muted loop>
-    <source src="https://cdn.pixabay.com/vimeo/393990260/32737.mp4?width=1280&hash=2bcbefb60d49a2da37c474e222132495fff975a1" type="video/mp4" />
+    <source src="https://cdn.pixabay.com/video/2020/02/23/32737-393990260_tiny.mp4" type="video/mp4" />
   </video>
 </div>
 
