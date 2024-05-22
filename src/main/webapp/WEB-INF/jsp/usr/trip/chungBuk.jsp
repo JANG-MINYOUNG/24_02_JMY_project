@@ -154,10 +154,11 @@ $(document).ready(function() {
   <div class="container slider-column">
     <div class="swiper swiper-slider">
       <div class="swiper-wrapper">
-        <img class="swiper-slide" src="https://www.oc.go.kr/DATA/contents/main/20240228011439999_PLds.jpg" alt="Swiper">
-        <img class="swiper-slide" src="https://image.여기유.com/content_festival/2024031809223317107213532162.jpg" alt="Swiper">
-        <img class="swiper-slide" src="https://file2.nocutnews.co.kr/newsroom/image/2024/02/23/202402231414502960_2.jpg" alt="Swiper">
-        <img class="swiper-slide" src="https://tong.visitkorea.or.kr/cms/resource/51/3106451_image2_1.jpg" alt="Swiper">
+        <c:forEach items="${festivals}" var="festival" >
+          <a href="detail?id=${festival.id}" class="swiper-slide">
+            <img src="${festival.imgAdr}" alt="Swiper" class="swiper-slide">
+          </a>
+        </c:forEach>
       </div>
       <span class="swiper-pagination"></span>
       <span class="swiper-button-prev"></span>

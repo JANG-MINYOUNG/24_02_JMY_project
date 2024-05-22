@@ -52,7 +52,7 @@
 	    if (isNaN(params.memberId) == true) {
 	        if (confirm('로그인 후 이용해주세요.')) {
 	            var currentUri = encodeURIComponent(window.location.href);
-	            window.location.href = '../member/login?afterLoginUri=' + currentUri;
+	            window.location.href = '../../member/login?afterLoginUri=' + currentUri;
 	            return;
 	        }
 	    }
@@ -111,7 +111,7 @@
 	    if (isNaN(params.memberId) == true) {
 	        if (confirm('로그인 후 이용해주세요.')) {
 	            var currentUri = encodeURIComponent(window.location.href);
-	            window.location.href = '../member/login?afterLoginUri=' + currentUri;
+	            window.location.href = '../../member/login?afterLoginUri=' + currentUri;
 	            return;
 	        }
 	    }
@@ -276,7 +276,7 @@ function doModifyReply(replyId) {
             </c:if>
             <c:if test="${article.userCanDelete }">
                 <a class="btn btn-outline" onclick="if(confirm('정말 삭제하시겠습니까?') == false) return false;"
-                    href="../article/doDelete?id=${article.id }"
+                    href="/usr/article/freeBoard/doDelete?id=${article.id }"
                 >삭제</a>
             </c:if>
         </div>
@@ -349,7 +349,7 @@ function doModifyReply(replyId) {
                             </c:if></td>
                         <td><c:if test="${reply.userCanDelete }">
                                 <a style="white-space: nowrap;" class="btn btn-outline"
-                                    onclick="if(confirm('정말 삭제하시겠습니까?') == false) return false;" href="../reply/doDelete?id=${reply.id }"
+                                    onclick="if(confirm('정말 삭제하시겠습니까?') == false) return false;" href="/usr/reply/doDelete?id=${reply.id }"
                                 >삭제</a>
                             </c:if></td>
                         <td></td> <!-- 이 부분 추가 -->

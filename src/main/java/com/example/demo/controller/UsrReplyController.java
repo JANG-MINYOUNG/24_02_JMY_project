@@ -70,7 +70,7 @@ public class UsrReplyController {
 		if (Ut.isNullOrEmpty(replaceUri)) {
 			switch (reply.getRelTypeCode()) {
 			case "article":
-				replaceUri = Ut.f("../../article/freeBoard/detail?id=%d", reply.getRelId());
+				replaceUri = Ut.f("../article/freeBoard/detail?id=%d", reply.getRelId());
 				break;
 			}
 		}

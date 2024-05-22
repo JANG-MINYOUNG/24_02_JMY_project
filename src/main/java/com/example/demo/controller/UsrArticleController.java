@@ -234,7 +234,7 @@ public class UsrArticleController {
 		}
 
 		return Ut.jsReplace(loginedMemberCanDeleteRd.getResultCode(), loginedMemberCanDeleteRd.getMsg(),
-				"../article/freeBoard/list");
+				"../freeBoard/list");
 	}
 
 }

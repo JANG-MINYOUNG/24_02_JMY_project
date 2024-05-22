@@ -7,6 +7,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.multipart.MultipartFile;
 
 import com.example.demo.service.MemberService;
 import com.example.demo.util.Ut;
@@ -96,7 +97,7 @@ public class UsrMemberController {
 	@RequestMapping("/usr/member/doJoin")
 	@ResponseBody
 	public String doJoin(HttpServletRequest req, String loginId, String loginPw, String name, String nickname,
-			String cellphoneNum, String email) {
+			String cellphoneNum, String email, MultipartFile profileImage) {
 		Rq rq = (Rq) req.getAttribute("rq");
 		if (rq.isLogined()) {
 			return Ut.jsHistoryBack("F-A", "이미 로그인 상태입니다");
@@ -131,6 +132,12 @@ public class UsrMemberController {
 		Member member = memberService.getMember(joinRd.getData1());
 
 		return Ut.jsReplace(joinRd.getResultCode(), joinRd.getMsg(), "../member/login");
+	}
+	
+	@RequestMapping("/usr/member/myPage")
+	public String showMyPage() {
+
+		return "usr/member/myPage";
 	}
 
 	@PostMapping("/idOverlap")

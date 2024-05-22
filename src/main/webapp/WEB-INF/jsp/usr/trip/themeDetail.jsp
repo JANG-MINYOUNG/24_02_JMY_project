@@ -12,12 +12,14 @@
 		<hr style="color: #c0c0c0; margin-top: 20px; width: 85%;" />
 		<img style="margin-top: 20px; width: 500px; height: 400px;" src="${themePlace.imgAdr }" alt="" />
 		<h2>${themePlace.name }</h2>
-		<p3>· 위치 <span style="font-size: 14px; color: black;">${themePlace.roadLocation }</span></p3>
-		<p4>· 비용 <span style="font-size: 14px; color: black;">${themePlace.price }</span></p4>
-		<p5>· 문의처 <span style="font-size: 14px; color: black;">${themePlace.phoneNumber }</span></p5>
+		<div class="text_box">
+			<p3>· 위치 <span style="font-size: 14px; color: black;" >${themePlace.roadLocation }</span></p3>
+			<p4>· 비용 <span style="font-size: 14px; color: black;">${themePlace.price }</span></p4>
+			<p5>· 문의처 <span style="font-size: 14px; color: black;">${themePlace.phoneNumber }</span></p5>
+		</div>
 	</div>
 	<div class="detail_nav">
-		<a href="#intro" style="font-size: 20px; margin-right: 20px;">축제 소개</a> <a href="#gallery"
+		<a href="#intro" style="font-size: 20px; margin-right: 20px;">소개</a> <a href="#gallery"
 			style="font-size: 20px; margin-right: 20px;"
 		>사진갤러리</a> <a href="#directions" style="font-size: 20px;">오시는길</a>
 		<hr style="color: #c0c0c0;" />

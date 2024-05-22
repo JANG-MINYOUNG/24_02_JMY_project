@@ -14,10 +14,12 @@
 		<hr style="color: #c0c0c0; margin-top: 20px; width: 85%;" />
 		<img style="margin-top: 20px; width: 500px; height: 400px;" src="${Allfestival.imgAdr }" alt="" />
 		<h2>${Allfestival.name }</h2>
-		<p3>· 축제 시기 <span style="font-size: 14px; color: black;">${Allfestival.period }</span></p3>
-		<p4>· 축제 장소 <span style="font-size: 14px; color: black;">${Allfestival.roadLocation }</span></p4>
-		<p5>· 문의처 <span style="font-size: 14px; color: black;">${Allfestival.phoneNumber }</span></p5>
-		<p6>· 홈페이지 <a style="font-size: 14px; color: black;" href="${Allfestival.homePage }">${Allfestival.homePage }</a></p6>
+		<div class="text_box">
+			<p3>· 축제 시기 <span style="font-size: 14px; color: black;">${Allfestival.period }</span></p3>
+			<p4>· 축제 장소 <span style="font-size: 14px; color: black;">${Allfestival.roadLocation }</span></p4>
+			<p5>· 문의처 <span style="font-size: 14px; color: black;">${Allfestival.phoneNumber }</span></p5>
+			<p6>· 홈페이지 <a style="font-size: 14px; color: black;" href="${Allfestival.homePage }">${Allfestival.homePage }</a></p6>
+		</div>	
 	</div>
 	<div class="detail_nav">
 		<a href="#intro" style="font-size: 20px; margin-right: 20px;">축제 소개</a> <a href="#gallery"

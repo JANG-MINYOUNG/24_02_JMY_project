@@ -153,12 +153,11 @@ $(document).ready(function() {
   <div class="container slider-column">
     <div class="swiper swiper-slider">
       <div class="swiper-wrapper">
-        <img class="swiper-slide" src="https://pbs.twimg.com/media/GISYc3Xa0AATcbP.jpg" alt="Swiper">
-        <img class="swiper-slide" src="https://www.e-fastnews.com/news/photo/202403/18263_35384_355.jpg" alt="Swiper">
-        <img class="swiper-slide" src=https://i.ytimg.com/vi/pgW0T7tC9fo/maxresdefault.jpg alt="Swiper">
-        <img class="swiper-slide" src="https://cdn.cctoday.co.kr/news/photo/202305/2177793_613266_5003.jpg" alt="Swiper">
-        <img class="swiper-slide" src="https://i.ytimg.com/vi/l1tCRSV2irk/hqdefault.jpg?sqp=-oaymwEmCOADEOgC8quKqQMa8AEB-AH-CYAC0AWKAgwIABABGEkgTChlMA8=&rs=AOn4CLCr1IDFfap3jkyujN-KVkiK-aL5Zg" alt="Swiper">
-        <img class="swiper-slide" src="https://www.kclassicnews.com/data/photos/portnews/202403/20240312082859-83914.jpg" alt="Swiper">
+        <c:forEach items="${festivals}" var="festival" >
+          <a href="detail?id=${festival.id}" class="swiper-slide">
+            <img src="${festival.imgAdr}" alt="Swiper" class="swiper-slide">
+          </a>
+        </c:forEach>
       </div>
       <span class="swiper-pagination"></span>
       <span class="swiper-button-prev"></span>

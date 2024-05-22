@@ -151,20 +151,11 @@ $(document).ready(function() {
   <div class="container slider-column">
     <div class="swiper swiper-slider">
       <div class="swiper-wrapper">
-        <img class="swiper-slide" src="https://www.nonsan.go.kr/nsfestival/img/main/mvisual_bg_240304.jpg" alt="Swiper">
-        <img class="swiper-slide" src="https://cdn.imweb.me/thumbnail/20240304/bda56287c8c3a.jpg" alt="Swiper">
-        <img class="swiper-slide" src="https://www.thefestival.co.kr/upfile/img/2024/03/admin_1710026742.jpg" alt="Swiper">
-        <img class="swiper-slide" src="https://www.hongseong.go.kr/thumbnail/tursmCn/920_TUCN_202401101106322711.jpg" alt="Swiper">
-        <img class="swiper-slide" src="https://www.ffestival.co.kr/img_up/shop_pds/kp575/design/my_xml/star_ex1661145769.jpg" alt="Swiper">
-        <img class="swiper-slide" src="https://www.nie.re.kr/cmmn/file/imageSrc.do?atchFileId=2d0f707e90194f57870ddbfaa0e9457f&fileSn=2&thumb=Y" alt="Swiper">
-        <img class="swiper-slide" src="https://www.hongseong.go.kr/thumbnail/tursmCn/920_TUCN_202401101106322711.jpg" alt="Swiper">
-        <img class="swiper-slide" src="https://lh3.googleusercontent.com/proxy/283C4Irffnj06zCZqu0_UzstVGdS88h8SmYZ11KY-Y34tAsqRbR5YGoJlgm4iEl1KVCLvftMyw7dYRgSQ64ktk_iHDl9wv-PhxUMGOAOQLYb1pOU4gYBrjqH-OO7tQU" alt="Swiper">
-        <img class="swiper-slide" src="https://i.ytimg.com/vi/XQp2FKQlsoE/maxresdefault.jpg" alt="Swiper">
-        <img class="swiper-slide" src="https://kfescdn.visitkorea.or.kr/kfes/upload/contents/db/df17f696-4b9f-4097-9c46-615ade39068a_3.png" alt="Swiper">
-        <img class="swiper-slide" src="https://culture.asan.go.kr/upload_data/m_culture_set/lss_2.jpg" alt="Swiper">
-        <img class="swiper-slide" src="https://i.ytimg.com/vi/VH8owYNWr9Y/maxresdefault.jpg?sqp=-oaymwEmCIAKENAF8quKqQMa8AEB-AH-CYAC0AWKAgwIABABGGwgMyh_MA8=&rs=AOn4CLARfLCwIC6GoFjx3DoHVu8ogRYU9w" alt="Swiper">
-        <img class="swiper-slide" src="https://www.hdcity.co.kr/Upload/20240227/2024%20%ED%8F%AC%EC%8A%A4%ED%84%B0.png" alt="Swiper">
-        <img class="swiper-slide" src="https://kfescdn.visitkorea.or.kr/kfes/upload/contents/db/9805568b-eff7-4336-90e3-c3413a87034a_3.JPG" alt="Swiper">
+        <c:forEach items="${festivals}" var="festival" >
+          <a href="detail?id=${festival.id}" class="swiper-slide">
+            <img src="${festival.imgAdr}" alt="Swiper" class="swiper-slide">
+          </a>
+        </c:forEach>
       </div>
       <span class="swiper-pagination"></span>
       <span class="swiper-button-prev"></span>
