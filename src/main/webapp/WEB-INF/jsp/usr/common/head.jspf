@@ -76,6 +76,15 @@
                             <li><a href="/usr/article/freeBoard/list?boardId=2&page=1">나의 여행일지</a></li>
                         </ul>
                     </li>
+                    <li>
+                        <span class="flex flex-ai-c height-100p">시즌별 메인페이지</span>
+                        <ul>
+                            <li><a href="/usr/home/springMainPage">봄</a></li>
+                            <li><a href="/usr/home/summerMainPage">여름</a></li>
+                            <li><a href="/usr/home/fallMainPage">가을</a></li>
+                            <li><a href="/usr/home/winterMainPage">겨울</a></li>
+                        </ul>
+                    </li>
                 </ul>
             </nav>
             <div style="margin-left: 70px; "> <!-- 간격을 조정할 부분 -->

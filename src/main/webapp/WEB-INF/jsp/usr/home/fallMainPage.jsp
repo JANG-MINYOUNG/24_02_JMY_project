@@ -146,6 +146,7 @@
 		<div class="temperature"></div>
 		<div class="weather-icon" style="background-color: rgba(0, 0, 0, 0.2); position: absolute; border-radius: 10px;"></div>
 	</div>
+	<img class="weather_place" src="https://img1.daumcdn.net/thumb/R800x0/?scode=mtistory2&fname=https%3A%2F%2Ft1.daumcdn.net%2Fcfile%2Ftistory%2F224568365460AA7607" alt="" />
 </div>
 <div class="theme_place">
 	<p>추천! 테마여행</p>
